@@ -23,6 +23,7 @@
 /* USER CODE BEGIN Includes */
 
 #include <stdio.h>
+#include "board.h"
 
 /* USER CODE END Includes */
 
@@ -107,7 +108,7 @@ int main(void)
   MX_USART2_UART_Init();
   /* USER CODE BEGIN 2 */
 
-  printf("STM32C031C6 ready\r\n");
+  kg_platform_start();
 
   /* USER CODE END 2 */
 
@@ -118,9 +119,7 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-    HAL_GPIO_TogglePin(Led_GPIO_Port, Led_Pin);
-    printf("tick %lu\r\n", (unsigned long)(HAL_GetTick() / 1000U));
-    HAL_Delay(1000);
+    kg_platform_run();
   }
   /* USER CODE END 3 */
 }
