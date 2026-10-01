@@ -1,0 +1,14 @@
+$ date -u +%Y-%m-%dT%H:%M:%SZ
+2026-10-03T14:20:54Z
+$ sw_vers
+ProductName:		macOS
+ProductVersion:		27.0.1
+BuildVersion:		26A434
+$ uname -sm
+Darwin arm64
+$ docker context show
+desktop-linux
+$ docker version --format client={{.Client.Os}}/{{.Client.Arch}} {{.Client.Version}}; server={{.Server.Os}}/{{.Server.Arch}} {{.Server.Version}}
+client=darwin/arm64 29.6.1; server=linux/arm64 29.6.1
+$ docker info --format {{.OperatingSystem}}; {{.Architecture}}; kernel={{.KernelVersion}}
+Docker Desktop; aarch64; kernel=6.12.76-linuxkit
