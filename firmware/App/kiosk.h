@@ -33,6 +33,7 @@ typedef struct {
     kg_motion base_motion, anchor_motion, previous_motion;
     uint16_t base_adc, anchor_adc;
     kg_event queue[KG_QUEUE_CAPACITY];
+    kg_event overflow;
     unsigned head, count;
 } kg_kiosk;
 void kg_kiosk_init(kg_kiosk *k);
