@@ -25,4 +25,4 @@ make build
 - [Передача в Ubuntu VM](docs/vm-transfer.md), [вимоги до здачі](docs/submission.md).
 - [Початковий README шаблону](docs/template-README.md).
 
-PDF-звіт, скриншоти й PR ще потрібні.
+Дві чисті Docker-збірки на Mac дали однакові ELF/HEX/BIN. Перевірку Ubuntu VM та UART/LED у Wokwi ще потрібно завершити. Для здачі потрібні PDF-звіт, скриншоти й PR.
