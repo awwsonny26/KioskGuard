@@ -94,6 +94,73 @@ static void calibrate(kg_kiosk *k, uint32_t now, const kg_input *in)
         kg_emit(k, now, KG_BASELINE_READY, in, k->base_adc);
     }
 }
+static bool beyond_angle(const kg_motion *a, const kg_motion *b, int64_t cosine2)
+{
+    int64_t dot = (int64_t)a->ax*b->ax + (int64_t)a->ay*b->ay + (int64_t)a->az*b->az;
+    if (dot < 0) return true;
+    return dot*dot*1000000 < length2(a)*length2(b)*cosine2;
+}
+static void detect_motion(kg_kiosk *k, uint32_t now, const kg_input *in)
+{
+    if (!in->imu_valid) {
+        k->motion_previous_valid = false;
+        k->moved_pending = false;
+        return;
+    }
+    if (!in->imu_fresh) return;
+    int64_t delta = distance2(&in->motion, &k->previous_motion);
+    if (k->motion_previous_valid && delta > 1000000 &&
+        (!k->shock_seen || (uint32_t)(now-k->last_shock) >= 500)) {
+        kg_emit(k, now, KG_BODY_SHOCK, in, (int32_t)delta);
+        k->last_shock = now;
+        k->shock_seen = true;
+    }
+    k->previous_motion = in->motion;
+    k->motion_previous_valid = true;
+    if (!quasistatic(&in->motion)) {
+        k->moved_pending = false;
+        return;
+    }
+    if (!beyond_angle(&in->motion, &k->base_motion, 933013)) {
+        k->moved_latched = false;
+    }
+    if (!beyond_angle(&in->motion, &k->base_motion, 883022) || k->moved_latched) {
+        k->moved_pending = false;
+        return;
+    }
+    if (!k->moved_pending) {
+        k->moved_pending = true;
+        k->moved_since = now;
+    }
+    if ((uint32_t)(now-k->moved_since) >= 1000) {
+        kg_emit(k, now, KG_BODY_MOVED, in, 20);
+        k->moved_latched = true;
+        k->moved_pending = false;
+    }
+}
+static void detect_light(kg_kiosk *k, uint32_t now, const kg_input *in)
+{
+    if (!in->adc_valid) {
+        k->light_pending = false;
+        return;
+    }
+    if (!in->adc_fresh) return;
+    unsigned delta = adc_delta(in->adc, k->base_adc);
+    if (delta*100 < 4095*10) k->light_latched = false;
+    if (delta*100 <= 4095*15 || k->light_latched) {
+        k->light_pending = false;
+        return;
+    }
+    if (!k->light_pending) {
+        k->light_pending = true;
+        k->light_since = now;
+    }
+    if ((uint32_t)(now-k->light_since) >= 300) {
+        kg_emit(k, now, KG_LIGHT_CHANGED, in, (int32_t)delta);
+        k->light_latched = true;
+        k->light_pending = false;
+    }
+}
 void kg_kiosk_step(kg_kiosk *k, uint32_t now, const kg_input *in)
 {
     if (in->pir && !k->pir_previous) kg_emit(k, now, KG_USER_NEAR, in, 0);
@@ -106,7 +173,14 @@ void kg_kiosk_step(kg_kiosk *k, uint32_t now, const kg_input *in)
     if (!in->adc_valid && !k->adc_fault) kg_emit(k, now, KG_ADC_ERROR, in, 0);
     if (in->adc_valid && k->adc_fault) kg_emit(k, now, KG_ADC_RECOVERED, in, 0);
     k->adc_fault = !in->adc_valid;
-    if (k->calibrating) calibrate(k, now, in);
+    if (k->calibrating) {
+        calibrate(k, now, in);
+        return;
+    }
+    if (k->ready) {
+        detect_motion(k, now, in);
+        detect_light(k, now, in);
+    }
 }
 const char *kg_event_name(kg_event_type type)
 {
