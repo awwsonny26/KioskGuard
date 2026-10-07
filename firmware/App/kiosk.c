@@ -182,13 +182,27 @@ void kg_kiosk_step(kg_kiosk *k, uint32_t now, const kg_input *in)
         detect_light(k, now, in);
     }
 }
+void kg_command(kg_kiosk *k, uint32_t now, const char *line, const kg_input *in)
+{
+    if (strcmp(line, "service on") == 0) {
+        k->service = true;
+        kg_emit(k, now, KG_SERVICE_ON, in, 0);
+    } else if (strcmp(line, "service off") == 0) {
+        k->service = false;
+        kg_emit(k, now, KG_SERVICE_OFF, in, 0);
+    } else if (strcmp(line, "baseline") == 0) {
+        kg_request_baseline(k, now, in);
+    } else {
+        kg_emit(k, now, KG_COMMAND_REJECTED, in, 1);
+    }
+}
 const char *kg_event_name(kg_event_type type)
 {
     static const char *const names[] = {
         "USER_NEAR", "BODY_SHOCK", "BODY_MOVED", "LIGHT_CHANGED",
         "BASELINE_READY", "BASELINE_PENDING", "SENSOR_ERROR", "SENSOR_RECOVERED",
         "SERVICE_ON", "SERVICE_OFF", "COMMAND_REJECTED", "QUEUE_OVERFLOW",
-        "ADC_ERROR", "ADC_RECOVERED"
+        "ADC_ERROR", "ADC_RECOVERED", "DIAGNOSTIC"
     };
     return (unsigned)type < sizeof(names)/sizeof(names[0]) ? names[type] : "UNKNOWN";
 }

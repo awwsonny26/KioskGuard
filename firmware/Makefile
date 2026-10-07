@@ -148,6 +148,7 @@ LDFLAGS = $(MCU) -specs=nano.specs -T$(LDSCRIPT) $(LIBDIR) $(LIBS) -Wl,-Map=$(BU
 
 # default action: build all
 C_SOURCES += Platform/runtime.c Platform/bus.c Devices/imu.c
+C_SOURCES += App/kiosk.c App/line.c
 C_SOURCES += Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_adc.c Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_adc_ex.c Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_ll_adc.c
 C_INCLUDES += -IPlatform -IDevices -IApp
 OWN_WARNINGS = $(if $(filter Drivers/%,$<),,-Wextra -Werror)
