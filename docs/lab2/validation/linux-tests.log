@@ -1,0 +1,92 @@
+python3 tools/check_structure.py
+PASS: portable dependencies and sensor wiring
+make -C tests test
+make[1]: Entering directory '/workspace/tests'
+mkdir -p build/Linux-aarch64
+cc -std=c11 -O0 -g -Wall -Wextra -Werror test_kiosk.c ../firmware/Devices/imu.c ../firmware/App/kiosk.c ../firmware/App/line.c -o build/Linux-aarch64/test_kiosk
+./build/Linux-aarch64/test_kiosk
+PASS 01 MPU ID, initialization order, NACK and timeout at every transaction
+PASS 02 signed units, captured +/-4g frame, failed read leaves sample intact
+PASS 03 baseline 2 seconds, motion/light restart stability, no warnings before ready
+PASS 04 PIR HIGH 5 seconds gives one INFO; LOW then HIGH rearms
+PASS 05 vector shock >1g, exact threshold, 500ms cooldown, dynamic acceleration gate
+PASS 06 45-degree movement 1000ms, 15-degree rearm, 180-degree orientation
+PASS 07 dynamic sample interrupts orientation confirmation
+PASS 08 15-percent ADC threshold, 300ms confirmation, 10-percent hysteresis
+PASS 09 50ms light pulse rejected, stale samples and ADC fault reset confirmation
+PASS 10 UART modes, rejection, baseline, simultaneous PIR/shock and immutable records
+PASS 11 one NACK error, PIR/ADC independent, recovery without false shock
+PASS 12 32-bit time rollover, queue capacity/loss report, reset counters
+PASS 13 CRLF, overlong/binary commands, 35ms button debounce and hold
+PASS: 13 groups, portable App/Devices only
+make[1]: Leaving directory '/workspace/tests'
+make -C tests coverage
+make[1]: Entering directory '/workspace/tests'
+mkdir -p coverage/Linux-aarch64
+rm -f coverage/Linux-aarch64/*.gcda coverage/Linux-aarch64/*.gcno coverage/Linux-aarch64/*.gcov
+cc -std=c11 -O0 -g -Wall -Wextra -Werror --coverage test_kiosk.c ../firmware/Devices/imu.c ../firmware/App/kiosk.c ../firmware/App/line.c -o coverage/Linux-aarch64/test_kiosk
+./coverage/Linux-aarch64/test_kiosk
+PASS 01 MPU ID, initialization order, NACK and timeout at every transaction
+PASS 02 signed units, captured +/-4g frame, failed read leaves sample intact
+PASS 03 baseline 2 seconds, motion/light restart stability, no warnings before ready
+PASS 04 PIR HIGH 5 seconds gives one INFO; LOW then HIGH rearms
+PASS 05 vector shock >1g, exact threshold, 500ms cooldown, dynamic acceleration gate
+PASS 06 45-degree movement 1000ms, 15-degree rearm, 180-degree orientation
+PASS 07 dynamic sample interrupts orientation confirmation
+PASS 08 15-percent ADC threshold, 300ms confirmation, 10-percent hysteresis
+PASS 09 50ms light pulse rejected, stale samples and ADC fault reset confirmation
+PASS 10 UART modes, rejection, baseline, simultaneous PIR/shock and immutable records
+PASS 11 one NACK error, PIR/ADC independent, recovery without false shock
+PASS 12 32-bit time rollover, queue capacity/loss report, reset counters
+PASS 13 CRLF, overlong/binary commands, 35ms button debounce and hold
+PASS: 13 groups, portable App/Devices only
+gcov -b -c coverage/Linux-aarch64/test_kiosk-imu.gcno coverage/Linux-aarch64/test_kiosk-kiosk.gcno coverage/Linux-aarch64/test_kiosk-line.gcno
+File '../firmware/Devices/imu.c'
+Lines executed:100.00% of 24
+Branches executed:100.00% of 14
+Taken at least once:100.00% of 14
+Calls executed:100.00% of 7
+Creating 'imu.c.gcov'
+
+File '../firmware/App/kiosk.c'
+Lines executed:100.00% of 158
+Branches executed:100.00% of 114
+Taken at least once:92.11% of 114
+Calls executed:100.00% of 28
+Creating 'kiosk.c.gcov'
+
+File '../firmware/App/line.c'
+Lines executed:100.00% of 22
+Branches executed:100.00% of 20
+Taken at least once:95.00% of 20
+No calls
+Creating 'line.c.gcov'
+
+Lines executed:100.00% of 204
+mv *.c.gcov coverage/Linux-aarch64/
+python3 ../tools/coverage_summary.py coverage/Linux-aarch64
+{'module': 'imu.c.gcov', 'lines_hit': 24, 'lines': 24, 'line_percent': 100.0, 'branches_taken': 14, 'branches': 14, 'branch_percent': 100.0}
+{'module': 'kiosk.c.gcov', 'lines_hit': 158, 'lines': 158, 'line_percent': 100.0, 'branches_taken': 105, 'branches': 114, 'branch_percent': 92.11}
+{'module': 'line.c.gcov', 'lines_hit': 22, 'lines': 22, 'line_percent': 100.0, 'branches_taken': 19, 'branches': 20, 'branch_percent': 95.0}
+PASS coverage targets: >=90% lines, >=80% branches in App/Devices
+make[1]: Leaving directory '/workspace/tests'
+make -C tests sanitize
+make[1]: Entering directory '/workspace/tests'
+mkdir -p build/Linux-aarch64
+cc -std=c11 -O0 -g -Wall -Wextra -Werror -fsanitize=address,undefined -fno-omit-frame-pointer test_kiosk.c ../firmware/Devices/imu.c ../firmware/App/kiosk.c ../firmware/App/line.c -o build/Linux-aarch64/test_sanitize
+./build/Linux-aarch64/test_sanitize
+PASS 01 MPU ID, initialization order, NACK and timeout at every transaction
+PASS 02 signed units, captured +/-4g frame, failed read leaves sample intact
+PASS 03 baseline 2 seconds, motion/light restart stability, no warnings before ready
+PASS 04 PIR HIGH 5 seconds gives one INFO; LOW then HIGH rearms
+PASS 05 vector shock >1g, exact threshold, 500ms cooldown, dynamic acceleration gate
+PASS 06 45-degree movement 1000ms, 15-degree rearm, 180-degree orientation
+PASS 07 dynamic sample interrupts orientation confirmation
+PASS 08 15-percent ADC threshold, 300ms confirmation, 10-percent hysteresis
+PASS 09 50ms light pulse rejected, stale samples and ADC fault reset confirmation
+PASS 10 UART modes, rejection, baseline, simultaneous PIR/shock and immutable records
+PASS 11 one NACK error, PIR/ADC independent, recovery without false shock
+PASS 12 32-bit time rollover, queue capacity/loss report, reset counters
+PASS 13 CRLF, overlong/binary commands, 35ms button debounce and hold
+PASS: 13 groups, portable App/Devices only
+make[1]: Leaving directory '/workspace/tests'

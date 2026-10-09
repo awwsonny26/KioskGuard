@@ -1,0 +1,3 @@
+b0a1a16cb3c862b6e4cf8f5332f7429245b60aa5a144e575081d24ff8fd2df9e  firmware/build/firmware.elf
+f09aa9168345860b05e2e12dbe7f9dc1fa6c78dc86838fd2beabb5998a6d9757  firmware/build/firmware.hex
+b56c37afd3012d0da4bf4d2bc260b56d86478680bb94fe363769e6346a317ea4  firmware/build/firmware.bin

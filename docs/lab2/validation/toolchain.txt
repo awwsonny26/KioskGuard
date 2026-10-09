@@ -1,0 +1,7 @@
+binutils-arm-none-eabi	2.42-1ubuntu1+23
+gcc	4:13.2.0-7ubuntu1
+gcc-arm-none-eabi	15:13.2.rel1-2
+libnewlib-arm-none-eabi	4.4.0.20231231-2
+make	4.3-4.1build2
+python3	3.12.3-0ubuntu2.1
+sha256:27cfdb58d7c0454c2cc8a71771f00ade68dc341234d9d70a9ae1127995f76bb1

@@ -1,0 +1,29 @@
+[
+  {
+    "module": "imu.c.gcov",
+    "lines_hit": 24,
+    "lines": 24,
+    "line_percent": 100.0,
+    "branches_taken": 14,
+    "branches": 14,
+    "branch_percent": 100.0
+  },
+  {
+    "module": "kiosk.c.gcov",
+    "lines_hit": 158,
+    "lines": 158,
+    "line_percent": 100.0,
+    "branches_taken": 105,
+    "branches": 114,
+    "branch_percent": 92.11
+  },
+  {
+    "module": "line.c.gcov",
+    "lines_hit": 22,
+    "lines": 22,
+    "line_percent": 100.0,
+    "branches_taken": 19,
+    "branches": 20,
+    "branch_percent": 95.0
+  }
+]

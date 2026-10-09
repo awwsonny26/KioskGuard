@@ -2,3 +2,9 @@
 firmware/build/
 wokwi.vcd
 *.swp
+tests/build/
+tests/coverage/
+*.gcda
+*.gcno
+*.gcov
+__pycache__/

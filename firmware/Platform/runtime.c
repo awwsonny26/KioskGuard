@@ -212,7 +212,7 @@ void kg_platform_run(void)
     now = HAL_GetTick();
     in = inputs(imu_fresh, adc_fresh);
     if (kg_button_press(&button,
-            HAL_GPIO_ReadPin(User_Button_GPIO_Port, User_Button_Pin) == GPIO_PIN_SET, now))
+            HAL_GPIO_ReadPin(User_Button_GPIO_Port, User_Button_Pin) == GPIO_PIN_RESET, now))
         kg_request_baseline(&kiosk, now, &in);
     kg_kiosk_step(&kiosk, now, &in);
     if ((uint32_t)(now-heartbeat_time) >= 1000) {

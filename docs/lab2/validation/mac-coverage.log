@@ -1,0 +1,47 @@
+/Library/Developer/CommandLineTools/usr/bin/make -C tests coverage
+mkdir -p coverage/Darwin-arm64
+rm -f coverage/Darwin-arm64/*.gcda coverage/Darwin-arm64/*.gcno coverage/Darwin-arm64/*.gcov
+cc -std=c11 -O0 -g -Wall -Wextra -Werror --coverage test_kiosk.c ../firmware/Devices/imu.c ../firmware/App/kiosk.c ../firmware/App/line.c -o coverage/Darwin-arm64/test_kiosk
+./coverage/Darwin-arm64/test_kiosk
+PASS 01 MPU ID, initialization order, NACK and timeout at every transaction
+PASS 02 signed units, captured +/-4g frame, failed read leaves sample intact
+PASS 03 baseline 2 seconds, motion/light restart stability, no warnings before ready
+PASS 04 PIR HIGH 5 seconds gives one INFO; LOW then HIGH rearms
+PASS 05 vector shock >1g, exact threshold, 500ms cooldown, dynamic acceleration gate
+PASS 06 45-degree movement 1000ms, 15-degree rearm, 180-degree orientation
+PASS 07 dynamic sample interrupts orientation confirmation
+PASS 08 15-percent ADC threshold, 300ms confirmation, 10-percent hysteresis
+PASS 09 50ms light pulse rejected, stale samples and ADC fault reset confirmation
+PASS 10 UART modes, rejection, baseline, simultaneous PIR/shock and immutable records
+PASS 11 one NACK error, PIR/ADC independent, recovery without false shock
+PASS 12 32-bit time rollover, queue capacity/loss report, reset counters
+PASS 13 CRLF, overlong/binary commands, 35ms button debounce and hold
+PASS: 13 groups, portable App/Devices only
+xcrun llvm-cov gcov -b -c coverage/Darwin-arm64/test_kiosk-imu.gcno coverage/Darwin-arm64/test_kiosk-kiosk.gcno coverage/Darwin-arm64/test_kiosk-line.gcno
+File '../firmware/Devices/imu.c'
+Lines executed:100.00% of 27
+Branches executed:100.00% of 14
+Taken at least once:100.00% of 14
+No calls
+Creating 'imu.c.gcov'
+
+File '../firmware/App/kiosk.c'
+Lines executed:100.00% of 176
+Branches executed:100.00% of 110
+Taken at least once:91.82% of 110
+No calls
+Creating 'kiosk.c.gcov'
+
+File '../firmware/App/line.c'
+Lines executed:100.00% of 25
+Branches executed:100.00% of 20
+Taken at least once:95.00% of 20
+No calls
+Creating 'line.c.gcov'
+
+mv *.c.gcov coverage/Darwin-arm64/
+python3 ../tools/coverage_summary.py coverage/Darwin-arm64
+{'module': 'imu.c.gcov', 'lines_hit': 27, 'lines': 27, 'line_percent': 100.0, 'branches_taken': 14, 'branches': 14, 'branch_percent': 100.0}
+{'module': 'kiosk.c.gcov', 'lines_hit': 176, 'lines': 176, 'line_percent': 100.0, 'branches_taken': 101, 'branches': 110, 'branch_percent': 91.82}
+{'module': 'line.c.gcov', 'lines_hit': 25, 'lines': 25, 'line_percent': 100.0, 'branches_taken': 19, 'branches': 20, 'branch_percent': 95.0}
+PASS coverage targets: >=90% lines, >=80% branches in App/Devices
