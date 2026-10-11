@@ -28,3 +28,9 @@ flowchart TB
 Продукт використовує два незалежні виміри механіки: різницю сусідніх векторів
 для удару і кут до зафіксованого baseline для переміщення. PIR не встановлює
 alarm або session. Сервіс змінює severity запису, а не вимикає опитування.
+
+![Component diagram](lab2/screenshots/components.png)
+
+Core USER CODE викликає Platform runner. B1 після Core init повторно
+ініціалізується runtime як input pull-up; це відповідає ioc. IRQ EXTI
+не використовується. I²C adapter належить Platform; vendor HAL не змінювали.

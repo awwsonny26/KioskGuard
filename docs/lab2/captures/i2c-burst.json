@@ -1,0 +1,69 @@
+{
+  "i2c": [
+    {
+      "start": 14025,
+      "bytes": [
+        208,
+        59
+      ],
+      "acks": [
+        true,
+        true
+      ],
+      "end": 209025,
+      "repeated": false
+    },
+    {
+      "start": 319800,
+      "bytes": [
+        209,
+        0,
+        0,
+        0,
+        0,
+        32,
+        0,
+        239,
+        92,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "acks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "end": 1684800,
+      "repeated": false
+    }
+  ],
+  "uart_tx": [],
+  "uart_rx": [],
+  "adc_rises": [],
+  "channels": {
+    "D0": 311,
+    "D1": 227,
+    "D2": 1,
+    "D3": 1,
+    "D4": 1,
+    "D5": 1,
+    "D6": 1,
+    "D7": 1
+  }
+}

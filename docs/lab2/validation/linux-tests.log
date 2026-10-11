@@ -2,8 +2,6 @@ python3 tools/check_structure.py
 PASS: portable dependencies and sensor wiring
 make -C tests test
 make[1]: Entering directory '/workspace/tests'
-mkdir -p build/Linux-aarch64
-cc -std=c11 -O0 -g -Wall -Wextra -Werror test_kiosk.c ../firmware/Devices/imu.c ../firmware/App/kiosk.c ../firmware/App/line.c -o build/Linux-aarch64/test_kiosk
 ./build/Linux-aarch64/test_kiosk
 PASS 01 MPU ID, initialization order, NACK and timeout at every transaction
 PASS 02 signed units, captured +/-4g frame, failed read leaves sample intact

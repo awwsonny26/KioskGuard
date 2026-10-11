@@ -121,6 +121,10 @@ static void process_commands(uint32_t now, const kg_input *in)
 void kg_platform_start(void)
 {
     GPIO_InitTypeDef pin = {0};
+    pin.Pin = User_Button_Pin;
+    pin.Mode = GPIO_MODE_INPUT;
+    pin.Pull = GPIO_PULLUP;
+    HAL_GPIO_Init(User_Button_GPIO_Port, &pin);
     pin.Pin = KG_PIR_PIN;
     pin.Mode = GPIO_MODE_INPUT;
     pin.Pull = GPIO_PULLDOWN;

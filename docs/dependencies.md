@@ -7,6 +7,6 @@ CMSIS із шаблону ЛР1 збережено без змін; контро
 
 GPIO для PIR/LED/markers, I2C для IMU, ADC для LDR, UART для журналу/команд.
 RCC/FLASH/PWR/CORTEX потрібні startup і SysTick. DMA є залежністю типів HAL,
-передач DMA немає. EXTI збережено для B1 з ЛР1; debounce виконується опитуванням.
+передач DMA немає. B1 — GPIO input pull-up; debounce виконується опитуванням.
 Власні файли збираються з -Wall -Wextra -Werror; vendor тільки з -Wall.
 Docker-файл фіксує образ та версії toolchain у фінальній конфігурації.

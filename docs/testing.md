@@ -15,7 +15,7 @@ simultaneous PIR/shock, fault/recovery, tick wrap, queue overflow, CRLF і debou
 macOS arm64 clang: усі 13 груп PASS, ASan/UBSan без діагностик.
 Line coverage imu.c 100%/27, kiosk.c 100%/176, line.c 100%/25.
 Branch taken: imu.c 100%/14, kiosk.c 91.82%/110, line.c 95%/20.
-Повні Linux і CI результати записуються після фактичного виконання у validation.
+Linux GCC: imu24/24 рядки, kiosk158/158, line22/22 (100%). Гілки14/14,105/114(92.11%),19/20(95%). 13 груп і ASan/UBSan PASS. Логи та CI — lab2/validation.
 
 Одна fixture походить із власного запису KioskGuard, а не із MuseGuard:
 00 00 00 00 20 00 EF 5C 00 00 00 00 00 00 при ±4 g.

@@ -9,18 +9,26 @@
 | PA1 | GPIO input | PIR OUT | CN8.2 A1 | 3.3 В OUT, MCU pull-down | Вільний GPIO поряд з AO, без перенесення шин |
 | PB8 | AF6 I2C1_SCL, OD | MPU SCL | CN5.10 D15 | 3.3 В, зовнішній 4.7 кОм | Збережено налаштування ЛР1 |
 | PB9 | AF6 I2C1_SDA, OD | MPU SDA | CN5.9 D14 | 3.3 В, зовнішній 4.7 кОм | Парний сигнал тієї самої I2C1 |
-| PA2 | AF1 USART2_TX | UART monitor RX | CN9.2 D1 / VCP | 3.3 В, без pull | Журнал ЛР1 і ЛР2 |
-| PA3 | AF1 USART2_RX | UART monitor TX | CN9.1 D0 / VCP | 3.3 В, без pull | Приймання команд |
+| PA2 | AF1 USART2_TX | UART monitor RX | CN7.37 / VCP | 3.3 В, без pull | Журнал ЛР1 і ЛР2 |
+| PA3 | AF1 USART2_RX | UART monitor TX | CN10.10 / VCP | 3.3 В, без pull | Приймання команд |
 | PA4 | GPIO output | ADC_MARK | CN8.3 A2 | 3.3 В | Маркер виклику ADC для аналізатора |
 | PA5 | GPIO output | LD4 | CN5.6 D13 | Бортовий LED | Heartbeat кожні 1000 мс |
-| PC13 | GPIO / B1 | User button | Бортова B1 | Бортова обв'язка | Повторний baseline з debounce |
+| PC13 | GPIO input / B1 | User button | Бортова B1 / CN7.23 | Pull-up, натискання LOW | Baseline, debounce 35 мс |
 | PA13/PA14 | SWD | Debug | ST-LINK | Бортова обв'язка | Залишені для відлагодження |
 
 Джерела: [DS13867 Rev 4](https://www.st.com/resource/en/datasheet/stm32c031c6.pdf),
 таблиці 12, 13, 15; [UM2953 Rev 2](https://www.st.com/resource/en/user_manual/um2953-stm32-nucleo64-board-mb1717-stmicroelectronics.pdf),
 таблиця 11 та рисунок 7; RM0490, розділи RCC, GPIO, ADC, I2C і USART.
 MCU datasheet визначає функцію піна, RM описує периферію, UM визначає роз'єми
-та бортові з'єднання. Номери morpho наведено після звіряння UM у підсумковому звіті.
+та бортові з'єднання. Morpho за рисунком 7: PA0=CN7.28, PA1=CN7.30,
+PA4=CN7.32, PB8=CN10.3, PB9=CN10.5, PA5=CN10.11, PC13=CN7.23.
+PA2=CN7.37, PA3=CN10.10. Arduino D1/D0 відповідають PB6/PB7 (USART1),
+а не PA2/PA3. Для VCP USART2 потрібні SB27/SB32 ON, SB31/SB33 OFF
+(UM2953, таблиці 8 і 10); стан фізичних перемичок не перевірено.
+
+Локальна UM2953 — Rev 1 (32 сторінки), вебджерело ST — Rev 2 (33 сторінки).
+Pinout звірено за рисунком 7 і таблицею 11. PC13 pull-up підтверджено також
+офіційним [ST BSP](https://github.com/STMicroelectronics/stm32c0xx-nucleo-bsp/blob/main/stm32c0xx_nucleo.c).
 
 MPU6050: AD0=GND, 7-bit address 0x68, WHO_AM_I 0x75 має 0x68.
 Лінії XDA/XCL, INT не використовуються. PIR і LDR не мають ID-регістра.
@@ -32,7 +40,11 @@ MPU6050: AD0=GND, 7-bit address 0x68, WHO_AM_I 0x75 має 0x68.
 PIR у моделі від 5V. PIR OUT має бути 3.3 В перед реальним монтажем.
 SCL/SDA підтягнути по 4.7 кОм до 3V3, врахувати вже наявні резистори breakout.
 LDR DO лишити непідключеним. Аналізатор D0=SCL, D1=SDA, D2=UART TX,
-D3=UART RX, D4=PIR, D5=ADC_MARK, D6=LD4. Схема diagram.json є монтажною схемою форми B.
+D3=UART RX, D4=PIR, D5=ADC_MARK, D6=LD4, D7=PC13.
+Схема diagram.json є монтажною схемою форми B. Окрема синя кнопка
+`B1 / PC13` замикає PC13 на GND і відтворює електричний вхід B1.
+Графічна бортова кнопка не дала фронту D7 у записі. Перевірено віртуальне
+джерело входу, а не фізичну кнопку Nucleo.
 
 ## Частоти та живлення
 

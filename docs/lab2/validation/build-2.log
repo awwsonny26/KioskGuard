@@ -1,10 +1,8 @@
-/Library/Developer/CommandLineTools/usr/bin/make -C firmware clean
-rm -fR build
 docker build -t kioskguard-build:lab2 docker
 #0 building with "desktop-linux" instance using docker driver
 
 #1 [internal] load build definition from Dockerfile
-#1 transferring dockerfile: 443B done
+#1 transferring dockerfile: 575B done
 #1 DONE 0.0s
 
 #2 [internal] load metadata for docker.io/library/ubuntu:24.04@sha256:534baea6a22c03a63003dbc8dbe78fe34bc0d7e595d9a9dc9834884ff530eb55
@@ -18,7 +16,7 @@ docker build -t kioskguard-build:lab2 docker
 #4 resolve docker.io/library/ubuntu:24.04@sha256:534baea6a22c03a63003dbc8dbe78fe34bc0d7e595d9a9dc9834884ff530eb55 done
 #4 DONE 0.0s
 
-#5 [2/3] RUN apt-get update && apt-get install -y --no-install-recommends     make     gcc     libc6-dev     python3     gcc-arm-none-eabi     binutils-arm-none-eabi     libnewlib-arm-none-eabi     ca-certificates     && rm -rf /var/lib/apt/lists/*
+#5 [2/3] RUN apt-get update && apt-get install -y --no-install-recommends     make=4.3-4.1build2     gcc=4:13.2.0-7ubuntu1     libc6-dev=2.39-0ubuntu8.9     python3=3.12.3-0ubuntu2.1     gcc-arm-none-eabi=15:13.2.rel1-2     binutils-arm-none-eabi=2.42-1ubuntu1+23     libnewlib-arm-none-eabi=4.4.0.20231231-2     ca-certificates=20260601~24.04.1     && rm -rf /var/lib/apt/lists/*
 #5 CACHED
 
 #6 [3/3] WORKDIR /workspace
@@ -26,18 +24,19 @@ docker build -t kioskguard-build:lab2 docker
 
 #7 exporting to image
 #7 exporting layers done
-#7 exporting manifest sha256:18d1dd2d1a74390eae1cfdabba5314aba94033e626e459eea32861ffe2dc1ee4 done
-#7 exporting config sha256:b99d73aebc2537aed7f937785a721dfea63bca304df1e42594ea20fdaf4c4e0a done
-#7 exporting attestation manifest sha256:d87369679038fb92cbbe535457b8d59c345b88f3ae7e7a3ae02481d680d3c4a0 done
-#7 exporting manifest list sha256:27cfdb58d7c0454c2cc8a71771f00ade68dc341234d9d70a9ae1127995f76bb1 done
+#7 exporting manifest sha256:f017e77c54027aedbc3e029a83ca874f36abd727a499865a23f4270468162379 done
+#7 exporting config sha256:f67ede47bad2422a0d0568b438a136b09da65cadbf28d947ac885cb5b3c4bc22 done
+#7 exporting attestation manifest sha256:46d5c98677a8f55acc901962dc749253f2116b497592186d45b8381bdc9cc2d1
+#7 exporting attestation manifest sha256:46d5c98677a8f55acc901962dc749253f2116b497592186d45b8381bdc9cc2d1 0.0s done
+#7 exporting manifest list sha256:a7abd04ab7bc94058e9469ecc121271376812f76467b419cb2d4406243f4a444 done
 #7 naming to docker.io/library/kioskguard-build:lab2 done
 #7 unpacking to docker.io/library/kioskguard-build:lab2 done
-#7 DONE 0.0s
+#7 DONE 0.1s
 docker run --rm -v "/Users/pliffdax/Projects/university/Study/People/Новаківська Софія Василівна/2026-Fall/SP/Lab01/Work/KioskGuard:/workspace" -w /workspace \
 		--user "501:20" kioskguard-build:lab2 \
 		make -C firmware all
 make: Entering directory '/workspace/firmware'
-mkdir -p build		
+mkdir -p build
 arm-none-eabi-gcc -c -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -IPlatform -IDevices -IApp -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/main.d" -Wextra -Werror -Wa,-a,-ad,-alms=build/main.lst Core/Src/main.c -o build/main.o
 arm-none-eabi-gcc -c -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -IPlatform -IDevices -IApp -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/stm32c0xx_it.d" -Wextra -Werror -Wa,-a,-ad,-alms=build/stm32c0xx_it.lst Core/Src/stm32c0xx_it.c -o build/stm32c0xx_it.o
 arm-none-eabi-gcc -c -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -IPlatform -IDevices -IApp -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/stm32c0xx_hal_msp.d" -Wextra -Werror -Wa,-a,-ad,-alms=build/stm32c0xx_hal_msp.lst Core/Src/stm32c0xx_hal_msp.c -o build/stm32c0xx_hal_msp.o
@@ -72,7 +71,7 @@ arm-none-eabi-gcc -x assembler-with-cpp -c -mcpu=cortex-m0plus -mthumb   -DUSE_H
 arm-none-eabi-gcc build/main.o build/stm32c0xx_it.o build/stm32c0xx_hal_msp.o build/syscalls.o build/sysmem.o build/stm32c0xx_hal.o build/stm32c0xx_hal_cortex.o build/stm32c0xx_hal_rcc.o build/stm32c0xx_hal_rcc_ex.o build/stm32c0xx_hal_flash.o build/stm32c0xx_hal_flash_ex.o build/stm32c0xx_hal_gpio.o build/stm32c0xx_hal_dma.o build/stm32c0xx_hal_dma_ex.o build/stm32c0xx_hal_pwr.o build/stm32c0xx_hal_pwr_ex.o build/stm32c0xx_hal_exti.o build/stm32c0xx_hal_i2c.o build/stm32c0xx_hal_i2c_ex.o build/stm32c0xx_hal_uart.o build/stm32c0xx_hal_uart_ex.o build/system_stm32c0xx.o build/runtime.o build/bus.o build/imu.o build/kiosk.o build/line.o build/stm32c0xx_hal_adc.o build/stm32c0xx_hal_adc_ex.o build/stm32c0xx_ll_adc.o build/startup_stm32c031xx.o -mcpu=cortex-m0plus -mthumb   -specs=nano.specs -TSTM32C031C6Tx_FLASH.ld  -lc -lm -lnosys  -Wl,-Map=build/firmware.map,--cref -Wl,--gc-sections -o build/firmware.elf
 arm-none-eabi-size build/firmware.elf
    text	   data	    bss	    dec	    hex	filename
-  26356	    112	   3816	  30284	   764c	build/firmware.elf
+  26376	    112	   3816	  30304	   7660	build/firmware.elf
 arm-none-eabi-objcopy -O ihex build/firmware.elf build/firmware.hex
-arm-none-eabi-objcopy -O binary -S build/firmware.elf build/firmware.bin	
+arm-none-eabi-objcopy -O binary -S build/firmware.elf build/firmware.bin
 make: Leaving directory '/workspace/firmware'

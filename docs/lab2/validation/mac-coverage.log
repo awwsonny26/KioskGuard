@@ -17,7 +17,7 @@ PASS 11 one NACK error, PIR/ADC independent, recovery without false shock
 PASS 12 32-bit time rollover, queue capacity/loss report, reset counters
 PASS 13 CRLF, overlong/binary commands, 35ms button debounce and hold
 PASS: 13 groups, portable App/Devices only
-xcrun llvm-cov gcov -b -c coverage/Darwin-arm64/test_kiosk-imu.gcno coverage/Darwin-arm64/test_kiosk-kiosk.gcno coverage/Darwin-arm64/test_kiosk-line.gcno
+gcov -b -c coverage/Darwin-arm64/test_kiosk-imu.gcno coverage/Darwin-arm64/test_kiosk-kiosk.gcno coverage/Darwin-arm64/test_kiosk-line.gcno
 File '../firmware/Devices/imu.c'
 Lines executed:100.00% of 27
 Branches executed:100.00% of 14

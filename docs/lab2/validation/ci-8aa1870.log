@@ -1,0 +1,774 @@
+verify	Set up job	﻿2026-10-13T16:31:28.4713137Z Current runner version: '2.337.0'
+verify	Set up job	2026-10-13T16:31:28.4735461Z ##[group]Runner Image Provisioner
+verify	Set up job	2026-10-13T16:31:28.4736263Z Hosted Compute Agent
+verify	Set up job	2026-10-13T16:31:28.4736757Z Version: 20261002.596
+verify	Set up job	2026-10-13T16:31:28.4737288Z Commit: c3d12f3313a95f25162a1503be624f3b0617f8c0
+verify	Set up job	2026-10-13T16:31:28.4737932Z Build Date: 2026-10-02T22:28:27Z
+verify	Set up job	2026-10-13T16:31:28.4738494Z Worker ID: {07fb9505-1a3f-4f3f-baaf-6237ba04cb49}
+verify	Set up job	2026-10-13T16:31:28.4739374Z Region: westus3
+verify	Set up job	2026-10-13T16:31:28.4739877Z Cloud: Azure
+verify	Set up job	2026-10-13T16:31:28.4740330Z ##[endgroup]
+verify	Set up job	2026-10-13T16:31:28.4741584Z ##[group]Operating System
+verify	Set up job	2026-10-13T16:31:28.4742093Z Ubuntu
+verify	Set up job	2026-10-13T16:31:28.4742578Z 24.04.5
+verify	Set up job	2026-10-13T16:31:28.4743036Z LTS
+verify	Set up job	2026-10-13T16:31:28.4743485Z ##[endgroup]
+verify	Set up job	2026-10-13T16:31:28.4743980Z ##[group]Runner Image
+verify	Set up job	2026-10-13T16:31:28.4744471Z Image: ubuntu-24.04
+verify	Set up job	2026-10-13T16:31:28.4744984Z Version: 20261004.327.1
+verify	Set up job	2026-10-13T16:31:28.4746026Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261004.327/images/ubuntu/Ubuntu2404-Readme.md
+verify	Set up job	2026-10-13T16:31:28.4747474Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261004.327
+verify	Set up job	2026-10-13T16:31:28.4748265Z ##[endgroup]
+verify	Set up job	2026-10-13T16:31:28.4749220Z ##[group]GITHUB_TOKEN Permissions
+verify	Set up job	2026-10-13T16:31:28.4751035Z Contents: read
+verify	Set up job	2026-10-13T16:31:28.4751581Z Metadata: read
+verify	Set up job	2026-10-13T16:31:28.4752057Z ##[endgroup]
+verify	Set up job	2026-10-13T16:31:28.4753823Z Secret source: Actions
+verify	Set up job	2026-10-13T16:31:28.4754640Z Cache mode: write
+verify	Set up job	2026-10-13T16:31:28.4755571Z Prepare workflow directory
+verify	Set up job	2026-10-13T16:31:28.5051391Z Prepare all required actions
+verify	Set up job	2026-10-13T16:31:28.5102176Z Getting action download info
+verify	Set up job	2026-10-13T16:31:28.8293194Z Download action repository 'actions/checkout@11d5960a326750d5838078e36cf38b85af677262' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+verify	Set up job	2026-10-13T16:31:29.0877559Z Complete job name: verify
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	﻿2026-10-13T16:31:29.1568700Z ##[group]Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:31:29.1569533Z with:
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:31:29.1569926Z   repository: awwsonny26/KioskGuard
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:31:29.1572889Z   token: ***
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:31:29.1573243Z   ssh-strict: true
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:31:29.1573599Z   ssh-user: git
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:31:29.1574053Z   persist-credentials: true
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:31:29.1574496Z   clean: true
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:31:29.1574859Z   sparse-checkout-cone-mode: true
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:31:29.1575480Z   fetch-depth: 1
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:31:29.1575829Z   fetch-tags: false
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:31:29.1576195Z   show-progress: true
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:31:29.1576558Z   lfs: false
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:31:29.1576891Z   submodules: false
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:31:29.1577246Z   set-safe-directory: true
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:31:29.1577653Z   allow-unsafe-pr-checkout: false
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:31:29.1578250Z ##[endgroup]
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:31:29.2459532Z Syncing repository: awwsonny26/KioskGuard
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:31:29.2461552Z ##[group]Getting Git version info
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:31:29.2462567Z Working directory is '/home/runner/work/KioskGuard/KioskGuard'
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:31:29.2463930Z [command]/usr/bin/git version
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:31:29.2495048Z git version 2.55.0
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:31:29.2511525Z ##[endgroup]
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:31:29.2524089Z Temporarily overriding HOME='/home/runner/work/_temp/f82e5eca-b233-4ae3-be10-592f0876d5e7' before making global git config changes
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:31:29.2526115Z Adding repository directory to the temporary git global config as a safe directory
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:31:29.2527676Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/KioskGuard/KioskGuard
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:31:29.2569741Z Deleting the contents of '/home/runner/work/KioskGuard/KioskGuard'
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:31:29.2579818Z ##[group]Initializing the repository
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:31:29.2581134Z [command]/usr/bin/git init /home/runner/work/KioskGuard/KioskGuard
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:31:29.4584181Z hint: Using 'master' as the name for the initial branch. This default branch name
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:31:29.4586071Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:31:29.4587451Z hint: to use in all of your new repositories, which will suppress this warning,
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:31:29.4588774Z hint: call:
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:31:29.4589327Z hint:
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:31:29.4590068Z hint: 	git config --global init.defaultBranch <name>
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:31:29.4590915Z hint:
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:31:29.4591574Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:31:29.4592360Z hint: 'development'. The just-created branch can be renamed via this command:
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:31:29.4592999Z hint:
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:31:29.4593369Z hint: 	git branch -m <name>
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:31:29.4593795Z hint:
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:31:29.4594617Z hint: Disable this message with "git config set advice.defaultBranchName false"
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:31:29.4596181Z Initialized empty Git repository in /home/runner/work/KioskGuard/KioskGuard/.git/
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:31:29.4597788Z [command]/usr/bin/git remote add origin https://github.com/awwsonny26/KioskGuard
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:31:29.4692517Z ##[endgroup]
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:31:29.4693221Z ##[group]Disabling automatic garbage collection
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:31:29.4695546Z [command]/usr/bin/git config --local gc.auto 0
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:31:29.4731930Z ##[endgroup]
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:31:29.4732602Z ##[group]Setting up auth
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:31:29.4737247Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:31:29.4765944Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:31:29.5044515Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:31:29.5074793Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:31:29.5263461Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:31:29.5295763Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:31:29.5499894Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:31:29.5586105Z ##[endgroup]
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:31:29.5587299Z ##[group]Fetching the repository
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:31:29.5595252Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +8aa187048212e986f146ae9ddb7279aec4222932:refs/remotes/origin/feature/lab-2
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:31:30.5422089Z From https://github.com/awwsonny26/KioskGuard
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:31:30.5439753Z  * [new ref]         8aa187048212e986f146ae9ddb7279aec4222932 -> origin/feature/lab-2
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:31:30.5442718Z ##[endgroup]
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:31:30.5444115Z ##[group]Determining the checkout info
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:31:30.5445764Z ##[endgroup]
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:31:30.5446617Z [command]/usr/bin/git sparse-checkout disable
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:31:30.5501312Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:31:30.5575344Z ##[group]Checking out the ref
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:31:30.5578877Z [command]/usr/bin/git checkout --progress --force -B feature/lab-2 refs/remotes/origin/feature/lab-2
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:31:30.5777155Z Switched to a new branch 'feature/lab-2'
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:31:30.5784459Z branch 'feature/lab-2' set up to track 'origin/feature/lab-2'.
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:31:30.5788561Z ##[endgroup]
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:31:30.5827106Z [command]/usr/bin/git log -1 --format=%H
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:31:30.5852199Z 8aa187048212e986f146ae9ddb7279aec4222932
+verify	Firmware in Docker	﻿2026-10-13T16:31:30.6574365Z ##[group]Run make build
+verify	Firmware in Docker	2026-10-13T16:31:30.6575610Z [36;1mmake build[0m
+verify	Firmware in Docker	2026-10-13T16:31:30.6864825Z shell: /usr/bin/bash -e {0}
+verify	Firmware in Docker	2026-10-13T16:31:30.6866124Z ##[endgroup]
+verify	Firmware in Docker	2026-10-13T16:31:30.7256523Z docker build -t kioskguard-build:lab2 docker
+verify	Firmware in Docker	2026-10-13T16:31:31.8744392Z #0 building with "default" instance using docker driver
+verify	Firmware in Docker	2026-10-13T16:31:31.8744780Z
+verify	Firmware in Docker	2026-10-13T16:31:31.8745739Z #1 [internal] load build definition from Dockerfile
+verify	Firmware in Docker	2026-10-13T16:31:32.4060364Z #1 transferring dockerfile:
+verify	Firmware in Docker	2026-10-13T16:31:32.6450944Z #1 transferring dockerfile: 443B 0.0s done
+verify	Firmware in Docker	2026-10-13T16:31:32.6451327Z #1 DONE 0.8s
+verify	Firmware in Docker	2026-10-13T16:31:32.6451438Z
+verify	Firmware in Docker	2026-10-13T16:31:32.6451830Z #2 [internal] load metadata for docker.io/library/ubuntu:24.04@sha256:534baea6a22c03a63003dbc8dbe78fe34bc0d7e595d9a9dc9834884ff530eb55
+verify	Firmware in Docker	2026-10-13T16:31:32.8286308Z #2 ...
+verify	Firmware in Docker	2026-10-13T16:31:32.8286542Z
+verify	Firmware in Docker	2026-10-13T16:31:32.8286725Z #3 [auth] library/ubuntu:pull token for registry-1.docker.io
+verify	Firmware in Docker	2026-10-13T16:31:32.8287018Z #3 DONE 0.0s
+verify	Firmware in Docker	2026-10-13T16:31:32.9788154Z
+verify	Firmware in Docker	2026-10-13T16:31:33.3430233Z #2 [internal] load metadata for docker.io/library/ubuntu:24.04@sha256:534baea6a22c03a63003dbc8dbe78fe34bc0d7e595d9a9dc9834884ff530eb55
+verify	Firmware in Docker	2026-10-13T16:31:33.3431157Z #2 DONE 0.8s
+verify	Firmware in Docker	2026-10-13T16:31:33.5174611Z
+verify	Firmware in Docker	2026-10-13T16:31:33.5174866Z #4 [internal] load .dockerignore
+verify	Firmware in Docker	2026-10-13T16:31:33.5175519Z #4 transferring context: 2B done
+verify	Firmware in Docker	2026-10-13T16:31:33.5175913Z #4 DONE 0.0s
+verify	Firmware in Docker	2026-10-13T16:31:33.5176315Z
+verify	Firmware in Docker	2026-10-13T16:31:33.5176771Z #5 [1/3] FROM docker.io/library/ubuntu:24.04@sha256:534baea6a22c03a63003dbc8dbe78fe34bc0d7e595d9a9dc9834884ff530eb55
+verify	Firmware in Docker	2026-10-13T16:31:33.5178352Z #5 resolve docker.io/library/ubuntu:24.04@sha256:534baea6a22c03a63003dbc8dbe78fe34bc0d7e595d9a9dc9834884ff530eb55 done
+verify	Firmware in Docker	2026-10-13T16:31:33.5179699Z #5 sha256:534baea6a22c03a63003dbc8dbe78fe34bc0d7e595d9a9dc9834884ff530eb55 6.69kB / 6.69kB done
+verify	Firmware in Docker	2026-10-13T16:31:33.5180733Z #5 sha256:f610ab94648195aa356059f5b41d6085c9d4d903c072430cdd1af7bdb646106b 424B / 424B done
+verify	Firmware in Docker	2026-10-13T16:31:33.5181756Z #5 sha256:69f919497cada9a8611f3de61df902d9f94bf20f84552ef5bd93125c38608ef9 2.05kB / 2.05kB done
+verify	Firmware in Docker	2026-10-13T16:31:33.5182553Z #5 DONE 0.0s
+verify	Firmware in Docker	2026-10-13T16:31:33.5182909Z
+verify	Firmware in Docker	2026-10-13T16:31:33.5184020Z #6 [2/3] RUN apt-get update && apt-get install -y --no-install-recommends     make     gcc     libc6-dev     python3     gcc-arm-none-eabi     binutils-arm-none-eabi     libnewlib-arm-none-eabi     ca-certificates     && rm -rf /var/lib/apt/lists/*
+verify	Firmware in Docker	2026-10-13T16:31:34.5512063Z #6 1.185 Get:1 http://archive.ubuntu.com/ubuntu noble InRelease [256 kB]
+verify	Firmware in Docker	2026-10-13T16:31:34.5512773Z #6 1.185 Get:2 http://security.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+verify	Firmware in Docker	2026-10-13T16:31:34.7633247Z #6 1.397 Get:3 http://archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+verify	Firmware in Docker	2026-10-13T16:31:35.0005634Z #6 1.483 Get:4 http://archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+verify	Firmware in Docker	2026-10-13T16:31:35.0378883Z #6 1.671 Get:5 http://archive.ubuntu.com/ubuntu noble/main amd64 Packages [1808 kB]
+verify	Firmware in Docker	2026-10-13T16:31:35.2230338Z #6 1.856 Get:6 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Packages [1548 kB]
+verify	Firmware in Docker	2026-10-13T16:31:35.3751963Z #6 2.009 Get:7 http://archive.ubuntu.com/ubuntu noble/restricted amd64 Packages [117 kB]
+verify	Firmware in Docker	2026-10-13T16:31:35.5400932Z #6 2.012 Get:8 http://archive.ubuntu.com/ubuntu noble/multiverse amd64 Packages [331 kB]
+verify	Firmware in Docker	2026-10-13T16:31:35.5401441Z #6 2.023 Get:9 http://archive.ubuntu.com/ubuntu noble/universe amd64 Packages [19.3 MB]
+verify	Firmware in Docker	2026-10-13T16:31:35.7853384Z #6 2.419 Get:10 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [1728 kB]
+verify	Firmware in Docker	2026-10-13T16:31:35.9020099Z #6 2.426 Get:11 http://archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Packages [2231 kB]
+verify	Firmware in Docker	2026-10-13T16:31:35.9021188Z #6 2.458 Get:12 http://archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Packages [61.7 kB]
+verify	Firmware in Docker	2026-10-13T16:31:35.9021988Z #6 2.459 Get:13 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [2166 kB]
+verify	Firmware in Docker	2026-10-13T16:31:35.9022776Z #6 2.535 Get:14 http://archive.ubuntu.com/ubuntu noble-backports/universe amd64 Packages [36.0 kB]
+verify	Firmware in Docker	2026-10-13T16:31:36.0527483Z #6 2.535 Get:15 http://archive.ubuntu.com/ubuntu noble-backports/multiverse amd64 Packages [669 B]
+verify	Firmware in Docker	2026-10-13T16:31:36.0528251Z #6 2.535 Get:16 http://archive.ubuntu.com/ubuntu noble-backports/main amd64 Packages [49.0 kB]
+verify	Firmware in Docker	2026-10-13T16:31:36.2351437Z #6 2.868 Get:17 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Packages [2122 kB]
+verify	Firmware in Docker	2026-10-13T16:31:36.5448477Z #6 3.178 Get:18 http://security.ubuntu.com/ubuntu noble-security/main amd64 Packages [1409 kB]
+verify	Firmware in Docker	2026-10-13T16:31:36.6710218Z #6 3.304 Get:19 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 Packages [55.6 kB]
+verify	Firmware in Docker	2026-10-13T16:31:36.8759146Z #6 3.359 Fetched 33.6 MB in 2s (13.6 MB/s)
+verify	Firmware in Docker	2026-10-13T16:31:37.3276941Z #6 3.359 Reading package lists...
+verify	Firmware in Docker	2026-10-13T16:31:37.9695695Z #6 3.980 Reading package lists...
+verify	Firmware in Docker	2026-10-13T16:31:38.1467297Z #6 4.611 Building dependency tree...
+verify	Firmware in Docker	2026-10-13T16:31:38.2930073Z #6 4.780 Reading state information...
+verify	Firmware in Docker	2026-10-13T16:31:38.2930882Z #6 4.926 The following additional packages will be installed:
+verify	Firmware in Docker	2026-10-13T16:31:38.2931645Z #6 4.926   binutils binutils-common binutils-x86-64-linux-gnu cpp cpp-13
+verify	Firmware in Docker	2026-10-13T16:31:38.2932208Z #6 4.926   cpp-13-x86-64-linux-gnu cpp-x86-64-linux-gnu gcc-13 gcc-13-base
+verify	Firmware in Docker	2026-10-13T16:31:38.3947456Z #6 4.926   gcc-13-x86-64-linux-gnu gcc-x86-64-linux-gnu libasan8 libatomic1 libbinutils
+verify	Firmware in Docker	2026-10-13T16:31:38.3948419Z #6 4.926   libc-dev-bin libcc1-0 libcrypt-dev libctf-nobfd0 libctf0 libexpat1
+verify	Firmware in Docker	2026-10-13T16:31:38.3949164Z #6 4.927   libgcc-13-dev libgomp1 libgprofng0 libhwasan0 libisl23 libitm1 libjansson4
+verify	Firmware in Docker	2026-10-13T16:31:38.3949856Z #6 4.927   liblsan0 libmpc3 libmpfr6 libnewlib-dev libpython3-stdlib
+verify	Firmware in Docker	2026-10-13T16:31:38.3950572Z #6 4.927   libpython3.12-minimal libpython3.12-stdlib libquadmath0 libreadline8t64
+verify	Firmware in Docker	2026-10-13T16:31:38.3951304Z #6 4.927   libsframe1 libsqlite3-0 libssl3t64 libtsan2 libubsan1 linux-libc-dev
+verify	Firmware in Docker	2026-10-13T16:31:38.3952047Z #6 4.927   media-types netbase openssl python3-minimal python3.12 python3.12-minimal
+verify	Firmware in Docker	2026-10-13T16:31:38.3952688Z #6 4.927   readline-common rpcsvc-proto tzdata
+verify	Firmware in Docker	2026-10-13T16:31:38.3953080Z #6 4.928 Suggested packages:
+verify	Firmware in Docker	2026-10-13T16:31:38.3953576Z #6 4.928   binutils-doc gprofng-gui cpp-doc gcc-13-locales cpp-13-doc gcc-multilib
+verify	Firmware in Docker	2026-10-13T16:31:38.3954134Z #6 4.928   manpages-dev autoconf automake libtool flex bison gdb gcc-doc
+verify	Firmware in Docker	2026-10-13T16:31:38.3954712Z #6 4.928   gcc-13-multilib gcc-13-doc gdb-x86-64-linux-gnu glibc-doc libnewlib-doc
+verify	Firmware in Docker	2026-10-13T16:31:38.3955524Z #6 4.928   make-doc python3-doc python3-tk python3-venv python3.12-venv python3.12-doc
+verify	Firmware in Docker	2026-10-13T16:31:38.3956047Z #6 4.928   binfmt-support readline-doc
+verify	Firmware in Docker	2026-10-13T16:31:38.3956394Z #6 4.928 Recommended packages:
+verify	Firmware in Docker	2026-10-13T16:31:38.3956871Z #6 4.928   manpages manpages-dev libc-devtools libstdc++-arm-none-eabi-newlib
+verify	Firmware in Docker	2026-10-13T16:31:38.3957437Z #6 5.028 The following NEW packages will be installed:
+verify	Firmware in Docker	2026-10-13T16:31:38.3958011Z #6 5.028   binutils binutils-arm-none-eabi binutils-common binutils-x86-64-linux-gnu
+verify	Firmware in Docker	2026-10-13T16:31:38.3958762Z #6 5.028   ca-certificates cpp cpp-13 cpp-13-x86-64-linux-gnu cpp-x86-64-linux-gnu gcc
+verify	Firmware in Docker	2026-10-13T16:31:38.5469521Z #6 5.028   gcc-13 gcc-13-base gcc-13-x86-64-linux-gnu gcc-arm-none-eabi
+verify	Firmware in Docker	2026-10-13T16:31:38.5470055Z #6 5.028   gcc-x86-64-linux-gnu libasan8 libatomic1 libbinutils libc-dev-bin libc6-dev
+verify	Firmware in Docker	2026-10-13T16:31:38.5470603Z #6 5.028   libcc1-0 libcrypt-dev libctf-nobfd0 libctf0 libexpat1 libgcc-13-dev libgomp1
+verify	Firmware in Docker	2026-10-13T16:31:38.5471110Z #6 5.028   libgprofng0 libhwasan0 libisl23 libitm1 libjansson4 liblsan0 libmpc3
+verify	Firmware in Docker	2026-10-13T16:31:38.5471501Z #6 5.028   libmpfr6 libnewlib-arm-none-eabi libnewlib-dev libpython3-stdlib
+verify	Firmware in Docker	2026-10-13T16:31:38.5472010Z #6 5.029   libpython3.12-minimal libpython3.12-stdlib libquadmath0 libreadline8t64
+verify	Firmware in Docker	2026-10-13T16:31:38.5472473Z #6 5.029   libsframe1 libsqlite3-0 libtsan2 libubsan1 linux-libc-dev make media-types
+verify	Firmware in Docker	2026-10-13T16:31:38.5472929Z #6 5.029   netbase openssl python3 python3-minimal python3.12 python3.12-minimal
+verify	Firmware in Docker	2026-10-13T16:31:38.5473698Z #6 5.029   readline-common rpcsvc-proto tzdata
+verify	Firmware in Docker	2026-10-13T16:31:38.5473955Z #6 5.030 The following packages will be upgraded:
+verify	Firmware in Docker	2026-10-13T16:31:38.5474312Z #6 5.030   libssl3t64
+verify	Firmware in Docker	2026-10-13T16:31:38.8265690Z #6 5.460 1 upgraded, 58 newly installed, 0 to remove and 2 not upgraded.
+verify	Firmware in Docker	2026-10-13T16:31:38.8266101Z #6 5.460 Need to get 175 MB of archives.
+verify	Firmware in Docker	2026-10-13T16:31:38.8266719Z #6 5.460 After this operation, 1195 MB of additional disk space will be used.
+verify	Firmware in Docker	2026-10-13T16:31:38.8267329Z #6 5.460 Get:1 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libssl3t64 amd64 3.0.13-0ubuntu3.16 [1945 kB]
+verify	Firmware in Docker	2026-10-13T16:31:40.3016797Z #6 6.935 Get:2 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libpython3.12-minimal amd64 3.12.3-1ubuntu0.17 [839 kB]
+verify	Firmware in Docker	2026-10-13T16:31:40.4476926Z #6 6.999 Get:3 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libexpat1 amd64 2.6.1-2ubuntu0.6 [98.9 kB]
+verify	Firmware in Docker	2026-10-13T16:31:40.4477992Z #6 7.081 Get:4 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 python3.12-minimal amd64 3.12.3-1ubuntu0.17 [2335 kB]
+verify	Firmware in Docker	2026-10-13T16:31:40.6619023Z #6 7.295 Get:5 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 python3-minimal amd64 3.12.3-0ubuntu2.1 [27.4 kB]
+verify	Firmware in Docker	2026-10-13T16:31:40.7664205Z #6 7.296 Get:6 http://archive.ubuntu.com/ubuntu noble/main amd64 media-types all 10.1.0 [27.5 kB]
+verify	Firmware in Docker	2026-10-13T16:31:40.7664883Z #6 7.297 Get:7 http://archive.ubuntu.com/ubuntu noble/main amd64 netbase all 6.4 [13.1 kB]
+verify	Firmware in Docker	2026-10-13T16:31:40.7665710Z #6 7.298 Get:8 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 tzdata all 2026c-0ubuntu0.24.04.1 [280 kB]
+verify	Firmware in Docker	2026-10-13T16:31:40.7666300Z #6 7.359 Get:9 http://archive.ubuntu.com/ubuntu noble/main amd64 readline-common all 8.2-4build1 [56.5 kB]
+verify	Firmware in Docker	2026-10-13T16:31:40.7667010Z #6 7.362 Get:10 http://archive.ubuntu.com/ubuntu noble/main amd64 libreadline8t64 amd64 8.2-4build1 [153 kB]
+verify	Firmware in Docker	2026-10-13T16:31:40.7667581Z #6 7.370 Get:11 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libsqlite3-0 amd64 3.45.1-1ubuntu2.8 [702 kB]
+verify	Firmware in Docker	2026-10-13T16:31:40.7668191Z #6 7.400 Get:12 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libpython3.12-stdlib amd64 3.12.3-1ubuntu0.17 [2071 kB]
+verify	Firmware in Docker	2026-10-13T16:31:40.8929283Z #6 7.526 Get:13 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 python3.12 amd64 3.12.3-1ubuntu0.17 [651 kB]
+verify	Firmware in Docker	2026-10-13T16:31:41.0036725Z #6 7.544 Get:14 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libpython3-stdlib amd64 3.12.3-0ubuntu2.1 [10.1 kB]
+verify	Firmware in Docker	2026-10-13T16:31:41.0037836Z #6 7.544 Get:15 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 python3 amd64 3.12.3-0ubuntu2.1 [23.0 kB]
+verify	Firmware in Docker	2026-10-13T16:31:41.0038764Z #6 7.544 Get:16 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 openssl amd64 3.0.13-0ubuntu3.16 [1004 kB]
+verify	Firmware in Docker	2026-10-13T16:31:41.0039624Z #6 7.569 Get:17 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 ca-certificates all 20260601~24.04.1 [139 kB]
+verify	Firmware in Docker	2026-10-13T16:31:41.0040295Z #6 7.637 Get:18 http://archive.ubuntu.com/ubuntu noble/main amd64 libjansson4 amd64 2.14-2build2 [32.8 kB]
+verify	Firmware in Docker	2026-10-13T16:31:41.1430016Z #6 7.638 Get:19 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 binutils-common amd64 2.42-4ubuntu2.10 [240 kB]
+verify	Firmware in Docker	2026-10-13T16:31:41.1431263Z #6 7.643 Get:20 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libsframe1 amd64 2.42-4ubuntu2.10 [15.7 kB]
+verify	Firmware in Docker	2026-10-13T16:31:41.1432208Z #6 7.643 Get:21 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libbinutils amd64 2.42-4ubuntu2.10 [577 kB]
+verify	Firmware in Docker	2026-10-13T16:31:41.1433309Z #6 7.776 Get:22 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libctf-nobfd0 amd64 2.42-4ubuntu2.10 [98.0 kB]
+verify	Firmware in Docker	2026-10-13T16:31:41.2823751Z #6 7.777 Get:23 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libctf0 amd64 2.42-4ubuntu2.10 [94.5 kB]
+verify	Firmware in Docker	2026-10-13T16:31:41.2824562Z #6 7.779 Get:24 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libgprofng0 amd64 2.42-4ubuntu2.10 [849 kB]
+verify	Firmware in Docker	2026-10-13T16:31:41.2825368Z #6 7.792 Get:25 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 binutils-x86-64-linux-gnu amd64 2.42-4ubuntu2.10 [2463 kB]
+verify	Firmware in Docker	2026-10-13T16:31:41.2826178Z #6 7.829 Get:26 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 binutils amd64 2.42-4ubuntu2.10 [18.2 kB]
+verify	Firmware in Docker	2026-10-13T16:31:41.2826756Z #6 7.830 Get:27 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 gcc-13-base amd64 13.3.0-6ubuntu2~24.04.1 [51.6 kB]
+verify	Firmware in Docker	2026-10-13T16:31:41.2827313Z #6 7.916 Get:28 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libisl23 amd64 0.26-3build1.1 [680 kB]
+verify	Firmware in Docker	2026-10-13T16:31:41.4484496Z #6 7.926 Get:29 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libmpfr6 amd64 4.2.1-1build1.1 [353 kB]
+verify	Firmware in Docker	2026-10-13T16:31:41.4485349Z #6 7.931 Get:30 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libmpc3 amd64 1.3.1-1build1.1 [54.6 kB]
+verify	Firmware in Docker	2026-10-13T16:31:41.4485980Z #6 7.932 Get:31 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 cpp-13-x86-64-linux-gnu amd64 13.3.0-6ubuntu2~24.04.1 [10.7 MB]
+verify	Firmware in Docker	2026-10-13T16:31:41.4987919Z #6 8.132 Get:32 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 cpp-13 amd64 13.3.0-6ubuntu2~24.04.1 [1042 B]
+verify	Firmware in Docker	2026-10-13T16:31:41.7024907Z #6 8.132 Get:33 http://archive.ubuntu.com/ubuntu noble/main amd64 cpp-x86-64-linux-gnu amd64 4:13.2.0-7ubuntu1 [5326 B]
+verify	Firmware in Docker	2026-10-13T16:31:41.7026176Z #6 8.134 Get:34 http://archive.ubuntu.com/ubuntu noble/main amd64 cpp amd64 4:13.2.0-7ubuntu1 [22.4 kB]
+verify	Firmware in Docker	2026-10-13T16:31:41.7027143Z #6 8.134 Get:35 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libcc1-0 amd64 14.2.0-4ubuntu2~24.04.1 [48.0 kB]
+verify	Firmware in Docker	2026-10-13T16:31:41.7028195Z #6 8.134 Get:36 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libgomp1 amd64 14.2.0-4ubuntu2~24.04.1 [148 kB]
+verify	Firmware in Docker	2026-10-13T16:31:41.7029189Z #6 8.134 Get:37 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libitm1 amd64 14.2.0-4ubuntu2~24.04.1 [29.7 kB]
+verify	Firmware in Docker	2026-10-13T16:31:41.7030204Z #6 8.196 Get:38 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libatomic1 amd64 14.2.0-4ubuntu2~24.04.1 [10.5 kB]
+verify	Firmware in Docker	2026-10-13T16:31:41.7031203Z #6 8.198 Get:39 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libasan8 amd64 14.2.0-4ubuntu2~24.04.1 [3027 kB]
+verify	Firmware in Docker	2026-10-13T16:31:41.7032242Z #6 8.221 Get:40 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 liblsan0 amd64 14.2.0-4ubuntu2~24.04.1 [1322 kB]
+verify	Firmware in Docker	2026-10-13T16:31:41.7033246Z #6 8.336 Get:41 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libtsan2 amd64 14.2.0-4ubuntu2~24.04.1 [2772 kB]
+verify	Firmware in Docker	2026-10-13T16:31:41.9088966Z #6 8.355 Get:42 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libubsan1 amd64 14.2.0-4ubuntu2~24.04.1 [1184 kB]
+verify	Firmware in Docker	2026-10-13T16:31:41.9090023Z #6 8.363 Get:43 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libhwasan0 amd64 14.2.0-4ubuntu2~24.04.1 [1641 kB]
+verify	Firmware in Docker	2026-10-13T16:31:41.9091007Z #6 8.374 Get:44 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libquadmath0 amd64 14.2.0-4ubuntu2~24.04.1 [153 kB]
+verify	Firmware in Docker	2026-10-13T16:31:41.9091763Z #6 8.375 Get:45 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libgcc-13-dev amd64 13.3.0-6ubuntu2~24.04.1 [2681 kB]
+verify	Firmware in Docker	2026-10-13T16:31:41.9092423Z #6 8.392 Get:46 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 gcc-13-x86-64-linux-gnu amd64 13.3.0-6ubuntu2~24.04.1 [21.1 MB]
+verify	Firmware in Docker	2026-10-13T16:31:42.0104788Z #6 8.644 Get:47 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 gcc-13 amd64 13.3.0-6ubuntu2~24.04.1 [494 kB]
+verify	Firmware in Docker	2026-10-13T16:31:42.1277075Z #6 8.647 Get:48 http://archive.ubuntu.com/ubuntu noble/main amd64 gcc-x86-64-linux-gnu amd64 4:13.2.0-7ubuntu1 [1212 B]
+verify	Firmware in Docker	2026-10-13T16:31:42.1277796Z #6 8.647 Get:49 http://archive.ubuntu.com/ubuntu noble/main amd64 gcc amd64 4:13.2.0-7ubuntu1 [5018 B]
+verify	Firmware in Docker	2026-10-13T16:31:42.1278427Z #6 8.647 Get:50 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libc-dev-bin amd64 2.39-0ubuntu8.9 [20.4 kB]
+verify	Firmware in Docker	2026-10-13T16:31:42.1278986Z #6 8.647 Get:51 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 linux-libc-dev amd64 6.8.0-147.147 [1595 kB]
+verify	Firmware in Docker	2026-10-13T16:31:42.1279528Z #6 8.655 Get:52 http://archive.ubuntu.com/ubuntu noble/main amd64 libcrypt-dev amd64 1:4.4.36-4build1 [112 kB]
+verify	Firmware in Docker	2026-10-13T16:31:42.1280284Z #6 8.656 Get:53 http://archive.ubuntu.com/ubuntu noble/main amd64 rpcsvc-proto amd64 1.4.2-0ubuntu7 [67.4 kB]
+verify	Firmware in Docker	2026-10-13T16:31:42.1280805Z #6 8.657 Get:54 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libc6-dev amd64 2.39-0ubuntu8.9 [2126 kB]
+verify	Firmware in Docker	2026-10-13T16:31:42.1281589Z #6 8.761 Get:55 http://archive.ubuntu.com/ubuntu noble/main amd64 make amd64 4.3-4.1build2 [180 kB]
+verify	Firmware in Docker	2026-10-13T16:31:42.2943857Z #6 8.788 Get:56 http://archive.ubuntu.com/ubuntu noble/universe amd64 binutils-arm-none-eabi amd64 2.42-1ubuntu1+23 [3137 kB]
+verify	Firmware in Docker	2026-10-13T16:31:42.2944568Z #6 8.928 Get:57 http://archive.ubuntu.com/ubuntu noble/universe amd64 gcc-arm-none-eabi amd64 15:13.2.rel1-2 [57.5 MB]
+verify	Firmware in Docker	2026-10-13T16:31:42.9181431Z #6 9.552 Get:58 http://archive.ubuntu.com/ubuntu noble/universe amd64 libnewlib-dev all 4.4.0.20231231-2 [140 kB]
+verify	Firmware in Docker	2026-10-13T16:31:43.0692937Z #6 9.552 Get:59 http://archive.ubuntu.com/ubuntu noble/universe amd64 libnewlib-arm-none-eabi all 4.4.0.20231231-2 [49.2 MB]
+verify	Firmware in Docker	2026-10-13T16:31:44.0738838Z #6 10.71 debconf: delaying package configuration, since apt-utils is not installed
+verify	Firmware in Docker	2026-10-13T16:31:44.1832355Z #6 10.74 Fetched 175 MB in 5s (34.7 MB/s)
+verify	Firmware in Docker	2026-10-13T16:31:44.2905038Z #6 10.82 (Reading database ...
+verify	Firmware in Docker	2026-10-13T16:31:44.2905718Z (Reading database ... 5%
+verify	Firmware in Docker	2026-10-13T16:31:44.2906033Z (Reading database ... 10%
+verify	Firmware in Docker	2026-10-13T16:31:44.2906330Z (Reading database ... 15%
+verify	Firmware in Docker	2026-10-13T16:31:44.2906644Z (Reading database ... 20%
+verify	Firmware in Docker	2026-10-13T16:31:44.2906927Z (Reading database ... 25%
+verify	Firmware in Docker	2026-10-13T16:31:44.2907224Z (Reading database ... 30%
+verify	Firmware in Docker	2026-10-13T16:31:44.2907500Z (Reading database ... 35%
+verify	Firmware in Docker	2026-10-13T16:31:44.2907779Z (Reading database ... 40%
+verify	Firmware in Docker	2026-10-13T16:31:44.2908060Z (Reading database ... 45%
+verify	Firmware in Docker	2026-10-13T16:31:44.2908337Z (Reading database ... 50%
+verify	Firmware in Docker	2026-10-13T16:31:44.2908616Z (Reading database ... 55%
+verify	Firmware in Docker	2026-10-13T16:31:44.2908892Z (Reading database ... 60%
+verify	Firmware in Docker	2026-10-13T16:31:44.2909170Z (Reading database ... 65%
+verify	Firmware in Docker	2026-10-13T16:31:44.2909455Z (Reading database ... 70%
+verify	Firmware in Docker	2026-10-13T16:31:44.2909750Z (Reading database ... 75%
+verify	Firmware in Docker	2026-10-13T16:31:44.2910040Z (Reading database ... 80%
+verify	Firmware in Docker	2026-10-13T16:31:44.2910317Z (Reading database ... 85%
+verify	Firmware in Docker	2026-10-13T16:31:44.5258738Z (Reading database ... 90%
+verify	Firmware in Docker	2026-10-13T16:31:44.5259046Z (Reading database ... 95%
+verify	Firmware in Docker	2026-10-13T16:31:44.5259255Z (Reading database ... 100%
+verify	Firmware in Docker	2026-10-13T16:31:44.5259523Z (Reading database ... 4381 files and directories currently installed.)
+verify	Firmware in Docker	2026-10-13T16:31:44.5259950Z #6 11.00 Preparing to unpack .../libssl3t64_3.0.13-0ubuntu3.16_amd64.deb ...
+verify	Firmware in Docker	2026-10-13T16:31:44.5260335Z #6 11.01 Unpacking libssl3t64:amd64 (3.0.13-0ubuntu3.16) over (3.0.13-0ubuntu3.15) ...
+verify	Firmware in Docker	2026-10-13T16:31:44.9547789Z #6 11.59 Setting up libssl3t64:amd64 (3.0.13-0ubuntu3.16) ...
+verify	Firmware in Docker	2026-10-13T16:31:45.0572801Z #6 11.60 Selecting previously unselected package libpython3.12-minimal:amd64.
+verify	Firmware in Docker	2026-10-13T16:31:45.0573291Z #6 11.60 (Reading database ...
+verify	Firmware in Docker	2026-10-13T16:31:45.0573515Z (Reading database ... 5%
+verify	Firmware in Docker	2026-10-13T16:31:45.0573715Z (Reading database ... 10%
+verify	Firmware in Docker	2026-10-13T16:31:45.0573899Z (Reading database ... 15%
+verify	Firmware in Docker	2026-10-13T16:31:45.0574104Z (Reading database ... 20%
+verify	Firmware in Docker	2026-10-13T16:31:45.0574288Z (Reading database ... 25%
+verify	Firmware in Docker	2026-10-13T16:31:45.0574465Z (Reading database ... 30%
+verify	Firmware in Docker	2026-10-13T16:31:45.0574646Z (Reading database ... 35%
+verify	Firmware in Docker	2026-10-13T16:31:45.0574827Z (Reading database ... 40%
+verify	Firmware in Docker	2026-10-13T16:31:45.0575021Z (Reading database ... 45%
+verify	Firmware in Docker	2026-10-13T16:31:45.0575363Z (Reading database ... 50%
+verify	Firmware in Docker	2026-10-13T16:31:45.0575546Z (Reading database ... 55%
+verify	Firmware in Docker	2026-10-13T16:31:45.0575723Z (Reading database ... 60%
+verify	Firmware in Docker	2026-10-13T16:31:45.0575899Z (Reading database ... 65%
+verify	Firmware in Docker	2026-10-13T16:31:45.0576071Z (Reading database ... 70%
+verify	Firmware in Docker	2026-10-13T16:31:45.0576247Z (Reading database ... 75%
+verify	Firmware in Docker	2026-10-13T16:31:45.0576430Z (Reading database ... 80%
+verify	Firmware in Docker	2026-10-13T16:31:45.0576606Z (Reading database ... 85%
+verify	Firmware in Docker	2026-10-13T16:31:45.0576777Z (Reading database ... 90%
+verify	Firmware in Docker	2026-10-13T16:31:45.0576947Z (Reading database ... 95%
+verify	Firmware in Docker	2026-10-13T16:31:45.0577125Z (Reading database ... 100%
+verify	Firmware in Docker	2026-10-13T16:31:45.0577391Z (Reading database ... 4381 files and directories currently installed.)
+verify	Firmware in Docker	2026-10-13T16:31:45.0578026Z #6 11.60 Preparing to unpack .../libpython3.12-minimal_3.12.3-1ubuntu0.17_amd64.deb ...
+verify	Firmware in Docker	2026-10-13T16:31:45.0578435Z #6 11.60 Unpacking libpython3.12-minimal:amd64 (3.12.3-1ubuntu0.17) ...
+verify	Firmware in Docker	2026-10-13T16:31:45.0578777Z #6 11.66 Selecting previously unselected package libexpat1:amd64.
+verify	Firmware in Docker	2026-10-13T16:31:45.0579109Z #6 11.66 Preparing to unpack .../libexpat1_2.6.1-2ubuntu0.6_amd64.deb ...
+verify	Firmware in Docker	2026-10-13T16:31:45.0579704Z #6 11.66 Unpacking libexpat1:amd64 (2.6.1-2ubuntu0.6) ...
+verify	Firmware in Docker	2026-10-13T16:31:45.0580080Z #6 11.67 Selecting previously unselected package python3.12-minimal.
+verify	Firmware in Docker	2026-10-13T16:31:45.0580444Z #6 11.68 Preparing to unpack .../python3.12-minimal_3.12.3-1ubuntu0.17_amd64.deb ...
+verify	Firmware in Docker	2026-10-13T16:31:45.0580921Z #6 11.69 Unpacking python3.12-minimal (3.12.3-1ubuntu0.17) ...
+verify	Firmware in Docker	2026-10-13T16:31:45.1573216Z #6 11.77 Setting up libpython3.12-minimal:amd64 (3.12.3-1ubuntu0.17) ...
+verify	Firmware in Docker	2026-10-13T16:31:45.1573655Z #6 11.79 Setting up libexpat1:amd64 (2.6.1-2ubuntu0.6) ...
+verify	Firmware in Docker	2026-10-13T16:31:45.3093972Z #6 11.79 Setting up python3.12-minimal (3.12.3-1ubuntu0.17) ...
+verify	Firmware in Docker	2026-10-13T16:31:45.7492203Z #6 12.38 Selecting previously unselected package python3-minimal.
+verify	Firmware in Docker	2026-10-13T16:31:45.9217890Z #6 12.38 (Reading database ...
+verify	Firmware in Docker	2026-10-13T16:31:45.9218317Z (Reading database ... 5%
+verify	Firmware in Docker	2026-10-13T16:31:45.9218662Z (Reading database ... 10%
+verify	Firmware in Docker	2026-10-13T16:31:45.9218900Z (Reading database ... 15%
+verify	Firmware in Docker	2026-10-13T16:31:45.9219096Z (Reading database ... 20%
+verify	Firmware in Docker	2026-10-13T16:31:45.9219347Z (Reading database ... 25%
+verify	Firmware in Docker	2026-10-13T16:31:45.9219631Z (Reading database ... 30%
+verify	Firmware in Docker	2026-10-13T16:31:45.9219915Z (Reading database ... 35%
+verify	Firmware in Docker	2026-10-13T16:31:45.9220190Z (Reading database ... 40%
+verify	Firmware in Docker	2026-10-13T16:31:45.9220635Z (Reading database ... 45%
+verify	Firmware in Docker	2026-10-13T16:31:45.9221003Z (Reading database ... 50%
+verify	Firmware in Docker	2026-10-13T16:31:45.9221377Z (Reading database ... 55%
+verify	Firmware in Docker	2026-10-13T16:31:45.9221854Z (Reading database ... 60%
+verify	Firmware in Docker	2026-10-13T16:31:45.9222322Z (Reading database ... 65%
+verify	Firmware in Docker	2026-10-13T16:31:45.9222786Z (Reading database ... 70%
+verify	Firmware in Docker	2026-10-13T16:31:45.9223318Z (Reading database ... 75%
+verify	Firmware in Docker	2026-10-13T16:31:45.9223868Z (Reading database ... 80%
+verify	Firmware in Docker	2026-10-13T16:31:45.9224504Z (Reading database ... 85%
+verify	Firmware in Docker	2026-10-13T16:31:45.9231539Z (Reading database ... 90%
+verify	Firmware in Docker	2026-10-13T16:31:45.9231941Z (Reading database ... 95%
+verify	Firmware in Docker	2026-10-13T16:31:45.9232255Z (Reading database ... 100%
+verify	Firmware in Docker	2026-10-13T16:31:45.9232653Z (Reading database ... 4700 files and directories currently installed.)
+verify	Firmware in Docker	2026-10-13T16:31:45.9233381Z #6 12.39 Preparing to unpack .../0-python3-minimal_3.12.3-0ubuntu2.1_amd64.deb ...
+verify	Firmware in Docker	2026-10-13T16:31:45.9234117Z #6 12.39 Unpacking python3-minimal (3.12.3-0ubuntu2.1) ...
+verify	Firmware in Docker	2026-10-13T16:31:45.9234781Z #6 12.40 Selecting previously unselected package media-types.
+verify	Firmware in Docker	2026-10-13T16:31:45.9235618Z #6 12.40 Preparing to unpack .../1-media-types_10.1.0_all.deb ...
+verify	Firmware in Docker	2026-10-13T16:31:45.9236056Z #6 12.40 Unpacking media-types (10.1.0) ...
+verify	Firmware in Docker	2026-10-13T16:31:45.9236437Z #6 12.46 Selecting previously unselected package netbase.
+verify	Firmware in Docker	2026-10-13T16:31:45.9236871Z #6 12.46 Preparing to unpack .../2-netbase_6.4_all.deb ...
+verify	Firmware in Docker	2026-10-13T16:31:45.9237283Z #6 12.46 Unpacking netbase (6.4) ...
+verify	Firmware in Docker	2026-10-13T16:31:45.9237636Z #6 12.48 Selecting previously unselected package tzdata.
+verify	Firmware in Docker	2026-10-13T16:31:45.9238107Z #6 12.48 Preparing to unpack .../3-tzdata_2026c-0ubuntu0.24.04.1_all.deb ...
+verify	Firmware in Docker	2026-10-13T16:31:45.9238569Z #6 12.48 Unpacking tzdata (2026c-0ubuntu0.24.04.1) ...
+verify	Firmware in Docker	2026-10-13T16:31:45.9239019Z #6 12.55 Selecting previously unselected package readline-common.
+verify	Firmware in Docker	2026-10-13T16:31:46.0231294Z #6 12.56 Preparing to unpack .../4-readline-common_8.2-4build1_all.deb ...
+verify	Firmware in Docker	2026-10-13T16:31:46.0231848Z #6 12.56 Unpacking readline-common (8.2-4build1) ...
+verify	Firmware in Docker	2026-10-13T16:31:46.0232304Z #6 12.57 Selecting previously unselected package libreadline8t64:amd64.
+verify	Firmware in Docker	2026-10-13T16:31:46.0232819Z #6 12.57 Preparing to unpack .../5-libreadline8t64_8.2-4build1_amd64.deb ...
+verify	Firmware in Docker	2026-10-13T16:31:46.0233591Z #6 12.59 Adding 'diversion of /lib/x86_64-linux-gnu/libhistory.so.8 to /lib/x86_64-linux-gnu/libhistory.so.8.usr-is-merged by libreadline8t64'
+verify	Firmware in Docker	2026-10-13T16:31:46.0234849Z #6 12.63 Adding 'diversion of /lib/x86_64-linux-gnu/libhistory.so.8.2 to /lib/x86_64-linux-gnu/libhistory.so.8.2.usr-is-merged by libreadline8t64'
+verify	Firmware in Docker	2026-10-13T16:31:46.0236057Z #6 12.63 Adding 'diversion of /lib/x86_64-linux-gnu/libreadline.so.8 to /lib/x86_64-linux-gnu/libreadline.so.8.usr-is-merged by libreadline8t64'
+verify	Firmware in Docker	2026-10-13T16:31:46.0237218Z #6 12.64 Adding 'diversion of /lib/x86_64-linux-gnu/libreadline.so.8.2 to /lib/x86_64-linux-gnu/libreadline.so.8.2.usr-is-merged by libreadline8t64'
+verify	Firmware in Docker	2026-10-13T16:31:46.0237935Z #6 12.64 Unpacking libreadline8t64:amd64 (8.2-4build1) ...
+verify	Firmware in Docker	2026-10-13T16:31:46.0238375Z #6 12.66 Selecting previously unselected package libsqlite3-0:amd64.
+verify	Firmware in Docker	2026-10-13T16:31:46.1913719Z #6 12.66 Preparing to unpack .../6-libsqlite3-0_3.45.1-1ubuntu2.8_amd64.deb ...
+verify	Firmware in Docker	2026-10-13T16:31:46.1914159Z #6 12.66 Unpacking libsqlite3-0:amd64 (3.45.1-1ubuntu2.8) ...
+verify	Firmware in Docker	2026-10-13T16:31:46.1914509Z #6 12.67 Selecting previously unselected package libpython3.12-stdlib:amd64.
+verify	Firmware in Docker	2026-10-13T16:31:46.1914955Z #6 12.67 Preparing to unpack .../7-libpython3.12-stdlib_3.12.3-1ubuntu0.17_amd64.deb ...
+verify	Firmware in Docker	2026-10-13T16:31:46.1915500Z #6 12.67 Unpacking libpython3.12-stdlib:amd64 (3.12.3-1ubuntu0.17) ...
+verify	Firmware in Docker	2026-10-13T16:31:46.2019750Z #6 12.84 Selecting previously unselected package python3.12.
+verify	Firmware in Docker	2026-10-13T16:31:46.3364284Z #6 12.84 Preparing to unpack .../8-python3.12_3.12.3-1ubuntu0.17_amd64.deb ...
+verify	Firmware in Docker	2026-10-13T16:31:46.3365251Z #6 12.84 Unpacking python3.12 (3.12.3-1ubuntu0.17) ...
+verify	Firmware in Docker	2026-10-13T16:31:46.3366132Z #6 12.85 Selecting previously unselected package libpython3-stdlib:amd64.
+verify	Firmware in Docker	2026-10-13T16:31:46.3366596Z #6 12.85 Preparing to unpack .../9-libpython3-stdlib_3.12.3-0ubuntu2.1_amd64.deb ...
+verify	Firmware in Docker	2026-10-13T16:31:46.3367079Z #6 12.85 Unpacking libpython3-stdlib:amd64 (3.12.3-0ubuntu2.1) ...
+verify	Firmware in Docker	2026-10-13T16:31:46.3367418Z #6 12.86 Setting up python3-minimal (3.12.3-0ubuntu2.1) ...
+verify	Firmware in Docker	2026-10-13T16:31:46.3367797Z #6 12.97 Selecting previously unselected package python3.
+verify	Firmware in Docker	2026-10-13T16:31:46.4429358Z #6 12.97 (Reading database ...
+verify	Firmware in Docker	2026-10-13T16:31:46.4429778Z (Reading database ... 5%
+verify	Firmware in Docker	2026-10-13T16:31:46.4430066Z (Reading database ... 10%
+verify	Firmware in Docker	2026-10-13T16:31:46.4430342Z (Reading database ... 15%
+verify	Firmware in Docker	2026-10-13T16:31:46.4430627Z (Reading database ... 20%
+verify	Firmware in Docker	2026-10-13T16:31:46.4430883Z (Reading database ... 25%
+verify	Firmware in Docker	2026-10-13T16:31:46.4431133Z (Reading database ... 30%
+verify	Firmware in Docker	2026-10-13T16:31:46.4431436Z (Reading database ... 35%
+verify	Firmware in Docker	2026-10-13T16:31:46.4431703Z (Reading database ... 40%
+verify	Firmware in Docker	2026-10-13T16:31:46.4431996Z (Reading database ... 45%
+verify	Firmware in Docker	2026-10-13T16:31:46.4432261Z (Reading database ... 50%
+verify	Firmware in Docker	2026-10-13T16:31:46.4432529Z (Reading database ... 55%
+verify	Firmware in Docker	2026-10-13T16:31:46.4432801Z (Reading database ... 60%
+verify	Firmware in Docker	2026-10-13T16:31:46.4433071Z (Reading database ... 65%
+verify	Firmware in Docker	2026-10-13T16:31:46.4433337Z (Reading database ... 70%
+verify	Firmware in Docker	2026-10-13T16:31:46.4433602Z (Reading database ... 75%
+verify	Firmware in Docker	2026-10-13T16:31:46.4433865Z (Reading database ... 80%
+verify	Firmware in Docker	2026-10-13T16:31:46.4434133Z (Reading database ... 85%
+verify	Firmware in Docker	2026-10-13T16:31:46.4434395Z (Reading database ... 90%
+verify	Firmware in Docker	2026-10-13T16:31:46.4434676Z (Reading database ... 95%
+verify	Firmware in Docker	2026-10-13T16:31:46.4434854Z (Reading database ... 100%
+verify	Firmware in Docker	2026-10-13T16:31:46.4435321Z (Reading database ... 5706 files and directories currently installed.)
+verify	Firmware in Docker	2026-10-13T16:31:46.4435728Z #6 12.97 Preparing to unpack .../00-python3_3.12.3-0ubuntu2.1_amd64.deb ...
+verify	Firmware in Docker	2026-10-13T16:31:46.4436066Z #6 12.98 Unpacking python3 (3.12.3-0ubuntu2.1) ...
+verify	Firmware in Docker	2026-10-13T16:31:46.4436356Z #6 13.00 Selecting previously unselected package openssl.
+verify	Firmware in Docker	2026-10-13T16:31:46.4436675Z #6 13.00 Preparing to unpack .../01-openssl_3.0.13-0ubuntu3.16_amd64.deb ...
+verify	Firmware in Docker	2026-10-13T16:31:46.4437119Z #6 13.00 Unpacking openssl (3.0.13-0ubuntu3.16) ...
+verify	Firmware in Docker	2026-10-13T16:31:46.4437874Z #6 13.05 Selecting previously unselected package ca-certificates.
+verify	Firmware in Docker	2026-10-13T16:31:46.4438666Z #6 13.05 Preparing to unpack .../02-ca-certificates_20260601~24.04.1_all.deb ...
+verify	Firmware in Docker	2026-10-13T16:31:46.4439385Z #6 13.05 Unpacking ca-certificates (20260601~24.04.1) ...
+verify	Firmware in Docker	2026-10-13T16:31:46.4439853Z #6 13.08 Selecting previously unselected package libjansson4:amd64.
+verify	Firmware in Docker	2026-10-13T16:31:46.5665484Z #6 13.08 Preparing to unpack .../03-libjansson4_2.14-2build2_amd64.deb ...
+verify	Firmware in Docker	2026-10-13T16:31:46.5666083Z #6 13.08 Unpacking libjansson4:amd64 (2.14-2build2) ...
+verify	Firmware in Docker	2026-10-13T16:31:46.5666525Z #6 13.09 Selecting previously unselected package binutils-common:amd64.
+verify	Firmware in Docker	2026-10-13T16:31:46.5667092Z #6 13.09 Preparing to unpack .../04-binutils-common_2.42-4ubuntu2.10_amd64.deb ...
+verify	Firmware in Docker	2026-10-13T16:31:46.5667848Z #6 13.09 Unpacking binutils-common:amd64 (2.42-4ubuntu2.10) ...
+verify	Firmware in Docker	2026-10-13T16:31:46.5668317Z #6 13.20 Selecting previously unselected package libsframe1:amd64.
+verify	Firmware in Docker	2026-10-13T16:31:46.6773178Z #6 13.20 Preparing to unpack .../05-libsframe1_2.42-4ubuntu2.10_amd64.deb ...
+verify	Firmware in Docker	2026-10-13T16:31:46.6773801Z #6 13.20 Unpacking libsframe1:amd64 (2.42-4ubuntu2.10) ...
+verify	Firmware in Docker	2026-10-13T16:31:46.6774296Z #6 13.21 Selecting previously unselected package libbinutils:amd64.
+verify	Firmware in Docker	2026-10-13T16:31:46.6774854Z #6 13.21 Preparing to unpack .../06-libbinutils_2.42-4ubuntu2.10_amd64.deb ...
+verify	Firmware in Docker	2026-10-13T16:31:46.6775515Z #6 13.21 Unpacking libbinutils:amd64 (2.42-4ubuntu2.10) ...
+verify	Firmware in Docker	2026-10-13T16:31:46.6776010Z #6 13.23 Selecting previously unselected package libctf-nobfd0:amd64.
+verify	Firmware in Docker	2026-10-13T16:31:46.6776494Z #6 13.23 Preparing to unpack .../07-libctf-nobfd0_2.42-4ubuntu2.10_amd64.deb ...
+verify	Firmware in Docker	2026-10-13T16:31:46.6776836Z #6 13.23 Unpacking libctf-nobfd0:amd64 (2.42-4ubuntu2.10) ...
+verify	Firmware in Docker	2026-10-13T16:31:46.6777148Z #6 13.26 Selecting previously unselected package libctf0:amd64.
+verify	Firmware in Docker	2026-10-13T16:31:46.6777472Z #6 13.26 Preparing to unpack .../08-libctf0_2.42-4ubuntu2.10_amd64.deb ...
+verify	Firmware in Docker	2026-10-13T16:31:46.6777774Z #6 13.26 Unpacking libctf0:amd64 (2.42-4ubuntu2.10) ...
+verify	Firmware in Docker	2026-10-13T16:31:46.6778079Z #6 13.27 Selecting previously unselected package libgprofng0:amd64.
+verify	Firmware in Docker	2026-10-13T16:31:46.6778421Z #6 13.27 Preparing to unpack .../09-libgprofng0_2.42-4ubuntu2.10_amd64.deb ...
+verify	Firmware in Docker	2026-10-13T16:31:46.6778741Z #6 13.27 Unpacking libgprofng0:amd64 (2.42-4ubuntu2.10) ...
+verify	Firmware in Docker	2026-10-13T16:31:46.6779177Z #6 13.31 Selecting previously unselected package binutils-x86-64-linux-gnu.
+verify	Firmware in Docker	2026-10-13T16:31:46.7850638Z #6 13.31 Preparing to unpack .../10-binutils-x86-64-linux-gnu_2.42-4ubuntu2.10_amd64.deb ...
+verify	Firmware in Docker	2026-10-13T16:31:46.7851352Z #6 13.31 Unpacking binutils-x86-64-linux-gnu (2.42-4ubuntu2.10) ...
+verify	Firmware in Docker	2026-10-13T16:31:46.7851827Z #6 13.40 Selecting previously unselected package binutils.
+verify	Firmware in Docker	2026-10-13T16:31:46.7852345Z #6 13.41 Preparing to unpack .../11-binutils_2.42-4ubuntu2.10_amd64.deb ...
+verify	Firmware in Docker	2026-10-13T16:31:46.7852794Z #6 13.41 Unpacking binutils (2.42-4ubuntu2.10) ...
+verify	Firmware in Docker	2026-10-13T16:31:46.7853224Z #6 13.42 Selecting previously unselected package gcc-13-base:amd64.
+verify	Firmware in Docker	2026-10-13T16:31:46.9371019Z #6 13.42 Preparing to unpack .../12-gcc-13-base_13.3.0-6ubuntu2~24.04.1_amd64.deb ...
+verify	Firmware in Docker	2026-10-13T16:31:46.9371481Z #6 13.42 Unpacking gcc-13-base:amd64 (13.3.0-6ubuntu2~24.04.1) ...
+verify	Firmware in Docker	2026-10-13T16:31:47.0031737Z #6 13.64 Selecting previously unselected package libisl23:amd64.
+verify	Firmware in Docker	2026-10-13T16:31:47.1758474Z #6 13.64 Preparing to unpack .../13-libisl23_0.26-3build1.1_amd64.deb ...
+verify	Firmware in Docker	2026-10-13T16:31:47.1759024Z #6 13.64 Unpacking libisl23:amd64 (0.26-3build1.1) ...
+verify	Firmware in Docker	2026-10-13T16:31:47.1759328Z #6 13.66 Selecting previously unselected package libmpfr6:amd64.
+verify	Firmware in Docker	2026-10-13T16:31:47.1759673Z #6 13.66 Preparing to unpack .../14-libmpfr6_4.2.1-1build1.1_amd64.deb ...
+verify	Firmware in Docker	2026-10-13T16:31:47.1759985Z #6 13.66 Unpacking libmpfr6:amd64 (4.2.1-1build1.1) ...
+verify	Firmware in Docker	2026-10-13T16:31:47.2371089Z #6 13.87 Selecting previously unselected package libmpc3:amd64.
+verify	Firmware in Docker	2026-10-13T16:31:47.3503952Z #6 13.87 Preparing to unpack .../15-libmpc3_1.3.1-1build1.1_amd64.deb ...
+verify	Firmware in Docker	2026-10-13T16:31:47.3504497Z #6 13.87 Unpacking libmpc3:amd64 (1.3.1-1build1.1) ...
+verify	Firmware in Docker	2026-10-13T16:31:47.3504989Z #6 13.88 Selecting previously unselected package cpp-13-x86-64-linux-gnu.
+verify	Firmware in Docker	2026-10-13T16:31:47.3505608Z #6 13.88 Preparing to unpack .../16-cpp-13-x86-64-linux-gnu_13.3.0-6ubuntu2~24.04.1_amd64.deb ...
+verify	Firmware in Docker	2026-10-13T16:31:47.3506021Z #6 13.88 Unpacking cpp-13-x86-64-linux-gnu (13.3.0-6ubuntu2~24.04.1) ...
+verify	Firmware in Docker	2026-10-13T16:31:47.3506603Z #6 13.98 Selecting previously unselected package cpp-13.
+verify	Firmware in Docker	2026-10-13T16:31:47.4782812Z #6 13.98 Preparing to unpack .../17-cpp-13_13.3.0-6ubuntu2~24.04.1_amd64.deb ...
+verify	Firmware in Docker	2026-10-13T16:31:47.4783438Z #6 13.99 Unpacking cpp-13 (13.3.0-6ubuntu2~24.04.1) ...
+verify	Firmware in Docker	2026-10-13T16:31:47.4784089Z #6 13.99 Selecting previously unselected package cpp-x86-64-linux-gnu.
+verify	Firmware in Docker	2026-10-13T16:31:47.4785564Z #6 14.00 Preparing to unpack .../18-cpp-x86-64-linux-gnu_4%3a13.2.0-7ubuntu1_amd64.deb ...
+verify	Firmware in Docker	2026-10-13T16:31:47.4786314Z #6 14.01 Unpacking cpp-x86-64-linux-gnu (4:13.2.0-7ubuntu1) ...
+verify	Firmware in Docker	2026-10-13T16:31:47.4786953Z #6 14.02 Selecting previously unselected package cpp.
+verify	Firmware in Docker	2026-10-13T16:31:47.4787437Z #6 14.02 Preparing to unpack .../19-cpp_4%3a13.2.0-7ubuntu1_amd64.deb ...
+verify	Firmware in Docker	2026-10-13T16:31:47.4787849Z #6 14.03 Unpacking cpp (4:13.2.0-7ubuntu1) ...
+verify	Firmware in Docker	2026-10-13T16:31:47.4788121Z #6 14.04 Selecting previously unselected package libcc1-0:amd64.
+verify	Firmware in Docker	2026-10-13T16:31:47.4788467Z #6 14.04 Preparing to unpack .../20-libcc1-0_14.2.0-4ubuntu2~24.04.1_amd64.deb ...
+verify	Firmware in Docker	2026-10-13T16:31:47.4788827Z #6 14.04 Unpacking libcc1-0:amd64 (14.2.0-4ubuntu2~24.04.1) ...
+verify	Firmware in Docker	2026-10-13T16:31:47.4789126Z #6 14.06 Selecting previously unselected package libgomp1:amd64.
+verify	Firmware in Docker	2026-10-13T16:31:47.4789457Z #6 14.06 Preparing to unpack .../21-libgomp1_14.2.0-4ubuntu2~24.04.1_amd64.deb ...
+verify	Firmware in Docker	2026-10-13T16:31:47.4789799Z #6 14.06 Unpacking libgomp1:amd64 (14.2.0-4ubuntu2~24.04.1) ...
+verify	Firmware in Docker	2026-10-13T16:31:47.4790102Z #6 14.11 Selecting previously unselected package libitm1:amd64.
+verify	Firmware in Docker	2026-10-13T16:31:47.5793160Z #6 14.11 Preparing to unpack .../22-libitm1_14.2.0-4ubuntu2~24.04.1_amd64.deb ...
+verify	Firmware in Docker	2026-10-13T16:31:47.5793633Z #6 14.11 Unpacking libitm1:amd64 (14.2.0-4ubuntu2~24.04.1) ...
+verify	Firmware in Docker	2026-10-13T16:31:47.5793957Z #6 14.12 Selecting previously unselected package libatomic1:amd64.
+verify	Firmware in Docker	2026-10-13T16:31:47.5794338Z #6 14.12 Preparing to unpack .../23-libatomic1_14.2.0-4ubuntu2~24.04.1_amd64.deb ...
+verify	Firmware in Docker	2026-10-13T16:31:47.5794689Z #6 14.13 Unpacking libatomic1:amd64 (14.2.0-4ubuntu2~24.04.1) ...
+verify	Firmware in Docker	2026-10-13T16:31:47.5795034Z #6 14.14 Selecting previously unselected package libasan8:amd64.
+verify	Firmware in Docker	2026-10-13T16:31:47.5795601Z #6 14.14 Preparing to unpack .../24-libasan8_14.2.0-4ubuntu2~24.04.1_amd64.deb ...
+verify	Firmware in Docker	2026-10-13T16:31:47.5795942Z #6 14.14 Unpacking libasan8:amd64 (14.2.0-4ubuntu2~24.04.1) ...
+verify	Firmware in Docker	2026-10-13T16:31:47.5796245Z #6 14.19 Selecting previously unselected package liblsan0:amd64.
+verify	Firmware in Docker	2026-10-13T16:31:47.5796599Z #6 14.19 Preparing to unpack .../25-liblsan0_14.2.0-4ubuntu2~24.04.1_amd64.deb ...
+verify	Firmware in Docker	2026-10-13T16:31:47.5796937Z #6 14.19 Unpacking liblsan0:amd64 (14.2.0-4ubuntu2~24.04.1) ...
+verify	Firmware in Docker	2026-10-13T16:31:47.5797234Z #6 14.21 Selecting previously unselected package libtsan2:amd64.
+verify	Firmware in Docker	2026-10-13T16:31:47.7112682Z #6 14.21 Preparing to unpack .../26-libtsan2_14.2.0-4ubuntu2~24.04.1_amd64.deb ...
+verify	Firmware in Docker	2026-10-13T16:31:47.7113265Z #6 14.21 Unpacking libtsan2:amd64 (14.2.0-4ubuntu2~24.04.1) ...
+verify	Firmware in Docker	2026-10-13T16:31:47.7113705Z #6 14.34 Selecting previously unselected package libubsan1:amd64.
+verify	Firmware in Docker	2026-10-13T16:31:47.8713319Z #6 14.35 Preparing to unpack .../27-libubsan1_14.2.0-4ubuntu2~24.04.1_amd64.deb ...
+verify	Firmware in Docker	2026-10-13T16:31:47.8713885Z #6 14.35 Unpacking libubsan1:amd64 (14.2.0-4ubuntu2~24.04.1) ...
+verify	Firmware in Docker	2026-10-13T16:31:47.9482979Z #6 14.58 Selecting previously unselected package libhwasan0:amd64.
+verify	Firmware in Docker	2026-10-13T16:31:47.9483464Z #6 14.58 Preparing to unpack .../28-libhwasan0_14.2.0-4ubuntu2~24.04.1_amd64.deb ...
+verify	Firmware in Docker	2026-10-13T16:31:48.1644897Z #6 14.65 Unpacking libhwasan0:amd64 (14.2.0-4ubuntu2~24.04.1) ...
+verify	Firmware in Docker	2026-10-13T16:31:48.3615888Z #6 14.99 Selecting previously unselected package libquadmath0:amd64.
+verify	Firmware in Docker	2026-10-13T16:31:48.5130968Z #6 15.00 Preparing to unpack .../29-libquadmath0_14.2.0-4ubuntu2~24.04.1_amd64.deb ...
+verify	Firmware in Docker	2026-10-13T16:31:48.5211569Z #6 15.15 Unpacking libquadmath0:amd64 (14.2.0-4ubuntu2~24.04.1) ...
+verify	Firmware in Docker	2026-10-13T16:31:49.7930435Z #6 16.43 Selecting previously unselected package libgcc-13-dev:amd64.
+verify	Firmware in Docker	2026-10-13T16:31:50.0358589Z #6 16.43 Preparing to unpack .../30-libgcc-13-dev_13.3.0-6ubuntu2~24.04.1_amd64.deb ...
+verify	Firmware in Docker	2026-10-13T16:31:50.0359535Z #6 16.52 Unpacking libgcc-13-dev:amd64 (13.3.0-6ubuntu2~24.04.1) ...
+verify	Firmware in Docker	2026-10-13T16:31:50.8531413Z #6 17.49 Selecting previously unselected package gcc-13-x86-64-linux-gnu.
+verify	Firmware in Docker	2026-10-13T16:31:51.0049945Z #6 17.49 Preparing to unpack .../31-gcc-13-x86-64-linux-gnu_13.3.0-6ubuntu2~24.04.1_amd64.deb ...
+verify	Firmware in Docker	2026-10-13T16:31:51.0136104Z #6 17.65 Unpacking gcc-13-x86-64-linux-gnu (13.3.0-6ubuntu2~24.04.1) ...
+verify	Firmware in Docker	2026-10-13T16:31:51.9993443Z #6 18.63 Selecting previously unselected package gcc-13.
+verify	Firmware in Docker	2026-10-13T16:31:52.1515863Z #6 18.63 Preparing to unpack .../32-gcc-13_13.3.0-6ubuntu2~24.04.1_amd64.deb ...
+verify	Firmware in Docker	2026-10-13T16:31:52.1516365Z #6 18.63 Unpacking gcc-13 (13.3.0-6ubuntu2~24.04.1) ...
+verify	Firmware in Docker	2026-10-13T16:31:52.3411046Z #6 18.97 Selecting previously unselected package gcc-x86-64-linux-gnu.
+verify	Firmware in Docker	2026-10-13T16:31:52.5280116Z #6 18.98 Preparing to unpack .../33-gcc-x86-64-linux-gnu_4%3a13.2.0-7ubuntu1_amd64.deb ...
+verify	Firmware in Docker	2026-10-13T16:31:52.5280700Z #6 18.98 Unpacking gcc-x86-64-linux-gnu (4:13.2.0-7ubuntu1) ...
+verify	Firmware in Docker	2026-10-13T16:31:52.5281063Z #6 18.99 Selecting previously unselected package gcc.
+verify	Firmware in Docker	2026-10-13T16:31:52.5281374Z #6 18.99 Preparing to unpack .../34-gcc_4%3a13.2.0-7ubuntu1_amd64.deb ...
+verify	Firmware in Docker	2026-10-13T16:31:52.5281669Z #6 18.99 Unpacking gcc (4:13.2.0-7ubuntu1) ...
+verify	Firmware in Docker	2026-10-13T16:31:52.5281952Z #6 19.00 Selecting previously unselected package libc-dev-bin.
+verify	Firmware in Docker	2026-10-13T16:31:52.5282307Z #6 19.00 Preparing to unpack .../35-libc-dev-bin_2.39-0ubuntu8.9_amd64.deb ...
+verify	Firmware in Docker	2026-10-13T16:31:52.5282651Z #6 19.00 Unpacking libc-dev-bin (2.39-0ubuntu8.9) ...
+verify	Firmware in Docker	2026-10-13T16:31:52.5282960Z #6 19.01 Selecting previously unselected package linux-libc-dev:amd64.
+verify	Firmware in Docker	2026-10-13T16:31:52.5283308Z #6 19.01 Preparing to unpack .../36-linux-libc-dev_6.8.0-147.147_amd64.deb ...
+verify	Firmware in Docker	2026-10-13T16:31:52.5283629Z #6 19.01 Unpacking linux-libc-dev:amd64 (6.8.0-147.147) ...
+verify	Firmware in Docker	2026-10-13T16:31:52.5411035Z #6 19.17 Selecting previously unselected package libcrypt-dev:amd64.
+verify	Firmware in Docker	2026-10-13T16:31:52.7518490Z #6 19.18 Preparing to unpack .../37-libcrypt-dev_1%3a4.4.36-4build1_amd64.deb ...
+verify	Firmware in Docker	2026-10-13T16:31:52.7518991Z #6 19.18 Unpacking libcrypt-dev:amd64 (1:4.4.36-4build1) ...
+verify	Firmware in Docker	2026-10-13T16:31:52.7519307Z #6 19.19 Selecting previously unselected package rpcsvc-proto.
+verify	Firmware in Docker	2026-10-13T16:31:52.7519661Z #6 19.19 Preparing to unpack .../38-rpcsvc-proto_1.4.2-0ubuntu7_amd64.deb ...
+verify	Firmware in Docker	2026-10-13T16:31:52.7519976Z #6 19.19 Unpacking rpcsvc-proto (1.4.2-0ubuntu7) ...
+verify	Firmware in Docker	2026-10-13T16:31:52.7520288Z #6 19.23 Selecting previously unselected package libc6-dev:amd64.
+verify	Firmware in Docker	2026-10-13T16:31:52.7520618Z #6 19.23 Preparing to unpack .../39-libc6-dev_2.39-0ubuntu8.9_amd64.deb ...
+verify	Firmware in Docker	2026-10-13T16:31:52.7520927Z #6 19.23 Unpacking libc6-dev:amd64 (2.39-0ubuntu8.9) ...
+verify	Firmware in Docker	2026-10-13T16:31:52.7733068Z #6 19.41 Selecting previously unselected package make.
+verify	Firmware in Docker	2026-10-13T16:31:53.0134712Z #6 19.41 Preparing to unpack .../40-make_4.3-4.1build2_amd64.deb ...
+verify	Firmware in Docker	2026-10-13T16:31:53.0135275Z #6 19.41 Unpacking make (4.3-4.1build2) ...
+verify	Firmware in Docker	2026-10-13T16:31:53.0135759Z #6 19.42 Selecting previously unselected package binutils-arm-none-eabi.
+verify	Firmware in Docker	2026-10-13T16:31:53.0136447Z #6 19.42 Preparing to unpack .../41-binutils-arm-none-eabi_2.42-1ubuntu1+23_amd64.deb ...
+verify	Firmware in Docker	2026-10-13T16:31:53.0137056Z #6 19.42 Unpacking binutils-arm-none-eabi (2.42-1ubuntu1+23) ...
+verify	Firmware in Docker	2026-10-13T16:31:53.0137585Z #6 19.49 Selecting previously unselected package gcc-arm-none-eabi.
+verify	Firmware in Docker	2026-10-13T16:31:53.0138170Z #6 19.50 Preparing to unpack .../42-gcc-arm-none-eabi_15%3a13.2.rel1-2_amd64.deb ...
+verify	Firmware in Docker	2026-10-13T16:31:53.0138742Z #6 19.50 Unpacking gcc-arm-none-eabi (15:13.2.rel1-2) ...
+verify	Firmware in Docker	2026-10-13T16:31:54.1017835Z #6 20.74 Selecting previously unselected package libnewlib-dev.
+verify	Firmware in Docker	2026-10-13T16:31:54.2274705Z #6 20.74 Preparing to unpack .../43-libnewlib-dev_4.4.0.20231231-2_all.deb ...
+verify	Firmware in Docker	2026-10-13T16:31:54.2275463Z #6 20.74 Unpacking libnewlib-dev (4.4.0.20231231-2) ...
+verify	Firmware in Docker	2026-10-13T16:31:54.2276099Z #6 20.86 Selecting previously unselected package libnewlib-arm-none-eabi.
+verify	Firmware in Docker	2026-10-13T16:31:54.3797783Z #6 20.86 Preparing to unpack .../44-libnewlib-arm-none-eabi_4.4.0.20231231-2_all.deb ...
+verify	Firmware in Docker	2026-10-13T16:31:54.3798858Z #6 20.86 Unpacking libnewlib-arm-none-eabi (4.4.0.20231231-2) ...
+verify	Firmware in Docker	2026-10-13T16:31:56.1849773Z #6 22.82 Setting up media-types (10.1.0) ...
+verify	Firmware in Docker	2026-10-13T16:31:56.4337623Z #6 22.84 Setting up binutils-arm-none-eabi (2.42-1ubuntu1+23) ...
+verify	Firmware in Docker	2026-10-13T16:31:56.4338059Z #6 22.86 Setting up libsqlite3-0:amd64 (3.45.1-1ubuntu2.8) ...
+verify	Firmware in Docker	2026-10-13T16:31:56.4338386Z #6 22.88 Setting up binutils-common:amd64 (2.42-4ubuntu2.10) ...
+verify	Firmware in Docker	2026-10-13T16:31:56.4731391Z #6 22.92 Setting up linux-libc-dev:amd64 (6.8.0-147.147) ...
+verify	Firmware in Docker	2026-10-13T16:31:56.4971085Z #6 23.13 Setting up libctf-nobfd0:amd64 (2.42-4ubuntu2.10) ...
+verify	Firmware in Docker	2026-10-13T16:31:56.8001663Z #6 23.43 Setting up libgomp1:amd64 (14.2.0-4ubuntu2~24.04.1) ...
+verify	Firmware in Docker	2026-10-13T16:31:56.9507595Z #6 23.58 Setting up libsframe1:amd64 (2.42-4ubuntu2.10) ...
+verify	Firmware in Docker	2026-10-13T16:31:57.1336935Z #6 23.67 Setting up libjansson4:amd64 (2.14-2build2) ...
+verify	Firmware in Docker	2026-10-13T16:31:57.1337357Z #6 23.67 Setting up tzdata (2026c-0ubuntu0.24.04.1) ...
+verify	Firmware in Docker	2026-10-13T16:31:57.1337603Z #6 23.77
+verify	Firmware in Docker	2026-10-13T16:31:57.1337811Z #6 23.77 Current default time zone: 'Etc/UTC'
+verify	Firmware in Docker	2026-10-13T16:31:57.2675636Z #6 23.78 Local time is now:      Tue Oct 13 16:31:57 UTC 2026.
+verify	Firmware in Docker	2026-10-13T16:31:57.2676148Z #6 23.78 Universal Time is now:  Tue Oct 13 16:31:57 UTC 2026.
+verify	Firmware in Docker	2026-10-13T16:31:57.2676468Z #6 23.78 Run 'dpkg-reconfigure tzdata' if you wish to change it.
+verify	Firmware in Docker	2026-10-13T16:31:57.2676749Z #6 23.78
+verify	Firmware in Docker	2026-10-13T16:31:57.2676978Z #6 23.79 Setting up rpcsvc-proto (1.4.2-0ubuntu7) ...
+verify	Firmware in Docker	2026-10-13T16:31:57.2677286Z #6 23.80 Setting up gcc-13-base:amd64 (13.3.0-6ubuntu2~24.04.1) ...
+verify	Firmware in Docker	2026-10-13T16:31:57.2677569Z #6 23.80 Setting up make (4.3-4.1build2) ...
+verify	Firmware in Docker	2026-10-13T16:31:57.2677816Z #6 23.81 Setting up libmpfr6:amd64 (4.2.1-1build1.1) ...
+verify	Firmware in Docker	2026-10-13T16:31:57.2678075Z #6 23.81 Setting up libnewlib-dev (4.4.0.20231231-2) ...
+verify	Firmware in Docker	2026-10-13T16:31:57.2678375Z #6 23.82 Setting up libquadmath0:amd64 (14.2.0-4ubuntu2~24.04.1) ...
+verify	Firmware in Docker	2026-10-13T16:31:57.2678663Z #6 23.82 Setting up libmpc3:amd64 (1.3.1-1build1.1) ...
+verify	Firmware in Docker	2026-10-13T16:31:57.2678942Z #6 23.82 Setting up libatomic1:amd64 (14.2.0-4ubuntu2~24.04.1) ...
+verify	Firmware in Docker	2026-10-13T16:31:57.2679256Z #6 23.82 Setting up libnewlib-arm-none-eabi (4.4.0.20231231-2) ...
+verify	Firmware in Docker	2026-10-13T16:31:57.2679563Z #6 23.83 Setting up libubsan1:amd64 (14.2.0-4ubuntu2~24.04.1) ...
+verify	Firmware in Docker	2026-10-13T16:31:57.2679859Z #6 23.83 Setting up libhwasan0:amd64 (14.2.0-4ubuntu2~24.04.1) ...
+verify	Firmware in Docker	2026-10-13T16:31:57.2680149Z #6 23.83 Setting up libcrypt-dev:amd64 (1:4.4.36-4build1) ...
+verify	Firmware in Docker	2026-10-13T16:31:57.2680439Z #6 23.90 Setting up libasan8:amd64 (14.2.0-4ubuntu2~24.04.1) ...
+verify	Firmware in Docker	2026-10-13T16:31:57.4894920Z #6 23.90 Setting up netbase (6.4) ...
+verify	Firmware in Docker	2026-10-13T16:31:57.4896471Z #6 23.91 Setting up libtsan2:amd64 (14.2.0-4ubuntu2~24.04.1) ...
+verify	Firmware in Docker	2026-10-13T16:31:57.4896863Z #6 23.91 Setting up libbinutils:amd64 (2.42-4ubuntu2.10) ...
+verify	Firmware in Docker	2026-10-13T16:31:57.4897205Z #6 23.91 Setting up libisl23:amd64 (0.26-3build1.1) ...
+verify	Firmware in Docker	2026-10-13T16:31:57.4897476Z #6 23.92 Setting up libc-dev-bin (2.39-0ubuntu8.9) ...
+verify	Firmware in Docker	2026-10-13T16:31:57.4897736Z #6 23.95 Setting up openssl (3.0.13-0ubuntu3.16) ...
+verify	Firmware in Docker	2026-10-13T16:31:57.4898038Z #6 23.95 Setting up readline-common (8.2-4build1) ...
+verify	Firmware in Docker	2026-10-13T16:31:57.4898311Z #6 23.96 Setting up libcc1-0:amd64 (14.2.0-4ubuntu2~24.04.1) ...
+verify	Firmware in Docker	2026-10-13T16:31:57.4898595Z #6 23.96 Setting up liblsan0:amd64 (14.2.0-4ubuntu2~24.04.1) ...
+verify	Firmware in Docker	2026-10-13T16:31:57.4899041Z #6 23.97 Setting up libitm1:amd64 (14.2.0-4ubuntu2~24.04.1) ...
+verify	Firmware in Docker	2026-10-13T16:31:57.4899496Z #6 23.97 Setting up libctf0:amd64 (2.42-4ubuntu2.10) ...
+verify	Firmware in Docker	2026-10-13T16:31:57.4899860Z #6 23.97 Setting up cpp-13-x86-64-linux-gnu (13.3.0-6ubuntu2~24.04.1) ...
+verify	Firmware in Docker	2026-10-13T16:31:57.4900178Z #6 23.97 Setting up gcc-arm-none-eabi (15:13.2.rel1-2) ...
+verify	Firmware in Docker	2026-10-13T16:31:57.4900450Z #6 23.97 Setting up ca-certificates (20260601~24.04.1) ...
+verify	Firmware in Docker	2026-10-13T16:31:57.6839698Z #6 24.32 Updating certificates in /etc/ssl/certs...
+verify	Firmware in Docker	2026-10-13T16:31:58.0381009Z #6 24.67 121 added, 0 removed; done.
+verify	Firmware in Docker	2026-10-13T16:31:58.2525293Z #6 24.69 Setting up libgprofng0:amd64 (2.42-4ubuntu2.10) ...
+verify	Firmware in Docker	2026-10-13T16:31:58.2525931Z #6 24.70 Setting up libreadline8t64:amd64 (8.2-4build1) ...
+verify	Firmware in Docker	2026-10-13T16:31:58.2526763Z #6 24.70 Setting up libgcc-13-dev:amd64 (13.3.0-6ubuntu2~24.04.1) ...
+verify	Firmware in Docker	2026-10-13T16:31:58.2527263Z #6 24.70 Setting up libc6-dev:amd64 (2.39-0ubuntu8.9) ...
+verify	Firmware in Docker	2026-10-13T16:31:58.2527763Z #6 24.71 Setting up binutils-x86-64-linux-gnu (2.42-4ubuntu2.10) ...
+verify	Firmware in Docker	2026-10-13T16:31:58.2528289Z #6 24.71 Setting up cpp-x86-64-linux-gnu (4:13.2.0-7ubuntu1) ...
+verify	Firmware in Docker	2026-10-13T16:31:58.2528997Z #6 24.71 Setting up libpython3.12-stdlib:amd64 (3.12.3-1ubuntu0.17) ...
+verify	Firmware in Docker	2026-10-13T16:31:58.2529486Z #6 24.71 Setting up cpp-13 (13.3.0-6ubuntu2~24.04.1) ...
+verify	Firmware in Docker	2026-10-13T16:31:58.2529972Z #6 24.73 Setting up gcc-13-x86-64-linux-gnu (13.3.0-6ubuntu2~24.04.1) ...
+verify	Firmware in Docker	2026-10-13T16:31:58.2530468Z #6 24.74 Setting up python3.12 (3.12.3-1ubuntu0.17) ...
+verify	Firmware in Docker	2026-10-13T16:31:58.8079598Z #6 25.44 Setting up binutils (2.42-4ubuntu2.10) ...
+verify	Firmware in Docker	2026-10-13T16:31:58.9289196Z #6 25.44 Setting up gcc-13 (13.3.0-6ubuntu2~24.04.1) ...
+verify	Firmware in Docker	2026-10-13T16:31:58.9289686Z #6 25.44 Setting up cpp (4:13.2.0-7ubuntu1) ...
+verify	Firmware in Docker	2026-10-13T16:31:58.9290017Z #6 25.45 Setting up libpython3-stdlib:amd64 (3.12.3-0ubuntu2.1) ...
+verify	Firmware in Docker	2026-10-13T16:31:58.9290338Z #6 25.45 Setting up gcc-x86-64-linux-gnu (4:13.2.0-7ubuntu1) ...
+verify	Firmware in Docker	2026-10-13T16:31:58.9290631Z #6 25.45 Setting up python3 (3.12.3-0ubuntu2.1) ...
+verify	Firmware in Docker	2026-10-13T16:31:58.9290876Z #6 25.56 Setting up gcc (4:13.2.0-7ubuntu1) ...
+verify	Firmware in Docker	2026-10-13T16:31:59.0978849Z #6 25.58 Processing triggers for libc-bin (2.39-0ubuntu8.9) ...
+verify	Firmware in Docker	2026-10-13T16:31:59.4382248Z #6 26.07 Processing triggers for ca-certificates (20260601~24.04.1) ...
+verify	Firmware in Docker	2026-10-13T16:31:59.6635844Z #6 26.15 Updating certificates in /etc/ssl/certs...
+verify	Firmware in Docker	2026-10-13T16:31:59.7901704Z #6 26.42 0 added, 0 removed; done.
+verify	Firmware in Docker	2026-10-13T16:31:59.7902091Z #6 26.42 Running hooks in /etc/ca-certificates/update.d...
+verify	Firmware in Docker	2026-10-13T16:31:59.9416420Z #6 26.42 done.
+verify	Firmware in Docker	2026-10-13T16:32:05.0870193Z #6 DONE 31.7s
+verify	Firmware in Docker	2026-10-13T16:32:05.2461860Z
+verify	Firmware in Docker	2026-10-13T16:32:05.2462296Z #7 [3/3] WORKDIR /workspace
+verify	Firmware in Docker	2026-10-13T16:32:05.2462559Z #7 DONE 0.0s
+verify	Firmware in Docker	2026-10-13T16:32:05.2462694Z
+verify	Firmware in Docker	2026-10-13T16:32:05.2462779Z #8 exporting to image
+verify	Firmware in Docker	2026-10-13T16:32:05.2462962Z #8 exporting layers
+verify	Firmware in Docker	2026-10-13T16:32:07.6077377Z #8 exporting layers 2.5s done
+verify	Firmware in Docker	2026-10-13T16:32:07.6666893Z #8 writing image sha256:42dd413646a9f71c316f8c07bf4ceaea44d84abc685d4399c8bdca950f0c158d done
+verify	Firmware in Docker	2026-10-13T16:32:07.6667646Z #8 naming to docker.io/library/kioskguard-build:lab2 done
+verify	Firmware in Docker	2026-10-13T16:32:07.6668072Z #8 DONE 2.5s
+verify	Firmware in Docker	2026-10-13T16:32:07.6731026Z docker run --rm -v "/home/runner/work/KioskGuard/KioskGuard:/workspace" -w /workspace \
+verify	Firmware in Docker	2026-10-13T16:32:07.6731633Z 	--user "1001:1001" kioskguard-build:lab2 \
+verify	Firmware in Docker	2026-10-13T16:32:07.6731918Z 	make -C firmware all
+verify	Firmware in Docker	2026-10-13T16:32:07.8293325Z make: Entering directory '/workspace/firmware'
+verify	Firmware in Docker	2026-10-13T16:32:07.8293867Z mkdir -p build
+verify	Firmware in Docker	2026-10-13T16:32:07.8303684Z arm-none-eabi-gcc -c -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -IPlatform -IDevices -IApp -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/main.d" -Wextra -Werror -Wa,-a,-ad,-alms=build/main.lst Core/Src/main.c -o build/main.o
+verify	Firmware in Docker	2026-10-13T16:32:07.9243569Z arm-none-eabi-gcc -c -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -IPlatform -IDevices -IApp -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/stm32c0xx_it.d" -Wextra -Werror -Wa,-a,-ad,-alms=build/stm32c0xx_it.lst Core/Src/stm32c0xx_it.c -o build/stm32c0xx_it.o
+verify	Firmware in Docker	2026-10-13T16:32:07.9580466Z arm-none-eabi-gcc -c -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -IPlatform -IDevices -IApp -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/stm32c0xx_hal_msp.d" -Wextra -Werror -Wa,-a,-ad,-alms=build/stm32c0xx_hal_msp.lst Core/Src/stm32c0xx_hal_msp.c -o build/stm32c0xx_hal_msp.o
+verify	Firmware in Docker	2026-10-13T16:32:07.9971144Z arm-none-eabi-gcc -c -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -IPlatform -IDevices -IApp -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/syscalls.d" -Wextra -Werror -Wa,-a,-ad,-alms=build/syscalls.lst Core/Src/syscalls.c -o build/syscalls.o
+verify	Firmware in Docker	2026-10-13T16:32:08.0297603Z arm-none-eabi-gcc -c -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -IPlatform -IDevices -IApp -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/sysmem.d" -Wextra -Werror -Wa,-a,-ad,-alms=build/sysmem.lst Core/Src/sysmem.c -o build/sysmem.o
+verify	Firmware in Docker	2026-10-13T16:32:08.0452610Z arm-none-eabi-gcc -c -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -IPlatform -IDevices -IApp -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/stm32c0xx_hal.d"  -Wa,-a,-ad,-alms=build/stm32c0xx_hal.lst Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal.c -o build/stm32c0xx_hal.o
+verify	Firmware in Docker	2026-10-13T16:32:08.0940499Z arm-none-eabi-gcc -c -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -IPlatform -IDevices -IApp -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/stm32c0xx_hal_cortex.d"  -Wa,-a,-ad,-alms=build/stm32c0xx_hal_cortex.lst Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_cortex.c -o build/stm32c0xx_hal_cortex.o
+verify	Firmware in Docker	2026-10-13T16:32:08.1459790Z arm-none-eabi-gcc -c -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -IPlatform -IDevices -IApp -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/stm32c0xx_hal_rcc.d"  -Wa,-a,-ad,-alms=build/stm32c0xx_hal_rcc.lst Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_rcc.c -o build/stm32c0xx_hal_rcc.o
+verify	Firmware in Docker	2026-10-13T16:32:08.2175295Z arm-none-eabi-gcc -c -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -IPlatform -IDevices -IApp -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/stm32c0xx_hal_rcc_ex.d"  -Wa,-a,-ad,-alms=build/stm32c0xx_hal_rcc_ex.lst Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_rcc_ex.c -o build/stm32c0xx_hal_rcc_ex.o
+verify	Firmware in Docker	2026-10-13T16:32:08.2664215Z arm-none-eabi-gcc -c -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -IPlatform -IDevices -IApp -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/stm32c0xx_hal_flash.d"  -Wa,-a,-ad,-alms=build/stm32c0xx_hal_flash.lst Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_flash.c -o build/stm32c0xx_hal_flash.o
+verify	Firmware in Docker	2026-10-13T16:32:08.3279234Z arm-none-eabi-gcc -c -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -IPlatform -IDevices -IApp -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/stm32c0xx_hal_flash_ex.d"  -Wa,-a,-ad,-alms=build/stm32c0xx_hal_flash_ex.lst Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_flash_ex.c -o build/stm32c0xx_hal_flash_ex.o
+verify	Firmware in Docker	2026-10-13T16:32:08.4019888Z arm-none-eabi-gcc -c -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -IPlatform -IDevices -IApp -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/stm32c0xx_hal_gpio.d"  -Wa,-a,-ad,-alms=build/stm32c0xx_hal_gpio.lst Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_gpio.c -o build/stm32c0xx_hal_gpio.o
+verify	Firmware in Docker	2026-10-13T16:32:08.4526809Z arm-none-eabi-gcc -c -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -IPlatform -IDevices -IApp -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/stm32c0xx_hal_dma.d"  -Wa,-a,-ad,-alms=build/stm32c0xx_hal_dma.lst Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_dma.c -o build/stm32c0xx_hal_dma.o
+verify	Firmware in Docker	2026-10-13T16:32:08.5439660Z arm-none-eabi-gcc -c -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -IPlatform -IDevices -IApp -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/stm32c0xx_hal_dma_ex.d"  -Wa,-a,-ad,-alms=build/stm32c0xx_hal_dma_ex.lst Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_dma_ex.c -o build/stm32c0xx_hal_dma_ex.o
+verify	Firmware in Docker	2026-10-13T16:32:08.5850923Z arm-none-eabi-gcc -c -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -IPlatform -IDevices -IApp -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/stm32c0xx_hal_pwr.d"  -Wa,-a,-ad,-alms=build/stm32c0xx_hal_pwr.lst Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_pwr.c -o build/stm32c0xx_hal_pwr.o
+verify	Firmware in Docker	2026-10-13T16:32:08.6218671Z arm-none-eabi-gcc -c -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -IPlatform -IDevices -IApp -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/stm32c0xx_hal_pwr_ex.d"  -Wa,-a,-ad,-alms=build/stm32c0xx_hal_pwr_ex.lst Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_pwr_ex.c -o build/stm32c0xx_hal_pwr_ex.o
+verify	Firmware in Docker	2026-10-13T16:32:08.6666729Z arm-none-eabi-gcc -c -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -IPlatform -IDevices -IApp -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/stm32c0xx_hal_exti.d"  -Wa,-a,-ad,-alms=build/stm32c0xx_hal_exti.lst Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_exti.c -o build/stm32c0xx_hal_exti.o
+verify	Firmware in Docker	2026-10-13T16:32:08.9694211Z arm-none-eabi-gcc -c -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -IPlatform -IDevices -IApp -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/stm32c0xx_hal_i2c.d"  -Wa,-a,-ad,-alms=build/stm32c0xx_hal_i2c.lst Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c -o build/stm32c0xx_hal_i2c.o
+verify	Firmware in Docker	2026-10-13T16:32:10.2864522Z arm-none-eabi-gcc -c -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -IPlatform -IDevices -IApp -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/stm32c0xx_hal_i2c_ex.d"  -Wa,-a,-ad,-alms=build/stm32c0xx_hal_i2c_ex.lst Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c_ex.c -o build/stm32c0xx_hal_i2c_ex.o
+verify	Firmware in Docker	2026-10-13T16:32:10.3372594Z arm-none-eabi-gcc -c -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -IPlatform -IDevices -IApp -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/stm32c0xx_hal_uart.d"  -Wa,-a,-ad,-alms=build/stm32c0xx_hal_uart.lst Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c -o build/stm32c0xx_hal_uart.o
+verify	Firmware in Docker	2026-10-13T16:32:10.9998829Z arm-none-eabi-gcc -c -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -IPlatform -IDevices -IApp -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/stm32c0xx_hal_uart_ex.d"  -Wa,-a,-ad,-alms=build/stm32c0xx_hal_uart_ex.lst Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart_ex.c -o build/stm32c0xx_hal_uart_ex.o
+verify	Firmware in Docker	2026-10-13T16:32:11.0907845Z arm-none-eabi-gcc -c -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -IPlatform -IDevices -IApp -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/system_stm32c0xx.d" -Wextra -Werror -Wa,-a,-ad,-alms=build/system_stm32c0xx.lst Core/Src/system_stm32c0xx.c -o build/system_stm32c0xx.o
+verify	Firmware in Docker	2026-10-13T16:32:11.1220843Z arm-none-eabi-gcc -c -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -IPlatform -IDevices -IApp -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/runtime.d" -Wextra -Werror -Wa,-a,-ad,-alms=build/runtime.lst Platform/runtime.c -o build/runtime.o
+verify	Firmware in Docker	2026-10-13T16:32:11.1971460Z arm-none-eabi-gcc -c -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -IPlatform -IDevices -IApp -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/bus.d" -Wextra -Werror -Wa,-a,-ad,-alms=build/bus.lst Platform/bus.c -o build/bus.o
+verify	Firmware in Docker	2026-10-13T16:32:11.2398597Z arm-none-eabi-gcc -c -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -IPlatform -IDevices -IApp -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/imu.d" -Wextra -Werror -Wa,-a,-ad,-alms=build/imu.lst Devices/imu.c -o build/imu.o
+verify	Firmware in Docker	2026-10-13T16:32:11.2609819Z arm-none-eabi-gcc -c -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -IPlatform -IDevices -IApp -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/kiosk.d" -Wextra -Werror -Wa,-a,-ad,-alms=build/kiosk.lst App/kiosk.c -o build/kiosk.o
+verify	Firmware in Docker	2026-10-13T16:32:11.3170545Z arm-none-eabi-gcc -c -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -IPlatform -IDevices -IApp -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/line.d" -Wextra -Werror -Wa,-a,-ad,-alms=build/line.lst App/line.c -o build/line.o
+verify	Firmware in Docker	2026-10-13T16:32:11.3328665Z arm-none-eabi-gcc -c -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -IPlatform -IDevices -IApp -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/stm32c0xx_hal_adc.d"  -Wa,-a,-ad,-alms=build/stm32c0xx_hal_adc.lst Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_adc.c -o build/stm32c0xx_hal_adc.o
+verify	Firmware in Docker	2026-10-13T16:32:11.5739145Z arm-none-eabi-gcc -c -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -IPlatform -IDevices -IApp -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/stm32c0xx_hal_adc_ex.d"  -Wa,-a,-ad,-alms=build/stm32c0xx_hal_adc_ex.lst Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_adc_ex.c -o build/stm32c0xx_hal_adc_ex.o
+verify	Firmware in Docker	2026-10-13T16:32:11.6240671Z arm-none-eabi-gcc -c -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -IPlatform -IDevices -IApp -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/stm32c0xx_ll_adc.d"  -Wa,-a,-ad,-alms=build/stm32c0xx_ll_adc.lst Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_ll_adc.c -o build/stm32c0xx_ll_adc.o
+verify	Firmware in Docker	2026-10-13T16:32:11.6328877Z arm-none-eabi-gcc -x assembler-with-cpp -c -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -IPlatform -IDevices -IApp -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/startup_stm32c031xx.d" startup_stm32c031xx.s -o build/startup_stm32c031xx.o
+verify	Firmware in Docker	2026-10-13T16:32:11.6397369Z arm-none-eabi-gcc build/main.o build/stm32c0xx_it.o build/stm32c0xx_hal_msp.o build/syscalls.o build/sysmem.o build/stm32c0xx_hal.o build/stm32c0xx_hal_cortex.o build/stm32c0xx_hal_rcc.o build/stm32c0xx_hal_rcc_ex.o build/stm32c0xx_hal_flash.o build/stm32c0xx_hal_flash_ex.o build/stm32c0xx_hal_gpio.o build/stm32c0xx_hal_dma.o build/stm32c0xx_hal_dma_ex.o build/stm32c0xx_hal_pwr.o build/stm32c0xx_hal_pwr_ex.o build/stm32c0xx_hal_exti.o build/stm32c0xx_hal_i2c.o build/stm32c0xx_hal_i2c_ex.o build/stm32c0xx_hal_uart.o build/stm32c0xx_hal_uart_ex.o build/system_stm32c0xx.o build/runtime.o build/bus.o build/imu.o build/kiosk.o build/line.o build/stm32c0xx_hal_adc.o build/stm32c0xx_hal_adc_ex.o build/stm32c0xx_ll_adc.o build/startup_stm32c031xx.o -mcpu=cortex-m0plus -mthumb   -specs=nano.specs -TSTM32C031C6Tx_FLASH.ld  -lc -lm -lnosys  -Wl,-Map=build/firmware.map,--cref -Wl,--gc-sections -o build/firmware.elf
+verify	Firmware in Docker	2026-10-13T16:32:11.6600200Z arm-none-eabi-size build/firmware.elf
+verify	Firmware in Docker	2026-10-13T16:32:11.6607862Z    text	   data	    bss	    dec	    hex	filename
+verify	Firmware in Docker	2026-10-13T16:32:11.6608367Z   26356	    112	   3816	  30284	   764c	build/firmware.elf
+verify	Firmware in Docker	2026-10-13T16:32:11.6610475Z arm-none-eabi-objcopy -O ihex build/firmware.elf build/firmware.hex
+verify	Firmware in Docker	2026-10-13T16:32:11.6625258Z arm-none-eabi-objcopy -O binary -S build/firmware.elf build/firmware.bin
+verify	Firmware in Docker	2026-10-13T16:32:11.6636856Z make: Leaving directory '/workspace/firmware'
+verify	Portable logic and wiring	﻿2026-10-13T16:32:11.8073680Z ##[group]Run make test
+verify	Portable logic and wiring	2026-10-13T16:32:11.8073913Z [36;1mmake test[0m
+verify	Portable logic and wiring	2026-10-13T16:32:11.8131318Z shell: /usr/bin/bash -e {0}
+verify	Portable logic and wiring	2026-10-13T16:32:11.8131544Z ##[endgroup]
+verify	Portable logic and wiring	2026-10-13T16:32:11.8217308Z python3 tools/check_structure.py
+verify	Portable logic and wiring	2026-10-13T16:32:11.8418559Z PASS: portable dependencies and sensor wiring
+verify	Portable logic and wiring	2026-10-13T16:32:11.8452727Z make -C tests test
+verify	Portable logic and wiring	2026-10-13T16:32:11.8462374Z make[1]: Entering directory '/home/runner/work/KioskGuard/KioskGuard/tests'
+verify	Portable logic and wiring	2026-10-13T16:32:11.8482347Z mkdir -p build/Linux-x86_64
+verify	Portable logic and wiring	2026-10-13T16:32:11.8493502Z cc -std=c11 -O0 -g -Wall -Wextra -Werror test_kiosk.c ../firmware/Devices/imu.c ../firmware/App/kiosk.c ../firmware/App/line.c -o build/Linux-x86_64/test_kiosk
+verify	Portable logic and wiring	2026-10-13T16:32:12.3675013Z ./build/Linux-x86_64/test_kiosk
+verify	Portable logic and wiring	2026-10-13T16:32:12.3680621Z PASS 01 MPU ID, initialization order, NACK and timeout at every transaction
+verify	Portable logic and wiring	2026-10-13T16:32:12.3681597Z PASS 02 signed units, captured +/-4g frame, failed read leaves sample intact
+verify	Portable logic and wiring	2026-10-13T16:32:12.3682268Z PASS 03 baseline 2 seconds, motion/light restart stability, no warnings before ready
+verify	Portable logic and wiring	2026-10-13T16:32:12.3682957Z PASS 04 PIR HIGH 5 seconds gives one INFO; LOW then HIGH rearms
+verify	Portable logic and wiring	2026-10-13T16:32:12.3683450Z PASS 05 vector shock >1g, exact threshold, 500ms cooldown, dynamic acceleration gate
+verify	Portable logic and wiring	2026-10-13T16:32:12.3683863Z PASS 06 45-degree movement 1000ms, 15-degree rearm, 180-degree orientation
+verify	Portable logic and wiring	2026-10-13T16:32:12.3684205Z PASS 07 dynamic sample interrupts orientation confirmation
+verify	Portable logic and wiring	2026-10-13T16:32:12.3684560Z PASS 08 15-percent ADC threshold, 300ms confirmation, 10-percent hysteresis
+verify	Portable logic and wiring	2026-10-13T16:32:12.3684943Z PASS 09 50ms light pulse rejected, stale samples and ADC fault reset confirmation
+verify	Portable logic and wiring	2026-10-13T16:32:12.3685537Z PASS 10 UART modes, rejection, baseline, simultaneous PIR/shock and immutable records
+verify	Portable logic and wiring	2026-10-13T16:32:12.3685931Z PASS 11 one NACK error, PIR/ADC independent, recovery without false shock
+verify	Portable logic and wiring	2026-10-13T16:32:12.3686326Z PASS 12 32-bit time rollover, queue capacity/loss report, reset counters
+verify	Portable logic and wiring	2026-10-13T16:32:12.3686676Z PASS 13 CRLF, overlong/binary commands, 35ms button debounce and hold
+verify	Portable logic and wiring	2026-10-13T16:32:12.3686971Z PASS: 13 groups, portable App/Devices only
+verify	Portable logic and wiring	2026-10-13T16:32:12.3687270Z make[1]: Leaving directory '/home/runner/work/KioskGuard/KioskGuard/tests'
+verify	Coverage	﻿2026-10-13T16:32:12.3714820Z ##[group]Run make coverage
+verify	Coverage	2026-10-13T16:32:12.3715055Z [36;1mmake coverage[0m
+verify	Coverage	2026-10-13T16:32:12.3770486Z shell: /usr/bin/bash -e {0}
+verify	Coverage	2026-10-13T16:32:12.3770711Z ##[endgroup]
+verify	Coverage	2026-10-13T16:32:12.3849869Z make -C tests coverage
+verify	Coverage	2026-10-13T16:32:12.3858336Z make[1]: Entering directory '/home/runner/work/KioskGuard/KioskGuard/tests'
+verify	Coverage	2026-10-13T16:32:12.3876030Z mkdir -p coverage/Linux-x86_64
+verify	Coverage	2026-10-13T16:32:12.3886735Z rm -f coverage/Linux-x86_64/*.gcda coverage/Linux-x86_64/*.gcno coverage/Linux-x86_64/*.gcov
+verify	Coverage	2026-10-13T16:32:12.3900450Z cc -std=c11 -O0 -g -Wall -Wextra -Werror --coverage test_kiosk.c ../firmware/Devices/imu.c ../firmware/App/kiosk.c ../firmware/App/line.c -o coverage/Linux-x86_64/test_kiosk
+verify	Coverage	2026-10-13T16:32:12.5455219Z ./coverage/Linux-x86_64/test_kiosk
+verify	Coverage	2026-10-13T16:32:12.5462911Z PASS 01 MPU ID, initialization order, NACK and timeout at every transaction
+verify	Coverage	2026-10-13T16:32:12.5463614Z PASS 02 signed units, captured +/-4g frame, failed read leaves sample intact
+verify	Coverage	2026-10-13T16:32:12.5464407Z PASS 03 baseline 2 seconds, motion/light restart stability, no warnings before ready
+verify	Coverage	2026-10-13T16:32:12.5464927Z PASS 04 PIR HIGH 5 seconds gives one INFO; LOW then HIGH rearms
+verify	Coverage	2026-10-13T16:32:12.5465517Z PASS 05 vector shock >1g, exact threshold, 500ms cooldown, dynamic acceleration gate
+verify	Coverage	2026-10-13T16:32:12.5465928Z PASS 06 45-degree movement 1000ms, 15-degree rearm, 180-degree orientation
+verify	Coverage	2026-10-13T16:32:12.5466287Z PASS 07 dynamic sample interrupts orientation confirmation
+verify	Coverage	2026-10-13T16:32:12.5466651Z PASS 08 15-percent ADC threshold, 300ms confirmation, 10-percent hysteresis
+verify	Coverage	2026-10-13T16:32:12.5467080Z PASS 09 50ms light pulse rejected, stale samples and ADC fault reset confirmation
+verify	Coverage	2026-10-13T16:32:12.5467511Z PASS 10 UART modes, rejection, baseline, simultaneous PIR/shock and immutable records
+verify	Coverage	2026-10-13T16:32:12.5467922Z PASS 11 one NACK error, PIR/ADC independent, recovery without false shock
+verify	Coverage	2026-10-13T16:32:12.5483673Z PASS 12 32-bit time rollover, queue capacity/loss report, reset counters
+verify	Coverage	2026-10-13T16:32:12.5484285Z PASS 13 CRLF, overlong/binary commands, 35ms button debounce and hold
+verify	Coverage	2026-10-13T16:32:12.5484747Z PASS: 13 groups, portable App/Devices only
+verify	Coverage	2026-10-13T16:32:12.5485672Z gcov -b -c coverage/Linux-x86_64/test_kiosk-imu.gcno coverage/Linux-x86_64/test_kiosk-kiosk.gcno coverage/Linux-x86_64/test_kiosk-line.gcno
+verify	Coverage	2026-10-13T16:32:12.6073273Z File '../firmware/Devices/imu.c'
+verify	Coverage	2026-10-13T16:32:12.6073657Z Lines executed:100.00% of 24
+verify	Coverage	2026-10-13T16:32:12.6073900Z Branches executed:100.00% of 14
+verify	Coverage	2026-10-13T16:32:12.6074138Z Taken at least once:100.00% of 14
+verify	Coverage	2026-10-13T16:32:12.6074666Z Calls executed:100.00% of 7
+verify	Coverage	2026-10-13T16:32:12.6074922Z Creating 'imu.c.gcov'
+verify	Coverage	2026-10-13T16:32:12.6075048Z
+verify	Coverage	2026-10-13T16:32:12.6075409Z File '../firmware/App/kiosk.c'
+verify	Coverage	2026-10-13T16:32:12.6075655Z Lines executed:100.00% of 158
+verify	Coverage	2026-10-13T16:32:12.6075977Z Branches executed:100.00% of 114
+verify	Coverage	2026-10-13T16:32:12.6076302Z Taken at least once:92.11% of 114
+verify	Coverage	2026-10-13T16:32:12.6076619Z Calls executed:100.00% of 28
+verify	Coverage	2026-10-13T16:32:12.6076959Z Creating 'kiosk.c.gcov'
+verify	Coverage	2026-10-13T16:32:12.6077158Z
+verify	Coverage	2026-10-13T16:32:12.6077287Z File '../firmware/App/line.c'
+verify	Coverage	2026-10-13T16:32:12.6077576Z Lines executed:100.00% of 22
+verify	Coverage	2026-10-13T16:32:12.6077787Z Branches executed:100.00% of 20
+verify	Coverage	2026-10-13T16:32:12.6078001Z Taken at least once:95.00% of 20
+verify	Coverage	2026-10-13T16:32:12.6078205Z No calls
+verify	Coverage	2026-10-13T16:32:12.6078377Z Creating 'line.c.gcov'
+verify	Coverage	2026-10-13T16:32:12.6078496Z
+verify	Coverage	2026-10-13T16:32:12.6078610Z Lines executed:100.00% of 204
+verify	Coverage	2026-10-13T16:32:12.6078839Z mv *.c.gcov coverage/Linux-x86_64/
+verify	Coverage	2026-10-13T16:32:12.6096832Z python3 ../tools/coverage_summary.py coverage/Linux-x86_64
+verify	Coverage	2026-10-13T16:32:12.6301725Z {'module': 'imu.c.gcov', 'lines_hit': 24, 'lines': 24, 'line_percent': 100.0, 'branches_taken': 14, 'branches': 14, 'branch_percent': 100.0}
+verify	Coverage	2026-10-13T16:32:12.6302468Z {'module': 'kiosk.c.gcov', 'lines_hit': 158, 'lines': 158, 'line_percent': 100.0, 'branches_taken': 105, 'branches': 114, 'branch_percent': 92.11}
+verify	Coverage	2026-10-13T16:32:12.6303402Z {'module': 'line.c.gcov', 'lines_hit': 22, 'lines': 22, 'line_percent': 100.0, 'branches_taken': 19, 'branches': 20, 'branch_percent': 95.0}
+verify	Coverage	2026-10-13T16:32:12.6303918Z PASS coverage targets: >=90% lines, >=80% branches in App/Devices
+verify	Coverage	2026-10-13T16:32:12.6335575Z make[1]: Leaving directory '/home/runner/work/KioskGuard/KioskGuard/tests'
+verify	Sanitizers	﻿2026-10-13T16:32:12.6369512Z ##[group]Run make sanitize
+verify	Sanitizers	2026-10-13T16:32:12.6369756Z [36;1mmake sanitize[0m
+verify	Sanitizers	2026-10-13T16:32:12.6424499Z shell: /usr/bin/bash -e {0}
+verify	Sanitizers	2026-10-13T16:32:12.6424737Z ##[endgroup]
+verify	Sanitizers	2026-10-13T16:32:12.6508769Z make -C tests sanitize
+verify	Sanitizers	2026-10-13T16:32:12.6517263Z make[1]: Entering directory '/home/runner/work/KioskGuard/KioskGuard/tests'
+verify	Sanitizers	2026-10-13T16:32:12.6535247Z mkdir -p build/Linux-x86_64
+verify	Sanitizers	2026-10-13T16:32:12.6545439Z cc -std=c11 -O0 -g -Wall -Wextra -Werror -fsanitize=address,undefined -fno-omit-frame-pointer test_kiosk.c ../firmware/Devices/imu.c ../firmware/App/kiosk.c ../firmware/App/line.c -o build/Linux-x86_64/test_sanitize
+verify	Sanitizers	2026-10-13T16:32:12.9363156Z ./build/Linux-x86_64/test_sanitize
+verify	Sanitizers	2026-10-13T16:32:13.0152674Z PASS 01 MPU ID, initialization order, NACK and timeout at every transaction
+verify	Sanitizers	2026-10-13T16:32:13.0153556Z PASS 02 signed units, captured +/-4g frame, failed read leaves sample intact
+verify	Sanitizers	2026-10-13T16:32:13.0157768Z PASS 03 baseline 2 seconds, motion/light restart stability, no warnings before ready
+verify	Sanitizers	2026-10-13T16:32:13.0158978Z PASS 04 PIR HIGH 5 seconds gives one INFO; LOW then HIGH rearms
+verify	Sanitizers	2026-10-13T16:32:13.0159882Z PASS 05 vector shock >1g, exact threshold, 500ms cooldown, dynamic acceleration gate
+verify	Sanitizers	2026-10-13T16:32:13.0160735Z PASS 06 45-degree movement 1000ms, 15-degree rearm, 180-degree orientation
+verify	Sanitizers	2026-10-13T16:32:13.0161546Z PASS 07 dynamic sample interrupts orientation confirmation
+verify	Sanitizers	2026-10-13T16:32:13.0162271Z PASS 08 15-percent ADC threshold, 300ms confirmation, 10-percent hysteresis
+verify	Sanitizers	2026-10-13T16:32:13.0163073Z PASS 09 50ms light pulse rejected, stale samples and ADC fault reset confirmation
+verify	Sanitizers	2026-10-13T16:32:13.0164020Z PASS 10 UART modes, rejection, baseline, simultaneous PIR/shock and immutable records
+verify	Sanitizers	2026-10-13T16:32:13.0164743Z PASS 11 one NACK error, PIR/ADC independent, recovery without false shock
+verify	Sanitizers	2026-10-13T16:32:13.0165477Z PASS 12 32-bit time rollover, queue capacity/loss report, reset counters
+verify	Sanitizers	2026-10-13T16:32:13.0166038Z PASS 13 CRLF, overlong/binary commands, 35ms button debounce and hold
+verify	Sanitizers	2026-10-13T16:32:13.0166513Z PASS: 13 groups, portable App/Devices only
+verify	Sanitizers	2026-10-13T16:32:13.0171824Z make[1]: Leaving directory '/home/runner/work/KioskGuard/KioskGuard/tests'
+verify	Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	﻿2026-10-13T16:32:13.0276944Z Post job cleanup.
+verify	Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:32:13.0954606Z [command]/usr/bin/git version
+verify	Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:32:13.0990265Z git version 2.55.0
+verify	Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:32:13.1019907Z Temporarily overriding HOME='/home/runner/work/_temp/f4f60221-edc9-4ab0-ba74-1be148e150ea' before making global git config changes
+verify	Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:32:13.1020938Z Adding repository directory to the temporary git global config as a safe directory
+verify	Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:32:13.1024407Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/KioskGuard/KioskGuard
+verify	Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:32:13.1057120Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+verify	Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:32:13.1086288Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+verify	Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:32:13.1295657Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+verify	Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:32:13.1319850Z http.https://github.com/.extraheader
+verify	Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:32:13.1329322Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+verify	Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:32:13.1359654Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+verify	Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:32:13.1569335Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+verify	Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-13T16:32:13.1601979Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+verify	Complete job	﻿2026-10-13T16:32:13.1929845Z Cleaning up orphan processes
+verify	Complete job	2026-10-13T16:32:13.2198713Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@11d5960a326750d5838078e36cf38b85af677262. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
