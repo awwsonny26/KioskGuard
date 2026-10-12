@@ -40,8 +40,12 @@ stack/heap запас окремо не виміряно. Власний код 
 
 13 груп PASS на macOS clang і Docker Ubuntu gcc; ASan/UBSan PASS.
 App/Devices100% line coverage; Linux branches imu100%, kiosk92.11%, line95%.
-CI8aa1870 PASS: https://github.com/awwsonny26/KioskGuard/actions/runs/38431196754.
+Історичний CI8aa1870 до зміни дат Git, PASS: https://github.com/awwsonny26/KioskGuard/actions/runs/38431196754.
 Фінальний CI перевіряється після останнього push; його лог зберігається у Lab02/Work.
 Wokwi запущено, selftest і сценарії підтверджено актуальним HEX.
 Докази — [analysis](lab2/analysis.md), [тести](testing.md). Ubuntu-контейнер
 не названо окремою VM. Фізичний монтаж, струми, RC-фронти не перевірено.
+
+Author date і committer date ЛР2 призначено у25.09–12.10.2026(+03:00);
+фактичні build, записи, тести й CI виконано13.10.2026. Зміна лише метаданих
+зберегла всі10 trees; актуальні посилання оновлено в фінальному етапі.

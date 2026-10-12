@@ -53,7 +53,7 @@ WHO pointer START=2.863600мс, STOP=3.065100мс; read START=3.266025мс,
 STOP=3.461025мс. Burst read START=6.809800мс, STOP=8.174800мс.
 Fault START=16753.628700мс, STOP=16753.733700мс.
 Знімки pulseview-whoami/burst/clock/nack.png. MPU Register Map Rev4.2:
-§§4.2, 4.4–4.7, 4.17–4.19, 4.28, 4.32, 4.35; живлення — Specification Rev3.4.
+§§4.2–4.5 (с.11,13–15), 4.17–4.19 (с.29–31), 4.28 (с.40), 4.32 (с.45); живлення — Specification Rev3.4.
 
 ## UART
 

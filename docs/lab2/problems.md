@@ -2,13 +2,13 @@
 
 | Симптом | Причина / певність | Виправлення, коміт |
 |---|---|---|
-| ADC бракувало в ARM build | ЛР1 шаблон не містив ADC/ADCEx/LL_ADC | Незмінені ST v1.0.1 файли й Makefile; 9f43c06 |
-| MPU мав ACK адреси й pointer, але не повертав ID | VCD показав зупинку HAL Mem_Read після pointer у моделі | Platform adapter: окремі STOP/START, очищення CR2/STOP, 5мс timeout, pacing TXDR; 7d4a9a1, 6fa82e5 |
-| gcov спочатку не давав підсумку | gcno мали префікс test_kiosk, source paths залежали від cwd | Фактичні gcno й окремі platform directories; 8aa1870 |
-| Порожній Wokwi webview | Причина невідома; reload не усунув | Code1.100.3 --disable-gpu, власний профіль Wokwi, без trial; коміт9 |
-| Native typeText не передавав команд | RX у VCD був порожній; причина маршрутизації невідома | Paste з CR дав RX і відповіді; decoder CR/LF; коміт9 |
-| Графічна B1 не створювала фронтів | У власному записі D7 не змінювався | PC13 input pull-up + віртуальний контакт GND; bounce/debounce/hold перевірено; коміт9 |
-| PA2/PA3 помилково названо D1/D0 | Змішані USART2/VCP й Arduino USART1 | UM2953: PA2=CN7.37, PA3=CN10.10; D1/D0=PB6/PB7; коміт9 |
+| ADC бракувало в ARM build | ЛР1 шаблон не містив ADC/ADCEx/LL_ADC | Незмінені ST v1.0.1 файли й Makefile; 3c7ce10 |
+| MPU мав ACK адреси й pointer, але не повертав ID | VCD показав зупинку HAL Mem_Read після pointer у моделі | Platform adapter: окремі STOP/START, очищення CR2/STOP, 5мс timeout, pacing TXDR; 9769e85, db44200 |
+| gcov спочатку не давав підсумку | gcno мали префікс test_kiosk, source paths залежали від cwd | Фактичні gcno й окремі platform directories; 2b8adb4 |
+| Порожній Wokwi webview | Причина невідома; reload не усунув | Code1.100.3 --disable-gpu, власний профіль Wokwi, без trial; коміт 9 (8a01998) |
+| Native typeText не передавав команд | RX у VCD був порожній; причина маршрутизації невідома | Paste з CR дав RX і відповіді; decoder CR/LF; коміт 9 (8a01998) |
+| Графічна B1 не створювала фронтів | У власному записі D7 не змінювався | PC13 input pull-up + віртуальний контакт GND; bounce/debounce/hold перевірено; коміт 9 (8a01998) |
+| PA2/PA3 помилково названо D1/D0 | Змішані USART2/VCP й Arduino USART1 | UM2953: PA2=CN7.37, PA3=CN10.10; D1/D0=PB6/PB7; коміт 9 (8a01998) |
 
 Хеш коміту9 наведено у звіті після фіксації. Інші коміти відкриваються за
 https://github.com/awwsonny26/KioskGuard/commit/ + хеш.

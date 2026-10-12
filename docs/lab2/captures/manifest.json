@@ -137,10 +137,6 @@
       "bytes": 893,
       "sha256": "133d20a37b9af09953ec3dc5af9f2644a4a53d7a1520c91757639cb3bf1803ef"
     },
-    "i2c-burst.pvs": {
-      "bytes": 1896,
-      "sha256": "ab4f817b8cd5d7e7a1e71b218bd9976bb89faec8591f307d64f1c34d07a9df9d"
-    },
     "i2c-burst.sr": {
       "bytes": 548,
       "sha256": "93b378914c54e8c536fecebc3e273b581f009925668ae9ec89b1cb1b6e1e3212"
@@ -184,10 +180,6 @@
     "i2c-whoami.json": {
       "bytes": 564,
       "sha256": "8e84aed6e395146e136977f57d0e9870f3b5d249169c0e84dafd1f541d450105"
-    },
-    "i2c-whoami.pvs": {
-      "bytes": 1898,
-      "sha256": "c7f2c7815b78db072e4e5191afa213f870fe0c05d643d99d3da18e8f6c35555d"
     },
     "i2c-whoami.sr": {
       "bytes": 506,
