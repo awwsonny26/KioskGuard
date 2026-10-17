@@ -1,19 +1,111 @@
 {
   "version": 1,
-  "author": "template",
+  "author": "Новаківська Софія Василівна",
   "editor": "wokwi",
   "parts": [
-    {
-      "type": "board-st-nucleo-c031c6",
-      "id": "nucleo",
-      "top": 0,
-      "left": 0,
-      "attrs": {}
+  {
+    "type": "board-st-nucleo-c031c6",
+    "id": "nucleo",
+    "top": 0,
+    "left": 0,
+    "attrs": {}
+  },
+  {
+    "type": "wokwi-mpu6050",
+    "id": "imu",
+    "top": 0,
+    "left": 300,
+    "attrs": {}
+  },
+  {
+    "type": "wokwi-pir-motion-sensor",
+    "id": "pir",
+    "top": 120,
+    "left": 510,
+    "attrs": {
+      "delayTime": "5",
+      "inhibitTime": "1.2"
     }
-  ],
+  },
+  {
+    "type": "wokwi-photoresistor-sensor",
+    "id": "light",
+    "top": 260,
+    "left": 510,
+    "attrs": {
+      "lux": "500"
+    }
+  },
+  {
+    "type": "wokwi-resistor",
+    "id": "scl_pull",
+    "top": -65,
+    "left": 300,
+    "rotate": 90,
+    "attrs": {
+      "value": "4700"
+    }
+  },
+  {
+    "type": "wokwi-resistor",
+    "id": "sda_pull",
+    "top": -65,
+    "left": 350,
+    "rotate": 90,
+    "attrs": {
+      "value": "4700"
+    }
+  },
+  {
+    "type": "wokwi-pushbutton",
+    "id": "baseline_button",
+    "top": 260,
+    "left": 300,
+    "attrs": {
+      "color": "blue",
+      "label": "B1 / PC13",
+      "key": "B"
+    }
+  },
+  {
+    "type": "wokwi-logic-analyzer",
+    "id": "trace",
+    "top": 260,
+    "left": 800,
+    "attrs": {
+      "bufferSize": "5000000"
+    }
+  }
+],
   "connections": [
     ["$serialMonitor:TX", "nucleo:PA3", "", []],
-    ["$serialMonitor:RX", "nucleo:PA2", "", []]
+    ["$serialMonitor:RX", "nucleo:PA2", "", []],
+    ["nucleo:3V3.1","imu:VCC","red",[]],
+    ["nucleo:GND.1","imu:GND","black",[]],
+    ["imu:AD0","nucleo:GND.1","black",[]],
+    ["nucleo:PB8","imu:SCL","green",[]],
+    ["nucleo:PB9","imu:SDA","blue",[]],
+    ["scl_pull:1","nucleo:3V3.1","red",[]],
+    ["scl_pull:2","imu:SCL","green",[]],
+    ["sda_pull:1","nucleo:3V3.1","red",[]],
+    ["sda_pull:2","imu:SDA","blue",[]],
+    ["nucleo:5V.1","pir:VCC","red",[]],
+    ["nucleo:GND.1","pir:GND","black",[]],
+    ["pir:OUT","nucleo:PA1","orange",[]],
+    ["nucleo:3V3.1","light:VCC","red",[]],
+    ["nucleo:GND.1","light:GND","black",[]],
+    ["light:AO","nucleo:PA0","purple",[]],
+    ["baseline_button:1.l","nucleo:GND.1","black",[]],
+    ["baseline_button:2.l","nucleo:PC13","cyan",[]],
+    ["trace:D0","nucleo:PB8","green",[]],
+    ["trace:D1","nucleo:PB9","blue",[]],
+    ["trace:D2","nucleo:PA2","gray",[]],
+    ["trace:D3","nucleo:PA3","gray",[]],
+    ["trace:D4","nucleo:PA1","orange",[]],
+    ["trace:D5","nucleo:PA4","purple",[]],
+    ["trace:D6","nucleo:PA5","yellow",[]],
+    ["trace:D7","nucleo:PC13","cyan",[]],
+    ["trace:GND","nucleo:GND.1","black",[]]
   ],
   "dependencies": {}
 }

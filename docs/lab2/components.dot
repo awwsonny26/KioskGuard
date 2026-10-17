@@ -1,0 +1,17 @@
+digraph KioskGuard {
+ graph [rankdir=TB,bgcolor="white",pad=.3,nodesep=.35,ranksep=.55];
+ node [shape=box,style="rounded,filled",fillcolor="#edf4fa",fontname="Arial",fontsize=15,margin=".2,.15"];
+ edge [fontname="Arial",fontsize=11,color="#526474"];
+ core [label="Core\nCubeMX init · main · IRQ"];
+ platform [label="Platform\n20/50 ms polling · ADC · UART · I2C adapter"];
+ app [label="App\nbaseline · event rules · snapshots\nUART line parser · B1 debounce"];
+ imu [label="Devices / imu\nWHO_AM_I · registers · raw → mg"];
+ hal [label="Drivers\nST HAL 1.0.1 · CMSIS"];
+ bus [label="kg_bus contract\ncontext + read/write callbacks",fillcolor="#fff5dc"];
+ tests [label="Host tests\nfake bus · mock expectations · timed inputs",fillcolor="#e8f4eb"];
+ core -> platform [label="runner / IRQ callbacks"];
+ platform -> app; platform -> imu; platform -> hal;
+ imu -> bus;
+ tests -> imu [style=dashed]; tests -> app [style=dashed]; tests -> bus [style=dashed];
+ {rank=same;app;imu;hal;}
+}

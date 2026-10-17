@@ -1,0 +1,333 @@
+{
+  "i2c": [
+    {
+      "start": 9436075,
+      "bytes": [
+        208,
+        59
+      ],
+      "acks": [
+        true,
+        true
+      ],
+      "end": 9631075,
+      "repeated": false
+    },
+    {
+      "start": 9741850,
+      "bytes": [
+        209,
+        0,
+        0,
+        0,
+        0,
+        32,
+        0,
+        239,
+        92,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "acks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "end": 11106850,
+      "repeated": false
+    },
+    {
+      "start": 29391225,
+      "bytes": [
+        208,
+        59
+      ],
+      "acks": [
+        true,
+        true
+      ],
+      "end": 29586225,
+      "repeated": false
+    },
+    {
+      "start": 29697000,
+      "bytes": [
+        209,
+        0,
+        0,
+        0,
+        0,
+        32,
+        0,
+        239,
+        92,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "acks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "end": 31062000,
+      "repeated": false
+    },
+    {
+      "start": 49349300,
+      "bytes": [
+        208,
+        59
+      ],
+      "acks": [
+        true,
+        true
+      ],
+      "end": 49544300,
+      "repeated": false
+    },
+    {
+      "start": 49655075,
+      "bytes": [
+        209,
+        0,
+        0,
+        0,
+        0,
+        32,
+        0,
+        239,
+        92,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "acks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "end": 51020075,
+      "repeated": false
+    },
+    {
+      "start": 69274400,
+      "bytes": [
+        208,
+        59
+      ],
+      "acks": [
+        true,
+        true
+      ],
+      "end": 69469400,
+      "repeated": false
+    },
+    {
+      "start": 69580175,
+      "bytes": [
+        209,
+        0,
+        0,
+        0,
+        0,
+        32,
+        0,
+        239,
+        92,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "acks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "end": 70945175,
+      "repeated": false
+    },
+    {
+      "start": 89395225,
+      "bytes": [
+        208,
+        59
+      ],
+      "acks": [
+        true,
+        true
+      ],
+      "end": 89590225,
+      "repeated": false
+    },
+    {
+      "start": 89701000,
+      "bytes": [
+        209,
+        0,
+        0,
+        0,
+        0,
+        32,
+        0,
+        239,
+        92,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "acks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "end": 91066000,
+      "repeated": false
+    },
+    {
+      "start": 109430725,
+      "bytes": [
+        208,
+        59
+      ],
+      "acks": [
+        true,
+        true
+      ],
+      "end": 109625725,
+      "repeated": false
+    },
+    {
+      "start": 109736500,
+      "bytes": [
+        209,
+        0,
+        0,
+        0,
+        0,
+        32,
+        0,
+        239,
+        92,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "acks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "end": 111101500,
+      "repeated": false
+    }
+  ],
+  "uart_tx": [],
+  "uart_rx": [],
+  "adc_rises": [
+    9330125,
+    59306575,
+    109324775
+  ],
+  "channels": {
+    "D0": 1861,
+    "D1": 1357,
+    "D2": 1,
+    "D3": 1,
+    "D4": 1,
+    "D5": 7,
+    "D6": 1,
+    "D7": 1
+  }
+}

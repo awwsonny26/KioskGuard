@@ -1,6 +1,6 @@
-IMAGE ?= stm32c0-wokwi-build:local
+IMAGE ?= kioskguard-build:lab2
 
-.PHONY: image build clean
+.PHONY: image build clean test coverage sanitize
 
 image:
 	docker build -t $(IMAGE) docker
@@ -12,3 +12,13 @@ build: image
 
 clean:
 	$(MAKE) -C firmware clean
+
+test:
+	python3 tools/check_structure.py
+	$(MAKE) -C tests test
+
+coverage:
+	$(MAKE) -C tests coverage
+
+sanitize:
+	$(MAKE) -C tests sanitize

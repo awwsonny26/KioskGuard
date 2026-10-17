@@ -1,28 +1,43 @@
 # KioskGuard
 
-Власниця: Новаківська Софія Василівна, група ІО-35.
+Новаківська Софія Василівна, ІО-35. ЛР2, форма B: STM32C031C6 і Wokwi.
 
-KioskGuard журналює події біля інформаційного термінала та зміни стану його корпусу. PIR повідомляє про рух користувача поруч. MPU6050 призначений для виявлення удару або переміщення корпусу, фоторезистор для зміни світла всередині. PIR не визначає сеанс роботи, а світло саме по собі не доводить відкриття чи злам.
-
-Середовище: Ubuntu 24.04, Docker, STM32 HAL, Wokwi. Плата симуляції Nucleo-C031C6, прошивка C з HAL. Поточна прошивка є незміненим шаблоном UART/LED, без датчиків.
-
-## Збірка й демонстрація
+PIR журналює рух поруч як INFO. MPU6050 розрізняє удар і стійкий нахил
+корпусу, ADC фіксує стійку зміну внутрішнього світла. У контрольному режимі
+механічні та світлові події мають WARN, у сервісному — INFO. Світло саме
+по собі не доводить злам; PIR не визначає сеанс.
 
 ```sh
 make clean
 make build
+make test
+make coverage
+make sanitize
 ```
 
-Результат у `firmware/build/firmware.elf`, `.hex`, `.bin`. Відкрийте саме цю копію у VS Code, натисніть F1 та `Wokwi: Start Simulator` з наявною ліцензією. UART має показати `STM32C031C6 ready` та наступні `tick`; LED PA5 має змінювати стан кожні 1000 мс. Повний цикл LED триває приблизно 2 с.
+Docker створює firmware/build/firmware.elf, .hex, .bin для Cortex-M0+.
+App/Devices тестуються на хості без плати. CI повторює build, test, coverage
+і ASan/UBSan на Ubuntu 24.04 при push та PR у main.
 
-`make build` виконує збірку. Для форми B запуск Wokwi завантажує артефакт, а його UART-панель є монітором. Окремих цілей `make flash` і `make monitor` у шаблоні немає.
+Відкрийте цей корінь у VS Code, F1 → Wokwi: Start Simulator.
+Після зміни HEX закрийте стару вкладку симулятора й запустіть заново.
+Старт: BOOT project=KioskGuard lab=2, три SELFTEST, BASELINE_PENDING;
+після 2 с стабільності — BASELINE_READY. Trial для роботи не активували.
+У перевіреному запуску працював Code 1.100.3 з --disable-gpu та Wokwi 4.0.
+Новіший екземпляр показував порожній webview; причина не встановлена.
 
-## Документи
+Команди UART, завершені CR або LF: service on, service off, baseline,
+probe, fault on, fault off. Діагностичний fault звертається до відсутньої
+0x69, створюючи NACK у моделі. Датчик лишається на 0x68.
+Синя віртуальна кнопка B1 / PC13 відтворює активний LOW вхід B1.
 
-- [PRD](docs/PRD.md), [словник](CONTEXT.md).
-- [Компоненти й джерела](docs/hardware-components.md).
-- [План ЛР1/ЛР2](docs/lab-plan.md), [перевірки](docs/verification.md).
-- [Передача в Ubuntu VM](docs/vm-transfer.md), [вимоги до здачі](docs/submission.md).
-- [Початковий README шаблону](docs/template-README.md).
+- [Вимоги](docs/PRD.md), [компоненти](docs/hardware-components.md), [pinout](docs/pinout.md).
+- [Архітектура](docs/architecture.md), [UART](docs/uart.md), [тести](docs/testing.md).
+- [Записи та вимірювання ЛР2](docs/lab2/analysis.md), [журнал проблем](docs/lab2/problems.md).
+- [Перевірки](docs/verification.md), [здача](docs/submission.md), [історія плану](docs/lab-plan.md).
 
-Дві чисті Docker-збірки на Mac дали однакові ELF/HEX/BIN. Перевірку Ubuntu VM та UART/LED у Wokwi ще потрібно завершити. Для здачі потрібні PDF-звіт, скриншоти й PR.
+Фізичну плату та бюджет живлення не випробувано. Докази форми B збережено
+як VCD, SR, декодування та фрагменти справжніх знімків програм.
+PR ЛР1 злитий у main; feature/lab-2 розвиває цей стан. PR ЛР2 створює користувач.
+
+[Готовий звіт](docs/lab2-report.md).

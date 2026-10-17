@@ -1,0 +1,9 @@
+binutils-arm-none-eabi=2.42-1ubuntu1+23
+ca-certificates=20260601~24.04.1
+gcc=4:13.2.0-7ubuntu1
+gcc-arm-none-eabi=15:13.2.rel1-2
+libc6-dev=2.39-0ubuntu8.9
+libnewlib-arm-none-eabi=4.4.0.20231231-2
+make=4.3-4.1build2
+python3=3.12.3-0ubuntu2.1
+sha256:a7abd04ab7bc94058e9469ecc121271376812f76467b419cb2d4406243f4a444

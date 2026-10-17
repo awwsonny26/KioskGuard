@@ -1,0 +1,21 @@
+name: KioskGuard build and tests
+on:
+  push:
+    branches: [feature/lab-2, main]
+  pull_request:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - name: Firmware in Docker
+        run: make build
+      - name: Portable logic and wiring
+        run: make test
+      - name: Coverage
+        run: make coverage
+      - name: Sanitizers
+        run: make sanitize

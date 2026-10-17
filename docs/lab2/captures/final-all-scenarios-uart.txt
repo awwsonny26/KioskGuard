@@ -1,0 +1,145 @@
+8.643575 ms BOOT project=KioskGuard lab=2
+12.255550 ms SELFTEST device=MPU6050 status=OK id_expected=0x68 range_g=4
+18.869600 ms SELFTEST device=LDR status=READABLE adc=1001
+23.776750 ms SELFTEST device=PIR status=READABLE out=0
+28.010950 ms STM32C031C6 ready
+31.946175 ms EVENT seq=1 t=28 type=BASELINE_PENDING mode=CONTROL severity=INFO ax=0 ay=0 az=1000 adc=1001 metric=0
+503.178350 ms SAMPLE t=500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=0 base_adc=0 mode=CONTROL
+998.804525 ms CAPTURE t=993 addr=0x68 id=0x68 status=OK raw=000000002000ef5c000000000000 ax=0 ay=0 az=1000 temp=24001
+1009.600525 ms tick 1 t=1007
+1013.349200 ms SAMPLE t=1010 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=0 base_adc=0 mode=CONTROL
+1513.103050 ms SAMPLE t=1510 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=0 base_adc=0 mode=CONTROL
+2001.714625 ms tick 2 t=2000
+2013.054650 ms SAMPLE t=2010 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=0 base_adc=0 mode=CONTROL
+2053.154800 ms EVENT seq=2 t=2049 type=BASELINE_READY mode=CONTROL severity=INFO ax=0 ay=0 az=1000 adc=1001 metric=1001
+2513.355450 ms SAMPLE t=2510 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+3001.698025 ms tick 3 t=3000
+3013.424775 ms SAMPLE t=3010 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+3513.370125 ms SAMPLE t=3510 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+3853.062050 ms EVENT seq=3 t=3849 type=USER_NEAR mode=CONTROL severity=INFO ax=2000 ay=0 az=1000 adc=1001 metric=0
+3864.911800 ms EVENT seq=4 t=3849 type=BODY_SHOCK mode=CONTROL severity=WARN ax=2000 ay=0 az=1000 adc=1001 metric=4000000
+4001.672200 ms tick 4 t=4000
+4013.173700 ms SAMPLE t=4010 ax=2000 ay=0 az=1000 adc=1001 pir=1 imu=OK ready=1 base_adc=1001 mode=CONTROL
+4513.043050 ms SAMPLE t=4510 ax=2000 ay=0 az=1000 adc=1001 pir=1 imu=OK ready=1 base_adc=1001 mode=CONTROL
+5001.656625 ms tick 5 t=5000
+5013.032650 ms SAMPLE t=5010 ax=2000 ay=0 az=1000 adc=1001 pir=1 imu=OK ready=1 base_adc=1001 mode=CONTROL
+5231.637575 ms CAPTURE t=5226 addr=0x68 id=0x68 status=OK raw=400000002000ef5c000000000000 ax=2000 ay=0 az=1000 temp=24001
+5513.023225 ms SAMPLE t=5510 ax=2000 ay=0 az=1000 adc=1001 pir=1 imu=OK ready=1 base_adc=1001 mode=CONTROL
+6001.614800 ms tick 6 t=6000
+6013.001300 ms SAMPLE t=6010 ax=2000 ay=0 az=1000 adc=1001 pir=1 imu=OK ready=1 base_adc=1001 mode=CONTROL
+6512.983150 ms SAMPLE t=6510 ax=2000 ay=0 az=1000 adc=1001 pir=1 imu=OK ready=1 base_adc=1001 mode=CONTROL
+7001.576450 ms tick 7 t=7000
+7012.963225 ms SAMPLE t=7010 ax=2000 ay=0 az=1000 adc=1001 pir=1 imu=OK ready=1 base_adc=1001 mode=CONTROL
+7513.074550 ms SAMPLE t=7510 ax=2000 ay=0 az=1000 adc=1001 pir=1 imu=OK ready=1 base_adc=1001 mode=CONTROL
+8001.539125 ms tick 8 t=8000
+8013.050375 ms SAMPLE t=8010 ax=2000 ay=0 az=1000 adc=1001 pir=1 imu=OK ready=1 base_adc=1001 mode=CONTROL
+8513.025200 ms SAMPLE t=8510 ax=2000 ay=0 az=750 adc=1001 pir=1 imu=OK ready=1 base_adc=1001 mode=CONTROL
+9001.561300 ms tick 9 t=9000
+9013.005800 ms SAMPLE t=9010 ax=2000 ay=0 az=750 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+9041.629200 ms CAPTURE t=9036 addr=0x68 id=0x68 status=OK raw=400000001800ef5c000000000000 ax=2000 ay=0 az=750 temp=24001
+9512.952400 ms SAMPLE t=9510 ax=2000 ay=0 az=750 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+10001.516950 ms tick 10 t=10000
+10012.981975 ms SAMPLE t=10010 ax=2000 ay=0 az=750 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+10512.987025 ms SAMPLE t=10510 ax=2000 ay=0 az=750 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+11001.551625 ms tick 11 t=11000
+11012.892900 ms SAMPLE t=11010 ax=2000 ay=0 az=750 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+11512.899475 ms SAMPLE t=11510 ax=2000 ay=0 az=750 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+11917.338275 ms EVENT seq=5 t=11913 type=BODY_SHOCK mode=CONTROL severity=WARN ax=750 ay=0 az=750 adc=1001 metric=1562500
+12001.500025 ms tick 12 t=12000
+12012.947550 ms SAMPLE t=12010 ax=750 ay=0 az=750 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+12512.858400 ms SAMPLE t=12510 ax=750 ay=0 az=750 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+12890.635275 ms CAPTURE t=12885 addr=0x68 id=0x68 status=OK raw=180000001800ef5c000000000000 ax=750 ay=0 az=750 temp=24001
+12917.122950 ms EVENT seq=6 t=12913 type=BODY_MOVED mode=CONTROL severity=WARN ax=750 ay=0 az=750 adc=1001 metric=20
+13001.498950 ms tick 13 t=13000
+13012.821475 ms SAMPLE t=13010 ax=750 ay=0 az=750 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+13512.817550 ms SAMPLE t=13510 ax=750 ay=0 az=750 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+14001.515625 ms tick 14 t=14000
+14012.840400 ms SAMPLE t=14010 ax=750 ay=0 az=750 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+14512.837725 ms SAMPLE t=14510 ax=750 ay=0 az=750 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+15001.412775 ms tick 15 t=15000
+15012.862300 ms SAMPLE t=15010 ax=750 ay=0 az=750 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+15512.859900 ms SAMPLE t=15510 ax=750 ay=0 az=750 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+16001.446200 ms tick 16 t=16000
+16012.751475 ms SAMPLE t=16010 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+16512.739050 ms SAMPLE t=16510 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+16753.191275 ms EVENT seq=7 t=16749 type=SERVICE_ON mode=SERVICE severity=INFO ax=0 ay=0 az=1000 adc=1001 metric=0
+16764.804050 ms EVENT seq=8 t=16752 type=COMMAND_REJECTED mode=SERVICE severity=INFO ax=0 ay=0 az=1000 adc=1001 metric=1
+16777.075275 ms EVENT seq=9 t=16752 type=DIAGNOSTIC mode=SERVICE severity=INFO ax=0 ay=0 az=1000 adc=1001 metric=105
+16788.914775 ms EVENT seq=10 t=16753 type=SENSOR_ERROR mode=SERVICE severity=ERROR ax=0 ay=0 az=1000 adc=1001 metric=1
+17001.394375 ms tick 17 t=17000
+17012.827400 ms SAMPLE t=17010 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=NACK ready=1 base_adc=1001 mode=SERVICE
+17512.765475 ms SAMPLE t=17510 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=NACK ready=1 base_adc=1001 mode=SERVICE
+18001.425525 ms tick 18 t=18000
+18012.735300 ms SAMPLE t=18010 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=NACK ready=1 base_adc=1001 mode=SERVICE
+18512.796900 ms SAMPLE t=18510 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=NACK ready=1 base_adc=1001 mode=SERVICE
+19001.335700 ms tick 19 t=19000
+19012.771475 ms SAMPLE t=19010 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=NACK ready=1 base_adc=1001 mode=SERVICE
+19354.821325 ms EVENT seq=11 t=19352 type=USER_NEAR mode=SERVICE severity=INFO ax=0 ay=0 az=1000 adc=1001 metric=0
+19512.803025 ms SAMPLE t=19510 ax=0 ay=0 az=1000 adc=4059 pir=1 imu=NACK ready=1 base_adc=1001 mode=SERVICE
+19682.976000 ms EVENT seq=12 t=19680 type=LIGHT_CHANGED mode=SERVICE severity=INFO ax=0 ay=0 az=1000 adc=4059 metric=3058
+20001.411625 ms tick 20 t=20000
+20012.800125 ms SAMPLE t=20010 ax=0 ay=0 az=1000 adc=4059 pir=1 imu=NACK ready=1 base_adc=1001 mode=SERVICE
+20280.053300 ms CAPTURE t=20275 addr=0x69 id=0x00 status=NACK raw=0000000000000000000000000000 ax=0 ay=0 az=0 temp=0
+20512.749225 ms SAMPLE t=20510 ax=0 ay=0 az=1000 adc=4059 pir=1 imu=NACK ready=1 base_adc=1001 mode=SERVICE
+21001.376300 ms tick 21 t=21000
+21012.761800 ms SAMPLE t=21010 ax=0 ay=0 az=1000 adc=4059 pir=1 imu=NACK ready=1 base_adc=1001 mode=SERVICE
+21512.737650 ms SAMPLE t=21510 ax=0 ay=0 az=1000 adc=4059 pir=1 imu=NACK ready=1 base_adc=1001 mode=SERVICE
+22001.366200 ms tick 22 t=22000
+22012.752700 ms SAMPLE t=22010 ax=0 ay=0 az=1000 adc=4059 pir=1 imu=NACK ready=1 base_adc=1001 mode=SERVICE
+22512.727800 ms SAMPLE t=22510 ax=0 ay=0 az=1000 adc=4059 pir=1 imu=NACK ready=1 base_adc=1001 mode=SERVICE
+23001.357375 ms tick 23 t=23000
+23012.598150 ms SAMPLE t=23010 ax=0 ay=0 az=1000 adc=999 pir=1 imu=NACK ready=1 base_adc=1001 mode=SERVICE
+23512.665975 ms SAMPLE t=23510 ax=0 ay=0 az=1000 adc=999 pir=1 imu=NACK ready=1 base_adc=1001 mode=SERVICE
+23861.253200 ms EVENT seq=13 t=23857 type=DIAGNOSTIC mode=SERVICE severity=INFO ax=0 ay=0 az=1000 adc=999 metric=104
+23873.132200 ms EVENT seq=14 t=23860 type=SERVICE_OFF mode=CONTROL severity=INFO ax=0 ay=0 az=1000 adc=999 metric=0
+24001.302300 ms tick 24 t=24000
+24012.665550 ms SAMPLE t=24010 ax=0 ay=0 az=1000 adc=999 pir=1 imu=NACK ready=1 base_adc=1001 mode=CONTROL
+24512.652150 ms SAMPLE t=24510 ax=0 ay=0 az=1000 adc=999 pir=0 imu=NACK ready=1 base_adc=1001 mode=CONTROL
+24760.583725 ms EVENT seq=15 t=24757 type=SENSOR_RECOVERED mode=CONTROL severity=INFO ax=0 ay=0 az=1000 adc=999 metric=0
+25001.255200 ms tick 25 t=25000
+25012.559725 ms SAMPLE t=25010 ax=0 ay=0 az=1000 adc=999 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+25512.545800 ms SAMPLE t=25510 ax=0 ay=0 az=1000 adc=999 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+26001.267625 ms tick 26 t=26000
+26012.575400 ms SAMPLE t=26010 ax=0 ay=0 az=1000 adc=999 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+26512.563475 ms SAMPLE t=26510 ax=0 ay=0 az=1000 adc=999 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+27001.172550 ms tick 27 t=27000
+27012.628050 ms SAMPLE t=27010 ax=0 ay=0 az=1000 adc=4059 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+27032.832875 ms EVENT seq=16 t=27030 type=LIGHT_CHANGED mode=CONTROL severity=WARN ax=0 ay=0 az=1000 adc=4059 metric=3058
+27512.527400 ms SAMPLE t=27510 ax=0 ay=0 az=1000 adc=4059 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+27715.513175 ms CAPTURE t=27710 addr=0x68 id=0x68 status=OK raw=000000002000ef5c000000000000 ax=0 ay=0 az=1000 temp=24001
+28001.165700 ms tick 28 t=28000
+28012.621450 ms SAMPLE t=28010 ax=0 ay=0 az=1000 adc=4059 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+28512.512300 ms SAMPLE t=28510 ax=0 ay=0 az=1000 adc=4059 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+29001.208625 ms tick 29 t=29000
+29012.540650 ms SAMPLE t=29010 ax=0 ay=0 az=1000 adc=4059 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+29512.553725 ms SAMPLE t=29510 ax=0 ay=0 az=1000 adc=4059 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+30001.157300 ms tick 30 t=30000
+30012.490550 ms SAMPLE t=30010 ax=0 ay=0 az=1000 adc=4059 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+30512.475900 ms SAMPLE t=30510 ax=0 ay=0 az=1000 adc=4059 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+30638.629750 ms EVENT seq=17 t=30635 type=BODY_SHOCK mode=CONTROL severity=WARN ax=2000 ay=0 az=1000 adc=4059 metric=4000000
+31001.105200 ms tick 31 t=31000
+31012.609950 ms SAMPLE t=31010 ax=2000 ay=0 az=1000 adc=4059 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+31343.752300 ms EVENT seq=18 t=31340 type=BASELINE_PENDING mode=CONTROL severity=INFO ax=2000 ay=0 az=1000 adc=4059 metric=0
+31512.542550 ms SAMPLE t=31510 ax=2000 ay=0 az=1000 adc=4059 pir=0 imu=OK ready=0 base_adc=1001 mode=CONTROL
+32001.123625 ms tick 32 t=32000
+32012.668875 ms SAMPLE t=32010 ax=2000 ay=0 az=1000 adc=4059 pir=0 imu=OK ready=0 base_adc=1001 mode=CONTROL
+32512.551450 ms SAMPLE t=32510 ax=2000 ay=0 az=1000 adc=4059 pir=0 imu=OK ready=0 base_adc=1001 mode=CONTROL
+33001.131050 ms tick 33 t=33000
+33012.514300 ms SAMPLE t=33010 ax=2000 ay=0 az=1000 adc=4059 pir=0 imu=OK ready=0 base_adc=1001 mode=CONTROL
+33512.563625 ms SAMPLE t=33510 ax=2000 ay=0 az=1000 adc=4059 pir=0 imu=OK ready=0 base_adc=1001 mode=CONTROL
+34001.143450 ms tick 34 t=34000
+34012.529200 ms SAMPLE t=34010 ax=2000 ay=0 az=1000 adc=4059 pir=0 imu=OK ready=0 base_adc=1001 mode=CONTROL
+34512.470050 ms SAMPLE t=34510 ax=0 ay=0 az=1000 adc=4059 pir=0 imu=OK ready=0 base_adc=1001 mode=CONTROL
+35001.057875 ms tick 35 t=35000
+35012.469150 ms SAMPLE t=35010 ax=0 ay=0 az=1000 adc=4059 pir=0 imu=OK ready=0 base_adc=1001 mode=CONTROL
+35203.109175 ms CAPTURE t=35198 addr=0x68 id=0x68 status=OK raw=000000002000ef5c000000000000 ax=0 ay=0 az=1000 temp=24001
+35512.543700 ms SAMPLE t=35510 ax=0 ay=0 az=1000 adc=4059 pir=0 imu=OK ready=0 base_adc=1001 mode=CONTROL
+36001.126550 ms tick 36 t=36000
+36012.538050 ms SAMPLE t=36010 ax=0 ay=0 az=1000 adc=4059 pir=0 imu=OK ready=0 base_adc=1001 mode=CONTROL
+36238.439100 ms EVENT seq=19 t=36235 type=BASELINE_READY mode=CONTROL severity=INFO ax=0 ay=0 az=1000 adc=4059 metric=4059
+36512.460875 ms SAMPLE t=36510 ax=0 ay=0 az=1000 adc=4059 pir=0 imu=OK ready=1 base_adc=4059 mode=CONTROL
+37001.059950 ms tick 37 t=37000
+37012.406725 ms SAMPLE t=37010 ax=0 ay=0 az=1000 adc=4059 pir=0 imu=OK ready=1 base_adc=4059 mode=CONTROL
+37512.439300 ms SAMPLE t=37510 ax=0 ay=0 az=1000 adc=4059 pir=0 imu=OK ready=1 base_adc=4059 mode=CONTROL
+38001.039625 ms tick 38 t=38000
+38012.388150 ms SAMPLE t=38010 ax=0 ay=0 az=1000 adc=4059 pir=0 imu=OK ready=1 base_adc=4059 mode=CONTROL
