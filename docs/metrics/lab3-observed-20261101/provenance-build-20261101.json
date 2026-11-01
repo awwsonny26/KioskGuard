@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-01",
+  "source_commit_before_receipt": "1a60c8439e28d159cbc0ca8ab0b21f834bce9514",
+  "source_archive_sha256": "253cac72cd50ebb45ff80f6e826b091e4f8d44d863aff3752878db4cceadf8bd",
+  "source": "git show HEAD:docs/metrics/lab3-observed-20261101/frozen-source.tar.gz",
+  "dockerfile": "docker/Dockerfile inside source archive",
+  "fresh_docker_image_id": "sha256:962bd5bf7a325f8fb0d988ddc6751f1f023a471379bd665926feade609c85774",
+  "previous_local_image_id": "sha256:d64c343111dcfeeb118119142f62dae0ec221648393b9cec0addd4553fe78730",
+  "command": "docker run --rm -v \"$kg_tmp:/workspace\" -w /workspace kioskguard-provenance:20261101 make -C firmware BUILD_DIR=build-poll",
+  "expected_and_observed_elf": "58e5ab7fd10281b0df4a39b6f53b9b3df29d12f2352092f8791329d26027c54c",
+  "expected_and_observed_hex": "0445490790f09b7cb904ce04b37c37792026bbe60bd6f51f00e90963cd4ef513",
+  "results": "both fresh Dockerfile image and prior local image produced exact matching ELF and HEX",
+  "limitations": [
+    "Build verification only; no simulator or physical run",
+    "Package versions pinned in Dockerfile may later become unavailable"
+  ]
+}
