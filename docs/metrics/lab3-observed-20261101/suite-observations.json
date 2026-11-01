@@ -1,0 +1,200 @@
+{
+  "fault_kind": "software changes target I2C address; NACK injection, not unplug or physical bus short",
+  "commands": [
+    {
+      "start_ns": 7067534600,
+      "end_ns": 7068055806,
+      "text": "stats"
+    },
+    {
+      "start_ns": 8101044575,
+      "end_ns": 8101652681,
+      "text": "rxdiag"
+    },
+    {
+      "start_ns": 393937869150,
+      "end_ns": 393938651006,
+      "text": "fault on"
+    },
+    {
+      "start_ns": 400971634600,
+      "end_ns": 400972503331,
+      "text": "fault off"
+    },
+    {
+      "start_ns": 407970700800,
+      "end_ns": 407971395781,
+      "text": "rate 20"
+    },
+    {
+      "start_ns": 417970696950,
+      "end_ns": 417971391931,
+      "text": "rate 10"
+    },
+    {
+      "start_ns": 427996197825,
+      "end_ns": 427996805931,
+      "text": "rate 5"
+    },
+    {
+      "start_ns": 437970709525,
+      "end_ns": 437971404506,
+      "text": "rate 20"
+    },
+    {
+      "start_ns": 439921730375,
+      "end_ns": 439922251581,
+      "text": "stats"
+    },
+    {
+      "start_ns": 440938241200,
+      "end_ns": 440947162481,
+      "text": "rxdiag"
+    }
+  ],
+  "events": [
+    {
+      "start_ns": 393941423550,
+      "end_ns": 393951774206,
+      "text": "EVENT seq=329 t=393944 type=DIAGNOSTIC mode=CONTROL severity=INFO ax=0 ay=0 az=1000 adc=1001 metric=105"
+    },
+    {
+      "start_ns": 393954419550,
+      "end_ns": 393964869931,
+      "text": "EVENT seq=330 t=393956 type=SENSOR_ERROR mode=CONTROL severity=ERROR ax=0 ay=0 az=1000 adc=1001 metric=1"
+    },
+    {
+      "start_ns": 400974924550,
+      "end_ns": 400985275306,
+      "text": "EVENT seq=331 t=400977 type=DIAGNOSTIC mode=CONTROL severity=INFO ax=0 ay=0 az=1000 adc=1001 metric=104"
+    },
+    {
+      "start_ns": 401957970800,
+      "end_ns": 401968720081,
+      "text": "EVENT seq=332 t=401961 type=SENSOR_RECOVERED mode=CONTROL severity=INFO ax=0 ay=0 az=1000 adc=1001 metric=0"
+    },
+    {
+      "start_ns": 407973826975,
+      "end_ns": 407984376781,
+      "text": "EVENT seq=333 t=407977 type=DIAGNOSTIC mode=CONTROL severity=INFO ax=0 ay=0 az=1000 adc=1001 metric=20000"
+    },
+    {
+      "start_ns": 417976032575,
+      "end_ns": 417986580081,
+      "text": "EVENT seq=334 t=417979 type=DIAGNOSTIC mode=CONTROL severity=INFO ax=0 ay=0 az=1000 adc=1001 metric=10000"
+    },
+    {
+      "start_ns": 427999822750,
+      "end_ns": 428010267856,
+      "text": "EVENT seq=335 t=428003 type=DIAGNOSTIC mode=CONTROL severity=INFO ax=0 ay=0 az=1000 adc=1001 metric=5000"
+    },
+    {
+      "start_ns": 437973997450,
+      "end_ns": 437984547506,
+      "text": "EVENT seq=336 t=437978 type=DIAGNOSTIC mode=CONTROL severity=INFO ax=0 ay=0 az=1000 adc=1001 metric=20000"
+    }
+  ],
+  "periods": [
+    {
+      "command": {
+        "start_ns": 393937869150,
+        "end_ns": 393938651006,
+        "text": "fault on"
+      },
+      "end_ns": 400971634600,
+      "imu_rises": 8,
+      "period_min_us": 999863.95,
+      "period_avg_us": 999978.8142857143,
+      "period_max_us": 1000096.15
+    },
+    {
+      "command": {
+        "start_ns": 400971634600,
+        "end_ns": 400972503331,
+        "text": "fault off"
+      },
+      "end_ns": 407970700800,
+      "imu_rises": 301,
+      "period_min_us": 19790.575,
+      "period_avg_us": 20015.883,
+      "period_max_us": 25023.475
+    },
+    {
+      "command": {
+        "start_ns": 407970700800,
+        "end_ns": 407971395781,
+        "text": "rate 20"
+      },
+      "end_ns": 417970696950,
+      "imu_rises": 499,
+      "period_min_us": 19807.425,
+      "period_avg_us": 19999.458333333332,
+      "period_max_us": 20191.025
+    },
+    {
+      "command": {
+        "start_ns": 417970696950,
+        "end_ns": 417971391931,
+        "text": "rate 10"
+      },
+      "end_ns": 427996197825,
+      "imu_rises": 1002,
+      "period_min_us": 9813.525,
+      "period_avg_us": 9999.674025974025,
+      "period_max_us": 10192.525
+    },
+    {
+      "command": {
+        "start_ns": 427996197825,
+        "end_ns": 427996805931,
+        "text": "rate 5"
+      },
+      "end_ns": 437970709525,
+      "imu_rises": 1994,
+      "period_min_us": 4804.875,
+      "period_avg_us": 4999.884119417962,
+      "period_max_us": 5209.05
+    },
+    {
+      "command": {
+        "start_ns": 437970709525,
+        "end_ns": 437971404506,
+        "text": "rate 20"
+      },
+      "end_ns": 439921730375,
+      "imu_rises": 97,
+      "period_min_us": 19812.575,
+      "period_avg_us": 19998.4296875,
+      "period_max_us": 20129.6
+    }
+  ],
+  "stats": [
+    {
+      "start_ns": 7069049075,
+      "end_ns": 7073919081,
+      "text": "METRICS_UNAVAILABLE cpu_wcet=1 timer=SysTick_1ms"
+    },
+    {
+      "start_ns": 8104559500,
+      "end_ns": 8116006256,
+      "text": "RXDIAG bytes=13 errors=0 drop=0 armfail=0 retry=0 pending=0 recorded=0 first=0 state=0 err=0 dispatch=1 line=stats"
+    },
+    {
+      "start_ns": 439923729825,
+      "end_ns": 439928599831,
+      "text": "METRICS_UNAVAILABLE cpu_wcet=1 timer=SysTick_1ms"
+    },
+    {
+      "start_ns": 440949730700,
+      "end_ns": 440961374431,
+      "text": "RXDIAG bytes=3623 errors=0 drop=0 armfail=0 retry=0 pending=0 recorded=0 first=0 state=0 err=0 dispatch=1 line=stats"
+    },
+    {
+      "start_ns": 441984760400,
+      "end_ns": 441998098331,
+      "text": "AUDIT gen=1 committed=0 near=45 shock=0 moved=0 light=0 errors=1 service_changes=281 busy=1 dirty=1 failed=1 invalid=64 coalesced=325"
+    }
+  ],
+  "memory": "Runtime stack/heap are not exposed by candidate stats; static link values do not measure runtime peaks.",
+  "limitations": "Marker intervals contain waits/interrupts; compare actual thresholds and loss counters manually. Missing output is unavailable, not zero."
+}

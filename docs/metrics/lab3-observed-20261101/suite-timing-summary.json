@@ -1,0 +1,20 @@
+{
+  "sha256": "668235f4e7739b0a6dea2ff81788b07a62698e9b7b9e6e59a3cf206a94b18ed5",
+  "service_commands": 281,
+  "service_unpaired": 0,
+  "service_uart_complete_ack": {
+    "n": 281,
+    "min_us": 12187.1,
+    "avg_us": 17239.893950177935,
+    "max_us": 40002.275,
+    "p99_us": 39751.05
+  },
+  "pir_to_policy_marker": {
+    "n": 45,
+    "min_us": 1888.55,
+    "avg_us": 11800.896666666667,
+    "max_us": 29713.3,
+    "p99_us": 29713.3
+  },
+  "pir_unpaired": 0
+}

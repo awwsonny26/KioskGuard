@@ -1,0 +1,33 @@
+{
+  "gate_confirmed_pairs": 3,
+  "suite_attempts": 45,
+  "valid_pairs": 45,
+  "complete_export_windows": 45,
+  "input_edges": 45,
+  "event_count": 45,
+  "policy_latency": {
+    "n": 45,
+    "min_us": 1888.55,
+    "avg_us": 11800.896666666667,
+    "max_us": 29713.3
+  },
+  "full_tx_latency": {
+    "n": 45,
+    "min_us": 15883.431,
+    "avg_us": 36032.156,
+    "max_us": 61378.206
+  },
+  "rxdiag": [
+    "RXDIAG bytes=13 errors=0 drop=0 armfail=0 retry=0 pending=0 recorded=0 first=0 state=0 err=0 dispatch=1 line=stats",
+    "RXDIAG bytes=3623 errors=0 drop=0 armfail=0 retry=0 pending=0 recorded=0 first=0 state=0 err=0 dispatch=1 line=stats"
+  ],
+  "firmware_elf_sha256": "58e5ab7fd10281b0df4a39b6f53b9b3df29d12f2352092f8791329d26027c54c",
+  "fixture": "synthetic high GPIO input, real MCU output; not physical PIR",
+  "limitations": [
+    "CPU/WCET unavailable",
+    "runtime stack/heap unavailable",
+    "Flash failed=1 committed=0",
+    "physical power-loss and disconnected sensor untested",
+    "FR11 combined shock and presence untested"
+  ]
+}

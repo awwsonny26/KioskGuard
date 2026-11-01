@@ -1,0 +1,67 @@
+{
+  "valid": true,
+  "phase": "gate",
+  "vcd_sha256": "7ca6ff79e7b0f476e4fc56b9dd2a05ff43ee9d9ed1cdcc53d1280d6f497adb6a",
+  "vcd_path": "/Users/pliffdax/Projects/university/Study/People/Новаківська Софія Василівна/2026-Fall/SP/Lab03/Work/s3-auto-ready-20261101/workspace/docs/captures/gate.vcd",
+  "inputs": {
+    "elf": "58e5ab7fd10281b0df4a39b6f53b9b3df29d12f2352092f8791329d26027c54c",
+    "fixture_wasm": "06f8ebc42bb962d42a0a7a789afde0fb3492742ab28727c8f7078cf2968d3058",
+    "diagram": "580a438d19af26dbea35eae26b57ee19b8296da5ab24578e6b06557b6d616381"
+  },
+  "boot": [
+    "BOOT project=KioskGuard lab=3 source=candidate-poll-tree-abf27f5853950696 timer=SysTick_1ms_CANDIDATE"
+  ],
+  "required_pairs": 3,
+  "valid_pair_count": 3,
+  "input_count": 3,
+  "event_count": 3,
+  "complete_export_windows": 3,
+  "pairs": [
+    {
+      "input_ns": 10241995300,
+      "window_start_ns": 10055351375,
+      "window_end_ns": 11871572231,
+      "overlap_uart_commands": 2,
+      "marker_ns": 10261075325,
+      "event_count": 1,
+      "event_end_ns": 10293078681,
+      "hold_ns": 5000000000,
+      "low_before_ns": 10241995300,
+      "policy_latency_us": 19080.025,
+      "full_tx_latency_us": 51083.381
+    },
+    {
+      "input_ns": 19000457325,
+      "window_start_ns": 18904087025,
+      "window_end_ns": 20719270531,
+      "overlap_uart_commands": 2,
+      "marker_ns": 19020843100,
+      "event_count": 1,
+      "event_end_ns": 19043119631,
+      "hold_ns": 5000000000,
+      "low_before_ns": 3758462025,
+      "policy_latency_us": 20385.775,
+      "full_tx_latency_us": 42662.306
+    },
+    {
+      "input_ns": 27429397550,
+      "window_start_ns": 27355355675,
+      "window_end_ns": 29170332406,
+      "overlap_uart_commands": 2,
+      "marker_ns": 27442616750,
+      "event_count": 1,
+      "event_end_ns": 27467848831,
+      "hold_ns": 5000000000,
+      "low_before_ns": 3428940225,
+      "policy_latency_us": 13219.2,
+      "full_tx_latency_us": 38451.281
+    }
+  ],
+  "rxdiag": [
+    "RXDIAG bytes=13 errors=0 drop=0 armfail=0 retry=0 pending=0 recorded=0 first=0 state=0 err=0 dispatch=1 line=stats",
+    "RXDIAG bytes=248 errors=0 drop=0 armfail=0 retry=0 pending=0 recorded=0 first=0 state=0 err=0 dispatch=4 line=service on"
+  ],
+  "clean_rxdiag": true,
+  "rx_commands": 25,
+  "limitations": "Synthetic GPIO substitutes PIR OUT; validate all 5s high and 1.2s low, event ordering, loss counters and actual operation window; simulated hardware only."
+}

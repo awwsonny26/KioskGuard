@@ -1,0 +1,29 @@
+{
+  "mcu_start_ms": 384500,
+  "mcu_finish_ms": 3984500,
+  "mcu_elapsed_ms": 3600000,
+  "raw_extended_last_ms": 3985000,
+  "raw_extended_elapsed_ms": 3600500,
+  "sample_count": 7202,
+  "adjacent_sample_delta_ms": {
+    "500": 7201
+  },
+  "vcd_sample_start_ns": 384496552100,
+  "vcd_sample_end_ns": 3984921587225,
+  "vcd_elapsed_ms": 3600425.035125,
+  "vcd_boot": "BOOT project=KioskGuard lab=3 source=candidate-poll-tree-abf27f5853950696 timer=SysTick_1ms_CANDIDATE",
+  "vcd_sha256": "03a58d7719a8cfb1b2360c6d53588e7d08ea0704e73dae14b3e5aa64a491114f",
+  "uart_sha256": "4cd25f8d3d95bbad4d12c4ef0575a0264bc779bcfbde0015ea04e8fe545e43c1",
+  "last_audit": "AUDIT gen=1 committed=0 near=0 shock=0 moved=0 light=0 errors=0 service_changes=122 busy=1 dirty=1 failed=1 invalid=64 coalesced=120",
+  "all_audit_failed": true,
+  "audit_status_count": 13,
+  "tx_counts": {
+    "stats": 14,
+    "service on": 61,
+    "service off": 61,
+    "rxdiag": 2,
+    "audit status": 13
+  },
+  "sensor_error_lines": 0,
+  "qualifier": "Duration and regular SAMPLE clock are confirmed; nominal journal persistence failed. VCD observes same simulated hardware, not physical hardware. MCU and VCD clocks differ; compare interval endpoints explicitly. No measured CPU/WCET."
+}

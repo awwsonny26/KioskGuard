@@ -1,0 +1,23 @@
+{
+  "state": "transport_complete_pending_vcd_and_review",
+  "reason": null,
+  "expected_banner": "candidate-poll-tree-abf27f5853950696",
+  "start": {
+    "host_utc": "2026-11-01T08:55:26.457687+00:00",
+    "host_monotonic_ns": 49368291
+  },
+  "limitations": "UART completion alone is not proof; inspect MCU BOOT and VCD coverage after Stop. CPU/WCET unavailable.",
+  "first_mcu_ms": 384500,
+  "go": {
+    "host_utc": "2026-11-01T09:01:43.955800+00:00",
+    "host_monotonic_ns": 377546970041
+  },
+  "last_mcu_ms": 3984500,
+  "elapsed_mcu_ms": 3600000,
+  "end": {
+    "host_utc": "2026-11-01T10:01:50.795058+00:00",
+    "host_monotonic_ns": 3984376321708
+  },
+  "uart_sha256": "4cd25f8d3d95bbad4d12c4ef0575a0264bc779bcfbde0015ea04e8fe545e43c1",
+  "events_sha256": "31d2905da6d7f9b97ea2d007c01d947e3ca1f2059e196ca05103a8a5459eb33f"
+}

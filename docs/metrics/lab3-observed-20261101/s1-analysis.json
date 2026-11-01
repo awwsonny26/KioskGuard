@@ -1,0 +1,18 @@
+{
+  "source_kind": "actual Wokwi UART; not physical hardware",
+  "count": 241,
+  "first_mcu_ms": 15500,
+  "last_mcu_ms": 135500,
+  "duration_ms": 120000,
+  "sample_interval_counts_ms": {
+    "500": 240
+  },
+  "sensor_error_lines": 0,
+  "raw_sha256": "6ce32844329907ccacb3fe7bdee2cd1f1f758b2e63e630f3ac230d5e306d0134",
+  "limitations": [
+    "sample cadence is not scheduler per-task statistics",
+    "CPU and WCET unavailable",
+    "S1 VCD from this continuous simulation is not yet exported",
+    "RAM/Flash durability not established"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "state": "captured_pending_VCD_review",
+  "phase": "suite",
+  "first_mcu_ms": 6000,
+  "last_mcu_ms": 448900,
+  "seen": {
+    "near": 45,
+    "export_0": 45,
+    "export_63": 45
+  },
+  "sent_actions": 247,
+  "limitations": "UART collection is not VCD overlap or hardware proof; examine GPIO and RX loss"
+}

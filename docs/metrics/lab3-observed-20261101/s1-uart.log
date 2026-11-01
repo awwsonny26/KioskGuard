@@ -1,0 +1,361 @@
+SAMPLE t=15500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=16000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 16 t=16039
+SAMPLE t=16500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=17000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 17 t=17039
+SAMPLE t=17500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=18000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 18 t=18039
+SAMPLE t=18500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=19000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 19 t=19039
+SAMPLE t=19500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=20000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 20 t=20039
+SAMPLE t=20500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=21000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 21 t=21039
+SAMPLE t=21500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=22000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 22 t=22039
+SAMPLE t=22500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=23000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 23 t=23039
+SAMPLE t=23500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=24000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 24 t=24039
+SAMPLE t=24500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=25000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 25 t=25039
+SAMPLE t=25500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=26000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 26 t=26039
+SAMPLE t=26500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=27000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 27 t=27039
+SAMPLE t=27500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=28000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 28 t=28039
+SAMPLE t=28500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=29000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 29 t=29039
+SAMPLE t=29500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=30000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 30 t=30039
+SAMPLE t=30500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=31000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 31 t=31039
+SAMPLE t=31500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=32000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 32 t=32039
+SAMPLE t=32500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=33000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 33 t=33039
+SAMPLE t=33500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=34000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 34 t=34039
+SAMPLE t=34500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=35000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 35 t=35039
+SAMPLE t=35500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=36000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 36 t=36039
+SAMPLE t=36500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=37000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 37 t=37039
+SAMPLE t=37500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=38000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 38 t=38039
+SAMPLE t=38500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=39000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 39 t=39039
+SAMPLE t=39500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=40000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 40 t=40039
+SAMPLE t=40500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=41000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 41 t=41039
+SAMPLE t=41500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=42000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 42 t=42039
+SAMPLE t=42500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=43000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 43 t=43039
+SAMPLE t=43500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=44000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 44 t=44039
+SAMPLE t=44500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=45000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 45 t=45039
+SAMPLE t=45500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=46000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 46 t=46039
+SAMPLE t=46500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=47000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 47 t=47039
+SAMPLE t=47500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=48000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 48 t=48039
+SAMPLE t=48500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=49000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 49 t=49039
+SAMPLE t=49500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=50000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 50 t=50039
+SAMPLE t=50500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=51000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 51 t=51039
+SAMPLE t=51500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=52000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 52 t=52039
+SAMPLE t=52500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=53000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 53 t=53039
+SAMPLE t=53500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=54000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 54 t=54039
+SAMPLE t=54500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=55000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 55 t=55039
+SAMPLE t=55500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=56000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 56 t=56039
+SAMPLE t=56500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=57000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 57 t=57039
+SAMPLE t=57500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=58000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 58 t=58039
+SAMPLE t=58500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=59000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 59 t=59039
+SAMPLE t=59500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=60000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 60 t=60039
+SAMPLE t=60500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=61000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 61 t=61039
+SAMPLE t=61500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=62000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 62 t=62039
+SAMPLE t=62500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=63000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 63 t=63039
+SAMPLE t=63500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=64000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 64 t=64039
+SAMPLE t=64500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=65000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 65 t=65039
+SAMPLE t=65500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=66000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 66 t=66039
+SAMPLE t=66500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=67000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 67 t=67039
+SAMPLE t=67500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=68000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 68 t=68039
+SAMPLE t=68500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=69000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 69 t=69039
+SAMPLE t=69500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=70000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 70 t=70039
+SAMPLE t=70500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=71000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 71 t=71039
+SAMPLE t=71500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=72000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 72 t=72039
+SAMPLE t=72500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=73000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 73 t=73039
+SAMPLE t=73500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=74000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 74 t=74039
+SAMPLE t=74500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=75000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 75 t=75039
+SAMPLE t=75500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=76000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 76 t=76039
+SAMPLE t=76500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=77000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 77 t=77039
+SAMPLE t=77500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=78000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 78 t=78039
+SAMPLE t=78500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=79000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 79 t=79039
+SAMPLE t=79500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=80000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 80 t=80039
+SAMPLE t=80500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=81000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 81 t=81039
+SAMPLE t=81500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=82000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 82 t=82039
+SAMPLE t=82500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=83000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 83 t=83039
+SAMPLE t=83500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=84000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 84 t=84039
+SAMPLE t=84500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=85000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 85 t=85039
+SAMPLE t=85500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=86000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 86 t=86039
+SAMPLE t=86500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=87000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 87 t=87039
+SAMPLE t=87500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=88000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 88 t=88039
+SAMPLE t=88500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=89000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 89 t=89039
+SAMPLE t=89500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=90000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 90 t=90039
+SAMPLE t=90500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=91000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 91 t=91039
+SAMPLE t=91500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=92000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 92 t=92039
+SAMPLE t=92500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=93000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 93 t=93039
+SAMPLE t=93500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=94000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 94 t=94039
+SAMPLE t=94500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=95000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 95 t=95039
+SAMPLE t=95500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=96000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 96 t=96039
+SAMPLE t=96500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=97000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 97 t=97039
+SAMPLE t=97500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=98000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 98 t=98039
+SAMPLE t=98500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=99000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 99 t=99039
+SAMPLE t=99500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=100000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 100 t=100039
+SAMPLE t=100500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=101000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 101 t=101039
+SAMPLE t=101500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=102000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 102 t=102039
+SAMPLE t=102500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=103000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 103 t=103039
+SAMPLE t=103500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=104000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 104 t=104039
+SAMPLE t=104500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=105000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 105 t=105039
+SAMPLE t=105500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=106000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 106 t=106039
+SAMPLE t=106500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=107000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 107 t=107039
+SAMPLE t=107500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=108000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 108 t=108039
+SAMPLE t=108500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=109000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 109 t=109039
+SAMPLE t=109500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=110000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 110 t=110039
+SAMPLE t=110500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=111000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 111 t=111039
+SAMPLE t=111500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=112000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 112 t=112039
+SAMPLE t=112500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=113000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 113 t=113039
+SAMPLE t=113500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=114000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 114 t=114039
+SAMPLE t=114500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=115000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 115 t=115039
+SAMPLE t=115500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=116000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 116 t=116039
+SAMPLE t=116500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=117000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 117 t=117039
+SAMPLE t=117500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=118000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 118 t=118039
+SAMPLE t=118500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=119000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 119 t=119039
+SAMPLE t=119500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=120000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 120 t=120039
+SAMPLE t=120500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=121000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 121 t=121039
+SAMPLE t=121500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=122000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 122 t=122039
+SAMPLE t=122500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=123000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 123 t=123039
+SAMPLE t=123500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=124000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 124 t=124039
+SAMPLE t=124500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=125000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 125 t=125039
+SAMPLE t=125500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=126000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 126 t=126039
+SAMPLE t=126500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=127000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 127 t=127039
+SAMPLE t=127500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=128000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 128 t=128039
+SAMPLE t=128500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=129000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 129 t=129039
+SAMPLE t=129500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=130000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 130 t=130039
+SAMPLE t=130500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=131000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 131 t=131039
+SAMPLE t=131500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=132000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 132 t=132039
+SAMPLE t=132500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=133000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 133 t=133039
+SAMPLE t=133500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=134000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 134 t=134039
+SAMPLE t=134500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=135000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 135 t=135039
+SAMPLE t=135500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
