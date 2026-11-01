@@ -1,0 +1,10 @@
+{
+  "name": "shockstim",
+  "author": "KioskGuard test fixture",
+  "pins": [
+    "SCL",
+    "SDA",
+    "STIM"
+  ],
+  "controls": []
+}

@@ -1,0 +1,39 @@
+BOOT project=KioskGuard lab=3 source=candidate-poll-tree-abf27f5853950696 timer=SysTick_1ms_CANDIDATE
+SELFTEST device=MPU6050 status=OK id_expected=0x68 range_g=4
+SELFTEST device=LDR status=READABLE adc=1001
+SELFTEST device=PIR status=READABLE out=0
+STM32C031C6 ready
+AUDIT_BOOT valid=0 gen=0 invalid=64 failed=0 imu_us=9000 adc_us=9000 pir_us=9000
+EVENT seq=1 t=50 type=BASELINE_PENDING mode=CONTROL severity=INFO ax=0 ay=0 az=1000 adc=1001 metric=0
+CLOCK_CHECK coarse_us=99000 hal_ms=100 supported=1
+SAMPLE t=500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=0 base_adc=0 mode=CONTROL
+SAMPLE t=1000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=0 base_adc=0 mode=CONTROL
+tick 1 t=1039
+SAMPLE t=1500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=0 base_adc=0 mode=CONTROL
+SAMPLE t=2000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=0 base_adc=0 mode=CONTROL
+tick 2 t=2039
+EVENT seq=2 t=2058 type=BASELINE_READY mode=CONTROL severity=INFO ax=0 ay=0 az=1000 adc=1001 metric=1001
+SAMPLE t=2500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=3000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 3 t=3037
+SAMPLE t=3500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=4000 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 4 t=4037
+SAMPLE t=4500 ax=0 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+EVENT seq=3 t=4998 type=BODY_SHOCK mode=CONTROL severity=WARN ax=2000 ay=0 az=1000 adc=1001 metric=4000000
+SAMPLE t=5012 ax=2000 ay=0 az=1000 adc=1001 pir=0 imu=OK ready=1 base_adc=1001 mode=CONTROL
+EVENT seq=4 t=5019 type=USER_NEAR mode=CONTROL severity=INFO ax=2000 ay=0 az=1000 adc=1001 metric=0
+tick 5 t=5037
+RXDIAG bytes=7 errors=0 drop=0 armfail=0 retry=0 pending=0 recorded=0 first=0 state=0 err=0 dispatch=0 line=
+SAMPLE t=5512 ax=2000 ay=0 az=1000 adc=1001 pir=1 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=6012 ax=2000 ay=0 az=1000 adc=1001 pir=1 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 6 t=6039
+SAMPLE t=6512 ax=2000 ay=0 az=1000 adc=1001 pir=1 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=7012 ax=2000 ay=0 az=1000 adc=1001 pir=1 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 7 t=7039
+SAMPLE t=7512 ax=2000 ay=0 az=1000 adc=1001 pir=1 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=8012 ax=2000 ay=0 az=1000 adc=1001 pir=1 imu=OK ready=1 base_adc=1001 mode=CONTROL
+tick 8 t=8037
+SAMPLE t=8512 ax=2000 ay=0 az=1000 adc=1001 pir=1 imu=OK ready=1 base_adc=1001 mode=CONTROL
+SAMPLE t=9012 ax=2000 ay=0 az=1000 adc=1001 pir=1 imu=OK ready=1 base_adc=1001 mode=CONTROL
+t

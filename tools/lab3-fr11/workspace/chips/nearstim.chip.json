@@ -1,0 +1,8 @@
+{
+  "name": "nearstim",
+  "author": "KioskGuard test fixture",
+  "pins": [
+    "OUT"
+  ],
+  "controls": []
+}

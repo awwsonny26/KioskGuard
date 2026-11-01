@@ -1,0 +1,14 @@
+[wokwi]
+version = 1
+firmware = 'firmware/build-poll/firmware.hex'
+elf = 'firmware/build-poll/firmware.elf'
+vcdFile = 'docs/captures/fr11.vcd'
+rfc2217ServerPort = 14379
+
+[[chip]]
+name = 'nearstim'
+binary = 'chips/nearstim.chip.wasm'
+
+[[chip]]
+name = 'shockstim'
+binary = 'chips/shockstim.chip.wasm'

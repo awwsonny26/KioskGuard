@@ -29,6 +29,7 @@ void kg_emit(kg_kiosk *k, uint32_t now, kg_event_type type, const kg_input *in, 
     e.value = value;
     if (k->count == KG_QUEUE_CAPACITY) {
         ++k->lost;
+        ++k->dropped_total;
         k->overflow = e;
         return;
     }

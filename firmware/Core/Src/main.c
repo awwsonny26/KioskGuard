@@ -21,6 +21,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include "measure.h"
 
 #include <stdio.h>
 #include "board.h"
@@ -83,6 +84,7 @@ int __io_putchar(int ch)
 int main(void)
 {
   /* USER CODE BEGIN 1 */
+  kg_stack_paint();
 
   /* USER CODE END 1 */
 
@@ -108,7 +110,12 @@ int main(void)
   MX_USART2_UART_Init();
   /* USER CODE BEGIN 2 */
 
+#ifdef KG_CAPABILITY_PILOT
+  extern void kg_capability_pilot(void);
+  kg_capability_pilot();
+#else
   kg_platform_start();
+#endif
 
   /* USER CODE END 2 */
 
@@ -119,7 +126,11 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+#ifndef KG_CAPABILITY_PILOT
     kg_platform_run();
+#else
+    __WFI();
+#endif
   }
   /* USER CODE END 3 */
 }

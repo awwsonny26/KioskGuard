@@ -22,5 +22,6 @@ for path in sorted(Path(sys.argv[1]).glob("*.c.gcov")):
     rows.append(row)
     print(row)
 Path(sys.argv[1],"summary.json").write_text(json.dumps(rows,indent=2))
-assert len(rows)==3 and all(r["line_percent"]>=90 and r["branch_percent"]>=80 for r in rows)
+expected=set(sys.argv[2:]) if len(sys.argv)>2 else {"imu.c.gcov","kiosk.c.gcov","line.c.gcov"}
+assert {r["module"] for r in rows}==expected and all(r["line_percent"]>=90 and r["branch_percent"]>=80 for r in rows)
 print("PASS coverage targets: >=90% lines, >=80% branches in App/Devices")

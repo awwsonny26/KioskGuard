@@ -1,0 +1,9 @@
+{
+  "seen": {
+    "shock": true,
+    "near": true
+  },
+  "latest_mcu_ms": 9012,
+  "rxdiag_sent": true,
+  "host_elapsed_seconds": 16.402
+}

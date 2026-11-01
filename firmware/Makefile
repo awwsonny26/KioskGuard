@@ -22,7 +22,7 @@ TARGET = firmware
 # debug build?
 DEBUG = 1
 # optimization
-OPT = -Og
+OPT = -Os
 
 
 #######################################
@@ -132,6 +132,7 @@ endif
 
 
 # Generate dependency information
+CFLAGS += -frandom-seed=$(notdir $<) -ffile-prefix-map=/workspace=. -flto -fstack-usage -Wstack-usage=512
 CFLAGS += -MMD -MP -MF"$(@:%.o=%.d)"
 
 
@@ -144,11 +145,16 @@ LDSCRIPT = STM32C031C6Tx_FLASH.ld
 # libraries
 LIBS = -lc -lm -lnosys 
 LIBDIR = 
-LDFLAGS = $(MCU) -specs=nano.specs -T$(LDSCRIPT) $(LIBDIR) $(LIBS) -Wl,-Map=$(BUILD_DIR)/$(TARGET).map,--cref -Wl,--gc-sections
+LDFLAGS = -frandom-seed=KioskGuard -flto -fstack-usage -Wstack-usage=512 $(MCU) -specs=nano.specs -T$(LDSCRIPT) $(LIBDIR) $(LIBS) -Wl,-Map=$(BUILD_DIR)/$(TARGET).map,--cref -Wl,--gc-sections,--print-memory-usage
 
 # default action: build all
 C_SOURCES += Platform/runtime.c Platform/bus.c Devices/imu.c
-C_SOURCES += App/kiosk.c App/line.c
+C_SOURCES += App/kiosk.c App/line.c App/audit.c App/cadence.c Platform/measure.c Platform/nvflash.c
+ifeq ($(CAPABILITY),1)
+C_SOURCES := $(filter-out Platform/runtime.c,$(C_SOURCES))
+C_SOURCES += Platform/capability.c
+C_DEFS += -DKG_CAPABILITY_PILOT
+endif
 C_SOURCES += Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_adc.c Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_adc_ex.c Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_ll_adc.c
 C_INCLUDES += -IPlatform -IDevices -IApp
 OWN_WARNINGS = $(if $(filter Drivers/%,$<),,-Wextra -Werror)
@@ -166,7 +172,7 @@ OBJECTS += $(addprefix $(BUILD_DIR)/,$(notdir $(ASM_SOURCES:.s=.o)))
 vpath %.s $(sort $(dir $(ASM_SOURCES)))
 
 $(BUILD_DIR)/%.o: %.c Makefile | $(BUILD_DIR) 
-	$(CC) -c $(CFLAGS) $(OWN_WARNINGS) -Wa,-a,-ad,-alms=$(BUILD_DIR)/$(notdir $(<:.c=.lst)) $< -o $@
+	$(CC) -c $(CFLAGS) $(if $(filter Core/Src/syscalls.c Core/Src/sysmem.c,$<),-fno-lto,) $(OWN_WARNINGS) -Wa,-a,-ad,-alms=$(BUILD_DIR)/$(notdir $(<:.c=.lst)) $< -o $@
 
 $(BUILD_DIR)/%.o: %.s Makefile | $(BUILD_DIR)
 	$(AS) -c $(CFLAGS) $< -o $@

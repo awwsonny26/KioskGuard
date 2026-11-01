@@ -1,5 +1,13 @@
 # KioskGuard
 
+Новаківська Софія Василівна, ІО-35. Bare-metal реалізація на Nucleo-C031C6; середовище Ubuntu 24.04, Docker, STM32 HAL, Wokwi. Один super loop опитує сенсори, розбирає UART і веде аудит; RTOS немає.
+
+Поточний код відповідає дослідженому кандидату `candidate-poll-tree-abf27f5853950696`. Після `make build` ELF і HEX містяться у `firmware/build-poll`; їх SHA256 наведено в [доказах](docs/metrics/lab3-observed-20261101/README.md). Окремий FR-11 зі спільним синтетичним стимулом описаний у [перевірці](docs/metrics/lab3-fr11-20261101/README.md). Збірка не підтверджує роботу фізичної плати.
+
+Симуляція підтвердила годину S2 і 45 входів S3, але аудит повідомив `failed=1, committed=0`. CPU/WCET, runtime stack/heap, фізичні сенсори й power-loss залишаються непідтвердженими. Докладно: [задачі](docs/tasks.md), [вимоги](docs/PRD.md), [архітектура](docs/architecture.md), [метрики](docs/metrics/README.md), [обмеження](docs/limitations.md), [база ЛР4](docs/baseline-lab4.md).
+
+## Збережена реалізація ЛР2
+
 Новаківська Софія Василівна, ІО-35. ЛР2, форма B: STM32C031C6 і Wokwi.
 
 PIR журналює рух поруч як INFO. MPU6050 розрізняє удар і стійкий нахил

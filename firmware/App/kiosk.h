@@ -29,7 +29,7 @@ typedef struct {
     bool moved_pending, moved_latched, light_pending, light_latched;
     bool imu_fault, adc_fault, shock_seen, motion_previous_valid;
     uint32_t stable_since, moved_since, light_since, last_shock;
-    uint32_t sequence, lost;
+    uint32_t sequence, lost, dropped_total;
     kg_motion base_motion, anchor_motion, previous_motion;
     uint16_t base_adc, anchor_adc;
     kg_event queue[KG_QUEUE_CAPACITY];

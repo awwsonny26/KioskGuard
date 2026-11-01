@@ -1,5 +1,6 @@
 #include "board.h"
 #include "bus.h"
+#include "measure.h"
 /* Register adapter for the Wokwi C0 model. HAL still owns peripheral init.
  * TXDR writes are separated because this model exposes TXIS before the prior
  * transmit event has consumed TXDR. RXDR must be consumed immediately. */
@@ -20,7 +21,7 @@ static kg_status await_flag(uint32_t flag, uint32_t start)
         uint32_t status = I2C1->ISR;
         if (status & I2C_ISR_NACKF) return KG_NACK;
         if (status & flag) return KG_OK;
-        if ((uint32_t)(HAL_GetTick() - start) >= 5U) return KG_TIMEOUT;
+        if ((uint32_t)(kg_now_us() - start) >= 5000U) return KG_TIMEOUT;
     }
 }
 static void release_bus(kg_status status)
@@ -35,7 +36,7 @@ static void release_bus(kg_status status)
 }
 static kg_status transfer(uint8_t address, uint8_t *bytes, size_t count, bool receive)
 {
-    uint32_t start = HAL_GetTick();
+    uint32_t start = kg_now_us();
     I2C1->ICR = I2C_ICR_STOPCF | I2C_ICR_NACKCF;
     I2C1->CR2 = ((uint32_t)address << 1) | ((uint32_t)count << 16) |
                 I2C_CR2_AUTOEND | (receive ? I2C_CR2_RD_WRN : 0) | I2C_CR2_START;

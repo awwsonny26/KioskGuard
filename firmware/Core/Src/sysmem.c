@@ -77,3 +77,9 @@ void *_sbrk(ptrdiff_t incr)
 
   return (void *)prev_heap_end;
 }
+
+unsigned kg_heap_peak(void)
+{
+  extern uint8_t _end;
+  return __sbrk_heap_end ? (unsigned)(__sbrk_heap_end - &_end) : 0;
+}

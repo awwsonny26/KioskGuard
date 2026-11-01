@@ -1,0 +1,93 @@
+{
+  "version": 1,
+  "name": "KioskGuard_LR3",
+  "rows": [
+    "core",
+    "polling",
+    "policy",
+    "storage"
+  ],
+  "gap": 16,
+  "blocks": [
+    {
+      "id": "core",
+      "label": "main: super loop без RTOS",
+      "preferredWidth": 570,
+      "children": [
+        "schedule",
+        "sleep"
+      ],
+      "arrangement": "row"
+    },
+    {
+      "id": "schedule",
+      "label": "TIM3 1 МГц\nАбсолютні строки, без catch-up",
+      "preferredWidth": 310
+    },
+    {
+      "id": "sleep",
+      "label": "WFI між викликами\nSysTick / UART / TIM3 IRQ",
+      "preferredWidth": 230
+    },
+    {
+      "id": "polling",
+      "label": "Platform: збір та команди",
+      "preferredWidth": 570,
+      "children": [
+        "inputs",
+        "commands"
+      ],
+      "arrangement": "row"
+    },
+    {
+      "id": "inputs",
+      "label": "PIR 20 мс · IMU 20 мс\nADC 50 мс · retry 1000 мс",
+      "preferredWidth": 310
+    },
+    {
+      "id": "commands",
+      "label": "UART RX: 127 байтів\nДо 32 байтів за 1 мс",
+      "preferredWidth": 230
+    },
+    {
+      "id": "policy",
+      "label": "App: стан термінала, кожні 5 мс",
+      "preferredWidth": 570,
+      "children": [
+        "rules",
+        "queue"
+      ],
+      "arrangement": "row"
+    },
+    {
+      "id": "rules",
+      "label": "USER_NEAR завжди INFO\nМеханіка / світло: CONTROL чи SERVICE",
+      "preferredWidth": 310
+    },
+    {
+      "id": "queue",
+      "label": "16 незмінних подій\nЯвний лічильник втрат",
+      "preferredWidth": 230
+    },
+    {
+      "id": "storage",
+      "label": "Журнал та вивід",
+      "preferredWidth": 570,
+      "children": [
+        "audit",
+        "output"
+      ],
+      "arrangement": "row"
+    },
+    {
+      "id": "audit",
+      "label": "2 × 2048 байтів flash\nCRC32 + commit, крок 8 байтів",
+      "preferredWidth": 310
+    },
+    {
+      "id": "output",
+      "label": "UART TX через IRQ\nЕкспорт / STAT / HIST",
+      "preferredWidth": 230
+    }
+  ]
+}

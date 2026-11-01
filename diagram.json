@@ -97,14 +97,14 @@
     ["light:AO","nucleo:PA0","purple",[]],
     ["baseline_button:1.l","nucleo:GND.1","black",[]],
     ["baseline_button:2.l","nucleo:PC13","cyan",[]],
-    ["trace:D0","nucleo:PB8","green",[]],
-    ["trace:D1","nucleo:PB9","blue",[]],
+    ["trace:D0","nucleo:PA6","green",[]],
+    ["trace:D1","nucleo:PA8","blue",[]],
     ["trace:D2","nucleo:PA2","gray",[]],
     ["trace:D3","nucleo:PA3","gray",[]],
     ["trace:D4","nucleo:PA1","orange",[]],
     ["trace:D5","nucleo:PA4","purple",[]],
     ["trace:D6","nucleo:PA5","yellow",[]],
-    ["trace:D7","nucleo:PC13","cyan",[]],
+    ["trace:D7","nucleo:PA7","cyan",[]],
     ["trace:GND","nucleo:GND.1","black",[]]
   ],
   "dependencies": {}

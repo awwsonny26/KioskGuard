@@ -1,0 +1,103 @@
+{
+  "valid": true,
+  "stimulus_ns": {
+    "presence_d4": 5000000000,
+    "shock_register_marker_d5": 5000000000
+  },
+  "i2c_before": {
+    "start": 4980042400,
+    "bytes": [
+      209,
+      0,
+      0,
+      0,
+      0,
+      32,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "acks": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "end": 4981407400,
+    "repeated": false
+  },
+  "i2c_step": {
+    "start": 4999965225,
+    "bytes": [
+      209,
+      64,
+      0,
+      0,
+      0,
+      32,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "acks": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "end": 5001330225,
+    "repeated": false
+  },
+  "events": {
+    "shock": {
+      "line": "EVENT seq=3 t=4998 type=BODY_SHOCK mode=CONTROL severity=WARN ax=2000 ay=0 az=1000 adc=1001 metric=4000000",
+      "start_ns": 5003729850,
+      "end_ns": 5014379280,
+      "stimulus_to_end_ms": 14.37928
+    },
+    "presence": {
+      "line": "EVENT seq=4 t=5019 type=USER_NEAR mode=CONTROL severity=INFO ax=2000 ay=0 az=1000 adc=1001 metric=0",
+      "start_ns": 5028558825,
+      "end_ns": 5038510805,
+      "stimulus_to_end_ms": 38.510805
+    }
+  },
+  "threshold": "vector delta > 1 g; stimulus delta 2 g, metric 4,000,000 mg²",
+  "scope": "one synthetic I2C MPU register model and independent synthetic GPIO, Wokwi only; physical sensors untested",
+  "vcd_sha256": "12e213707b9210b74adcedeb5eb84744aad340f0abf73116d9d0f837c3908827",
+  "raw_sha256": "d8151cdf6009ebd626f0b410f3d46cbc1637028ce2cccc55a151b92cb7282067"
+}
