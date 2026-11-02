@@ -158,7 +158,7 @@ endif
 C_SOURCES += Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_adc.c Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_adc_ex.c Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_ll_adc.c
 C_INCLUDES += -IPlatform -IDevices -IApp
 OWN_WARNINGS = $(if $(filter Drivers/%,$<),,-Wextra -Werror)
-all: $(BUILD_DIR)/$(TARGET).elf $(BUILD_DIR)/$(TARGET).hex $(BUILD_DIR)/$(TARGET).bin
+all: $(BUILD_DIR)/$(TARGET).elf $(BUILD_DIR)/$(TARGET).hex $(BUILD_DIR)/$(TARGET).bin $(BUILD_DIR)/$(TARGET)-wokwi.hex
 
 
 #######################################
@@ -183,6 +183,11 @@ $(BUILD_DIR)/$(TARGET).elf: $(OBJECTS) Makefile
 
 $(BUILD_DIR)/%.hex: $(BUILD_DIR)/%.elf | $(BUILD_DIR)
 	$(HEX) $< $@
+
+# Initial blank audit pages for the simulator only. Keep the ordinary HEX/BIN
+# separate so this image cannot accidentally be mistaken for a persistent log.
+$(BUILD_DIR)/%-wokwi.hex: $(BUILD_DIR)/%.elf | $(BUILD_DIR)
+	$(HEX) --gap-fill 0xff --pad-to 0x08008000 $< $@
 	
 $(BUILD_DIR)/%.bin: $(BUILD_DIR)/%.elf | $(BUILD_DIR)
 	$(BIN) $< $@	

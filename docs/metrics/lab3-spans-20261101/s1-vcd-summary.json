@@ -1,0 +1,65 @@
+{
+  "source_sha256": "6a989a7d9a223ffb491caaddeb03e11126c249daf628c69b7a1c5961983d6ff9",
+  "raw_sha256": "7e047986749d47d74eb042a6a88002b4e44bf81318774c981b7125724f3a2642",
+  "end_first_stat_ns": 120529147275,
+  "rx": [
+    {
+      "start_ns": 120525565850,
+      "end_ns": 120526087056,
+      "text": "stats"
+    },
+    {
+      "start_ns": 120733968275,
+      "end_ns": 120734576381,
+      "text": "rxdiag"
+    },
+    {
+      "start_ns": 120734576450,
+      "end_ns": 120735705806,
+      "text": "audit status"
+    }
+  ],
+  "metrics": {
+    "imu": {
+      "width": {
+        "n": 6024,
+        "min_us": 1726.725,
+        "avg_us": 1727.3036811088978,
+        "max_us": 1731.175,
+        "p99_us": 1728.55
+      },
+      "period": {
+        "n": 6023,
+        "min_us": 18601.8,
+        "avg_us": 19999.320048148762,
+        "max_us": 20831.825,
+        "p99_us": 20158.525
+      }
+    },
+    "adc": {
+      "width": {
+        "n": 2410,
+        "min_us": 53.975,
+        "avg_us": 55.99604771784232,
+        "max_us": 69.25,
+        "p99_us": 55.925
+      },
+      "period": {
+        "n": 2409,
+        "min_us": 47861.25,
+        "avg_us": 50010.09996886675,
+        "max_us": 76834.4,
+        "p99_us": 50114.45
+      }
+    },
+    "audit": {
+      "width": {
+        "n": 0
+      },
+      "period": {
+        "n": 0
+      }
+    }
+  },
+  "limits": "GPIO IMU pulse is inside the task, firmware timer measures outer task; first STAT TX begins after snapshot, so edge populations can differ. Simulation only."
+}

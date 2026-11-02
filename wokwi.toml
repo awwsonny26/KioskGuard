@@ -1,6 +1,6 @@
 [wokwi]
 version = 1
-firmware = 'firmware/build-poll/firmware.hex'
+firmware = 'firmware/build-poll/firmware-wokwi.hex'
 elf = 'firmware/build-poll/firmware.elf'
 vcdFile = 'docs/captures/kioskguard-product-gate.vcd'
 rfc2217ServerPort = 14379

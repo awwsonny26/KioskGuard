@@ -1,0 +1,16 @@
+{
+  "first_mcu_ms": 500,
+  "last_mcu_ms": 122500,
+  "samples": 245,
+  "non_500_intervals": [],
+  "got": [
+    "SYSTEM",
+    "RXDIAG"
+  ],
+  "commands": [
+    "stats",
+    "rxdiag"
+  ],
+  "error": null,
+  "state": "captured_pending_vcd"
+}

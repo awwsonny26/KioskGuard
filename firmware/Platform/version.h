@@ -1,1 +1,1 @@
-#define KG_VERSION "candidate-poll-tree-abf27f5853950696"
+#define KG_VERSION "candidate-spans-20261101"

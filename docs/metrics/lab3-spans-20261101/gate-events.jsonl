@@ -1,0 +1,197 @@
+{"kind": "connected", "host_utc": "2026-11-01T19:37:30.895733+00:00", "host_monotonic_ns": 451751791}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:31.413633+00:00", "host_monotonic_ns": 969298458, "offset": 0, "length": 490, "latest_sample_ms": null}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:31.518940+00:00", "host_monotonic_ns": 1074603833, "offset": 490, "length": 14, "latest_sample_ms": null}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:31.827638+00:00", "host_monotonic_ns": 1383303708, "offset": 504, "length": 86, "latest_sample_ms": null}
+{"kind": "start", "host_utc": "2026-11-01T19:37:31.827723+00:00", "host_monotonic_ns": 1383381291, "first_mcu_ms": 500}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:32.344494+00:00", "host_monotonic_ns": 1900158750, "offset": 590, "length": 87, "latest_sample_ms": 500}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:32.449675+00:00", "host_monotonic_ns": 2005337958, "offset": 677, "length": 15, "latest_sample_ms": 1000}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:32.857906+00:00", "host_monotonic_ns": 2413575250, "offset": 692, "length": 87, "latest_sample_ms": 1000}
+{"kind": "tx", "host_utc": "2026-11-01T19:37:32.858054+00:00", "host_monotonic_ns": 2413710750, "command": "stats", "planned_offset_ms": 1000, "latest_sample_ms": 1500}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:32.960373+00:00", "host_monotonic_ns": 2516038250, "offset": 779, "length": 700, "latest_sample_ms": 1500}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:33.065032+00:00", "host_monotonic_ns": 2620694125, "offset": 1479, "length": 228, "latest_sample_ms": 1500}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:33.372703+00:00", "host_monotonic_ns": 2928368833, "offset": 1707, "length": 102, "latest_sample_ms": 1500}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:33.474195+00:00", "host_monotonic_ns": 3029856375, "offset": 1809, "length": 106, "latest_sample_ms": 2000}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:33.887104+00:00", "host_monotonic_ns": 3442815708, "offset": 1915, "length": 90, "latest_sample_ms": 2000}
+{"kind": "tx", "host_utc": "2026-11-01T19:37:33.887282+00:00", "host_monotonic_ns": 3442936750, "command": "rxdiag", "planned_offset_ms": 2000, "latest_sample_ms": 2500}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:33.990029+00:00", "host_monotonic_ns": 3545690875, "offset": 2005, "length": 116, "latest_sample_ms": 2500}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:34.403213+00:00", "host_monotonic_ns": 3958873083, "offset": 2121, "length": 105, "latest_sample_ms": 2500}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:34.807610+00:00", "host_monotonic_ns": 4363280458, "offset": 2226, "length": 32, "latest_sample_ms": 3000}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:34.912507+00:00", "host_monotonic_ns": 4468169000, "offset": 2258, "length": 58, "latest_sample_ms": 3000}
+{"kind": "tx", "host_utc": "2026-11-01T19:37:34.912623+00:00", "host_monotonic_ns": 4468275000, "command": "export", "planned_offset_ms": 3000, "latest_sample_ms": 3500}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:35.012859+00:00", "host_monotonic_ns": 4568542416, "offset": 2316, "length": 462, "latest_sample_ms": 3500}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:35.114733+00:00", "host_monotonic_ns": 4670394875, "offset": 2778, "length": 595, "latest_sample_ms": 3500}
+{"kind": "tx", "host_utc": "2026-11-01T19:37:35.114842+00:00", "host_monotonic_ns": 4670493833, "command": "service on", "planned_offset_ms": null, "latest_sample_ms": 3500}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:35.215194+00:00", "host_monotonic_ns": 4770856166, "offset": 3373, "length": 604, "latest_sample_ms": 3500}
+{"kind": "tx", "host_utc": "2026-11-01T19:37:35.215299+00:00", "host_monotonic_ns": 4770951458, "command": "service off", "planned_offset_ms": null, "latest_sample_ms": 3500}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:35.315948+00:00", "host_monotonic_ns": 4871606416, "offset": 3977, "length": 617, "latest_sample_ms": 3500}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:35.418114+00:00", "host_monotonic_ns": 4973773125, "offset": 4594, "length": 490, "latest_sample_ms": 3500}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:35.521093+00:00", "host_monotonic_ns": 5076763875, "offset": 5084, "length": 619, "latest_sample_ms": 3500}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:35.622790+00:00", "host_monotonic_ns": 5178450125, "offset": 5703, "length": 620, "latest_sample_ms": 3500}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:35.724486+00:00", "host_monotonic_ns": 5280149375, "offset": 6323, "length": 502, "latest_sample_ms": 3500}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:35.825064+00:00", "host_monotonic_ns": 5380721333, "offset": 6825, "length": 605, "latest_sample_ms": 3500}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:35.925656+00:00", "host_monotonic_ns": 5481313416, "offset": 7430, "length": 598, "latest_sample_ms": 3500}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:36.026228+00:00", "host_monotonic_ns": 5581887916, "offset": 8028, "length": 574, "latest_sample_ms": 3500}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:36.127268+00:00", "host_monotonic_ns": 5682924708, "offset": 8602, "length": 520, "latest_sample_ms": 3500}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:36.228374+00:00", "host_monotonic_ns": 5784034208, "offset": 9122, "length": 611, "latest_sample_ms": 3500}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:36.329233+00:00", "host_monotonic_ns": 5884897916, "offset": 9733, "length": 513, "latest_sample_ms": 3500}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:36.430005+00:00", "host_monotonic_ns": 5985667875, "offset": 10246, "length": 572, "latest_sample_ms": 3500}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:36.531205+00:00", "host_monotonic_ns": 6086864333, "offset": 10818, "length": 570, "latest_sample_ms": 3500}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:36.631797+00:00", "host_monotonic_ns": 6187465541, "offset": 11388, "length": 530, "latest_sample_ms": 3500}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:36.732131+00:00", "host_monotonic_ns": 6287789750, "offset": 11918, "length": 610, "latest_sample_ms": 3500}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:36.835364+00:00", "host_monotonic_ns": 6391022791, "offset": 12528, "length": 100, "latest_sample_ms": 3500}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:37.246269+00:00", "host_monotonic_ns": 6801930625, "offset": 12628, "length": 90, "latest_sample_ms": 5424}
+{"kind": "tx", "host_utc": "2026-11-01T19:37:37.246375+00:00", "host_monotonic_ns": 6802023916, "command": "service off", "planned_offset_ms": 5000, "latest_sample_ms": 5924}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:37.346931+00:00", "host_monotonic_ns": 6902677166, "offset": 12718, "length": 115, "latest_sample_ms": 5924}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:37.762175+00:00", "host_monotonic_ns": 7317852625, "offset": 12833, "length": 90, "latest_sample_ms": 5924}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:38.277549+00:00", "host_monotonic_ns": 7833204000, "offset": 12923, "length": 90, "latest_sample_ms": 6424}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:38.380927+00:00", "host_monotonic_ns": 7936584708, "offset": 13013, "length": 15, "latest_sample_ms": 6924}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:38.796395+00:00", "host_monotonic_ns": 8352058625, "offset": 13028, "length": 90, "latest_sample_ms": 6924}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:39.312162+00:00", "host_monotonic_ns": 8867820833, "offset": 13118, "length": 90, "latest_sample_ms": 7424}
+{"kind": "tx", "host_utc": "2026-11-01T19:37:39.312503+00:00", "host_monotonic_ns": 8868154166, "command": "service on", "planned_offset_ms": 7000, "latest_sample_ms": 7924}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:39.413248+00:00", "host_monotonic_ns": 8968912375, "offset": 13208, "length": 114, "latest_sample_ms": 7924}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:39.822224+00:00", "host_monotonic_ns": 9377901250, "offset": 13322, "length": 90, "latest_sample_ms": 7924}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:40.234173+00:00", "host_monotonic_ns": 9789824250, "offset": 13412, "length": 42, "latest_sample_ms": 8424}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:40.335314+00:00", "host_monotonic_ns": 9890964708, "offset": 13454, "length": 48, "latest_sample_ms": 8424}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:40.440481+00:00", "host_monotonic_ns": 9996132166, "offset": 13502, "length": 15, "latest_sample_ms": 8924}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:40.745951+00:00", "host_monotonic_ns": 10301603250, "offset": 13517, "length": 90, "latest_sample_ms": 8924}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:41.262782+00:00", "host_monotonic_ns": 10818436250, "offset": 13607, "length": 90, "latest_sample_ms": 9424}
+{"kind": "tx", "host_utc": "2026-11-01T19:37:41.262948+00:00", "host_monotonic_ns": 10818607125, "command": "service off", "planned_offset_ms": 9000, "latest_sample_ms": 9924}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:41.366938+00:00", "host_monotonic_ns": 10922592333, "offset": 13697, "length": 117, "latest_sample_ms": 9924}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:41.775762+00:00", "host_monotonic_ns": 11331415416, "offset": 13814, "length": 91, "latest_sample_ms": 9924}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:42.295852+00:00", "host_monotonic_ns": 11851515333, "offset": 13905, "length": 91, "latest_sample_ms": 10424}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:42.401154+00:00", "host_monotonic_ns": 11956805208, "offset": 13996, "length": 17, "latest_sample_ms": 10924}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:42.812476+00:00", "host_monotonic_ns": 12368124083, "offset": 14013, "length": 91, "latest_sample_ms": 10924}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:43.328482+00:00", "host_monotonic_ns": 12884130875, "offset": 14104, "length": 91, "latest_sample_ms": 11424}
+{"kind": "tx", "host_utc": "2026-11-01T19:37:43.328587+00:00", "host_monotonic_ns": 12884226666, "command": "service on", "planned_offset_ms": 11000, "latest_sample_ms": 11924}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:43.429176+00:00", "host_monotonic_ns": 12984825875, "offset": 14195, "length": 117, "latest_sample_ms": 11924}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:43.738075+00:00", "host_monotonic_ns": 13293727666, "offset": 14312, "length": 41, "latest_sample_ms": 11924}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:43.841129+00:00", "host_monotonic_ns": 13396780625, "offset": 14353, "length": 50, "latest_sample_ms": 11924}
+{"kind": "tx", "host_utc": "2026-11-01T19:37:43.841305+00:00", "host_monotonic_ns": 13396949041, "command": "export", "planned_offset_ms": 11500, "latest_sample_ms": 12424}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:43.941521+00:00", "host_monotonic_ns": 13497173166, "offset": 14403, "length": 474, "latest_sample_ms": 12424}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:44.041702+00:00", "host_monotonic_ns": 13597351000, "offset": 14877, "length": 615, "latest_sample_ms": 12424}
+{"kind": "tx", "host_utc": "2026-11-01T19:37:44.041803+00:00", "host_monotonic_ns": 13597442208, "command": "service on", "planned_offset_ms": null, "latest_sample_ms": 12424}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:44.142152+00:00", "host_monotonic_ns": 13697797416, "offset": 15492, "length": 635, "latest_sample_ms": 12424}
+{"kind": "tx", "host_utc": "2026-11-01T19:37:44.142252+00:00", "host_monotonic_ns": 13697889541, "command": "service off", "planned_offset_ms": null, "latest_sample_ms": 12424}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:44.242527+00:00", "host_monotonic_ns": 13798176541, "offset": 16127, "length": 584, "latest_sample_ms": 12424}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:44.342786+00:00", "host_monotonic_ns": 13898437166, "offset": 16711, "length": 530, "latest_sample_ms": 12424}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:44.445499+00:00", "host_monotonic_ns": 14001145083, "offset": 17241, "length": 555, "latest_sample_ms": 12424}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:44.545793+00:00", "host_monotonic_ns": 14101451333, "offset": 17796, "length": 598, "latest_sample_ms": 12424}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:44.646746+00:00", "host_monotonic_ns": 14202392875, "offset": 18394, "length": 503, "latest_sample_ms": 12424}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:44.748296+00:00", "host_monotonic_ns": 14303948333, "offset": 18897, "length": 604, "latest_sample_ms": 12424}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:44.848582+00:00", "host_monotonic_ns": 14404231416, "offset": 19501, "length": 531, "latest_sample_ms": 12424}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:44.949683+00:00", "host_monotonic_ns": 14505331291, "offset": 20032, "length": 555, "latest_sample_ms": 12424}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:45.050464+00:00", "host_monotonic_ns": 14606109791, "offset": 20587, "length": 549, "latest_sample_ms": 12424}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:45.150678+00:00", "host_monotonic_ns": 14706322791, "offset": 21136, "length": 605, "latest_sample_ms": 12424}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:45.251295+00:00", "host_monotonic_ns": 14806949541, "offset": 21741, "length": 550, "latest_sample_ms": 12424}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:45.351858+00:00", "host_monotonic_ns": 14907510166, "offset": 22291, "length": 562, "latest_sample_ms": 12424}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:45.454183+00:00", "host_monotonic_ns": 15009832208, "offset": 22853, "length": 523, "latest_sample_ms": 12424}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:45.555139+00:00", "host_monotonic_ns": 15110784208, "offset": 23376, "length": 620, "latest_sample_ms": 12424}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:45.656209+00:00", "host_monotonic_ns": 15211855708, "offset": 23996, "length": 531, "latest_sample_ms": 12424}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:45.761406+00:00", "host_monotonic_ns": 15317053250, "offset": 24527, "length": 197, "latest_sample_ms": 12424}
+{"kind": "tx", "host_utc": "2026-11-01T19:37:45.761538+00:00", "host_monotonic_ns": 15317180375, "command": "service off", "planned_offset_ms": 13000, "latest_sample_ms": 14361}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:45.865501+00:00", "host_monotonic_ns": 15421142708, "offset": 24724, "length": 102, "latest_sample_ms": 14361}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:46.172249+00:00", "host_monotonic_ns": 15727893000, "offset": 24826, "length": 6, "latest_sample_ms": 14361}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:46.274786+00:00", "host_monotonic_ns": 15830437333, "offset": 24832, "length": 85, "latest_sample_ms": 14361}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:46.376473+00:00", "host_monotonic_ns": 15932118458, "offset": 24917, "length": 17, "latest_sample_ms": 14861}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:46.680094+00:00", "host_monotonic_ns": 16235742208, "offset": 24934, "length": 88, "latest_sample_ms": 14861}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:46.784230+00:00", "host_monotonic_ns": 16339884125, "offset": 25022, "length": 3, "latest_sample_ms": 14861}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:47.194519+00:00", "host_monotonic_ns": 16750165750, "offset": 25025, "length": 91, "latest_sample_ms": 15361}
+{"kind": "tx", "host_utc": "2026-11-01T19:37:47.194673+00:00", "host_monotonic_ns": 16750308583, "command": "service on", "planned_offset_ms": 15000, "latest_sample_ms": 15861}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:47.299807+00:00", "host_monotonic_ns": 16855448291, "offset": 25116, "length": 101, "latest_sample_ms": 15861}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:47.403668+00:00", "host_monotonic_ns": 16959315916, "offset": 25217, "length": 17, "latest_sample_ms": 15861}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:47.706398+00:00", "host_monotonic_ns": 17262040916, "offset": 25234, "length": 91, "latest_sample_ms": 15861}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:48.226965+00:00", "host_monotonic_ns": 17782609750, "offset": 25325, "length": 91, "latest_sample_ms": 16361}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:48.431780+00:00", "host_monotonic_ns": 17987424250, "offset": 25416, "length": 17, "latest_sample_ms": 16861}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:48.744046+00:00", "host_monotonic_ns": 18299689875, "offset": 25433, "length": 91, "latest_sample_ms": 16861}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:49.264064+00:00", "host_monotonic_ns": 18819705000, "offset": 25524, "length": 91, "latest_sample_ms": 17361}
+{"kind": "tx", "host_utc": "2026-11-01T19:37:49.264183+00:00", "host_monotonic_ns": 18819813708, "command": "service off", "planned_offset_ms": 17000, "latest_sample_ms": 17861}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:49.367258+00:00", "host_monotonic_ns": 18922900791, "offset": 25615, "length": 119, "latest_sample_ms": 17861}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:49.672401+00:00", "host_monotonic_ns": 19228043125, "offset": 25734, "length": 15, "latest_sample_ms": 17861}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:49.776227+00:00", "host_monotonic_ns": 19331864583, "offset": 25749, "length": 76, "latest_sample_ms": 17861}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:50.190594+00:00", "host_monotonic_ns": 19746233416, "offset": 25825, "length": 91, "latest_sample_ms": 18361}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:50.400858+00:00", "host_monotonic_ns": 19956493875, "offset": 25916, "length": 17, "latest_sample_ms": 18861}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:50.704150+00:00", "host_monotonic_ns": 20259787250, "offset": 25933, "length": 91, "latest_sample_ms": 18861}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:51.220691+00:00", "host_monotonic_ns": 20776325375, "offset": 26024, "length": 91, "latest_sample_ms": 19361}
+{"kind": "tx", "host_utc": "2026-11-01T19:37:51.220808+00:00", "host_monotonic_ns": 20776435625, "command": "service on", "planned_offset_ms": 19000, "latest_sample_ms": 19861}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:51.325947+00:00", "host_monotonic_ns": 20881585583, "offset": 26115, "length": 101, "latest_sample_ms": 19861}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:51.429823+00:00", "host_monotonic_ns": 20985462291, "offset": 26216, "length": 17, "latest_sample_ms": 19861}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:51.738208+00:00", "host_monotonic_ns": 21293843666, "offset": 26233, "length": 91, "latest_sample_ms": 19861}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:52.254407+00:00", "host_monotonic_ns": 21810044500, "offset": 26324, "length": 91, "latest_sample_ms": 20361}
+{"kind": "tx", "host_utc": "2026-11-01T19:37:52.254535+00:00", "host_monotonic_ns": 21810162458, "command": "export", "planned_offset_ms": 20000, "latest_sample_ms": 20861}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:52.354739+00:00", "host_monotonic_ns": 21910373666, "offset": 26415, "length": 462, "latest_sample_ms": 20861}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:52.455931+00:00", "host_monotonic_ns": 22011576666, "offset": 26877, "length": 563, "latest_sample_ms": 20861}
+{"kind": "tx", "host_utc": "2026-11-01T19:37:52.456109+00:00", "host_monotonic_ns": 22011740916, "command": "service on", "planned_offset_ms": null, "latest_sample_ms": 20861}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:52.556304+00:00", "host_monotonic_ns": 22111942750, "offset": 27440, "length": 592, "latest_sample_ms": 20861}
+{"kind": "tx", "host_utc": "2026-11-01T19:37:52.556426+00:00", "host_monotonic_ns": 22112053458, "command": "service off", "planned_offset_ms": null, "latest_sample_ms": 20861}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:52.656759+00:00", "host_monotonic_ns": 22212402458, "offset": 28032, "length": 608, "latest_sample_ms": 20861}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:52.757164+00:00", "host_monotonic_ns": 22312813083, "offset": 28640, "length": 581, "latest_sample_ms": 20861}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:52.857831+00:00", "host_monotonic_ns": 22413467291, "offset": 29221, "length": 587, "latest_sample_ms": 20861}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:52.958548+00:00", "host_monotonic_ns": 22514183083, "offset": 29808, "length": 520, "latest_sample_ms": 20861}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:53.059379+00:00", "host_monotonic_ns": 22615016291, "offset": 30328, "length": 565, "latest_sample_ms": 20861}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:53.160387+00:00", "host_monotonic_ns": 22716030833, "offset": 30893, "length": 560, "latest_sample_ms": 20861}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:53.262434+00:00", "host_monotonic_ns": 22818071666, "offset": 31453, "length": 525, "latest_sample_ms": 20861}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:53.364131+00:00", "host_monotonic_ns": 22919767875, "offset": 31978, "length": 614, "latest_sample_ms": 20861}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:53.465029+00:00", "host_monotonic_ns": 23020670500, "offset": 32592, "length": 506, "latest_sample_ms": 20861}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:53.567592+00:00", "host_monotonic_ns": 23123232875, "offset": 33098, "length": 585, "latest_sample_ms": 20861}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:53.668039+00:00", "host_monotonic_ns": 23223684375, "offset": 33683, "length": 609, "latest_sample_ms": 20861}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:53.769112+00:00", "host_monotonic_ns": 23324745041, "offset": 34292, "length": 514, "latest_sample_ms": 20861}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:53.870430+00:00", "host_monotonic_ns": 23426063083, "offset": 34806, "length": 582, "latest_sample_ms": 20861}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:53.970691+00:00", "host_monotonic_ns": 23526323541, "offset": 35388, "length": 572, "latest_sample_ms": 20861}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:54.072147+00:00", "host_monotonic_ns": 23627794791, "offset": 35960, "length": 536, "latest_sample_ms": 20861}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:54.172802+00:00", "host_monotonic_ns": 23728442500, "offset": 36496, "length": 240, "latest_sample_ms": 20861}
+{"kind": "tx", "host_utc": "2026-11-01T19:37:54.172995+00:00", "host_monotonic_ns": 23728622541, "command": "service off", "planned_offset_ms": 21000, "latest_sample_ms": 22781}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:54.275655+00:00", "host_monotonic_ns": 23831299541, "offset": 36736, "length": 102, "latest_sample_ms": 22781}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:54.380897+00:00", "host_monotonic_ns": 23936529916, "offset": 36838, "length": 17, "latest_sample_ms": 22781}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:54.689291+00:00", "host_monotonic_ns": 24244921416, "offset": 36855, "length": 91, "latest_sample_ms": 22781}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:55.101517+00:00", "host_monotonic_ns": 24657147541, "offset": 36946, "length": 91, "latest_sample_ms": 23281}
+{"kind": "tx", "host_utc": "2026-11-01T19:37:55.101633+00:00", "host_monotonic_ns": 24657254958, "command": "service on", "planned_offset_ms": 23000, "latest_sample_ms": 23781}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:55.206761+00:00", "host_monotonic_ns": 24762390541, "offset": 37037, "length": 101, "latest_sample_ms": 23781}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:55.416405+00:00", "host_monotonic_ns": 24972034333, "offset": 37138, "length": 17, "latest_sample_ms": 23781}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:55.622379+00:00", "host_monotonic_ns": 25178008500, "offset": 37155, "length": 91, "latest_sample_ms": 23781}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:56.142184+00:00", "host_monotonic_ns": 25697812916, "offset": 37246, "length": 91, "latest_sample_ms": 24281}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:56.348464+00:00", "host_monotonic_ns": 25904107083, "offset": 37337, "length": 1, "latest_sample_ms": 24781}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:56.450603+00:00", "host_monotonic_ns": 26006231666, "offset": 37338, "length": 16, "latest_sample_ms": 24781}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:56.659032+00:00", "host_monotonic_ns": 26214660541, "offset": 37354, "length": 91, "latest_sample_ms": 24781}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:57.173009+00:00", "host_monotonic_ns": 26728648500, "offset": 37445, "length": 91, "latest_sample_ms": 25281}
+{"kind": "tx", "host_utc": "2026-11-01T19:37:57.173238+00:00", "host_monotonic_ns": 26728862625, "command": "service off", "planned_offset_ms": 25000, "latest_sample_ms": 25781}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:57.274546+00:00", "host_monotonic_ns": 26830178625, "offset": 37536, "length": 102, "latest_sample_ms": 25781}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:57.379755+00:00", "host_monotonic_ns": 26935380916, "offset": 37638, "length": 17, "latest_sample_ms": 25781}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:57.688174+00:00", "host_monotonic_ns": 27243812041, "offset": 37655, "length": 91, "latest_sample_ms": 25781}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:58.096336+00:00", "host_monotonic_ns": 27651962708, "offset": 37746, "length": 60, "latest_sample_ms": 26281}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:58.197513+00:00", "host_monotonic_ns": 27753137750, "offset": 37806, "length": 31, "latest_sample_ms": 26281}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:58.404450+00:00", "host_monotonic_ns": 27960081500, "offset": 37837, "length": 17, "latest_sample_ms": 26781}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:58.612360+00:00", "host_monotonic_ns": 28167986291, "offset": 37854, "length": 91, "latest_sample_ms": 26781}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:59.128631+00:00", "host_monotonic_ns": 28684261458, "offset": 37945, "length": 91, "latest_sample_ms": 27281}
+{"kind": "tx", "host_utc": "2026-11-01T19:37:59.128799+00:00", "host_monotonic_ns": 28684420791, "command": "service on", "planned_offset_ms": 27000, "latest_sample_ms": 27781}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:59.234029+00:00", "host_monotonic_ns": 28789663125, "offset": 38036, "length": 101, "latest_sample_ms": 27781}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:59.440169+00:00", "host_monotonic_ns": 28995791208, "offset": 38137, "length": 17, "latest_sample_ms": 27781}
+{"kind": "rx", "host_utc": "2026-11-01T19:37:59.647919+00:00", "host_monotonic_ns": 29203546000, "offset": 38154, "length": 91, "latest_sample_ms": 27781}
+{"kind": "rx", "host_utc": "2026-11-01T19:38:00.167186+00:00", "host_monotonic_ns": 29722809000, "offset": 38245, "length": 91, "latest_sample_ms": 28281}
+{"kind": "rx", "host_utc": "2026-11-01T19:38:00.373910+00:00", "host_monotonic_ns": 29929531625, "offset": 38336, "length": 17, "latest_sample_ms": 28781}
+{"kind": "rx", "host_utc": "2026-11-01T19:38:00.687049+00:00", "host_monotonic_ns": 30242673416, "offset": 38353, "length": 91, "latest_sample_ms": 28781}
+{"kind": "tx", "host_utc": "2026-11-01T19:38:00.687190+00:00", "host_monotonic_ns": 30242806541, "command": "rxdiag", "planned_offset_ms": 28500, "latest_sample_ms": 29281}
+{"kind": "rx", "host_utc": "2026-11-01T19:38:00.792400+00:00", "host_monotonic_ns": 30348021958, "offset": 38444, "length": 122, "latest_sample_ms": 29281}
+{"kind": "rx", "host_utc": "2026-11-01T19:38:01.101364+00:00", "host_monotonic_ns": 30656993833, "offset": 38566, "length": 91, "latest_sample_ms": 29281}
+{"kind": "rx", "host_utc": "2026-11-01T19:38:01.411399+00:00", "host_monotonic_ns": 30967025541, "offset": 38657, "length": 17, "latest_sample_ms": 29781}
+{"kind": "rx", "host_utc": "2026-11-01T19:38:01.617420+00:00", "host_monotonic_ns": 31173044375, "offset": 38674, "length": 91, "latest_sample_ms": 29781}
+{"kind": "tx", "host_utc": "2026-11-01T19:38:01.617848+00:00", "host_monotonic_ns": 31173462583, "command": "audit status", "planned_offset_ms": 29500, "latest_sample_ms": 30281}
+{"kind": "rx", "host_utc": "2026-11-01T19:38:01.720622+00:00", "host_monotonic_ns": 31276247833, "offset": 38765, "length": 132, "latest_sample_ms": 30281}
+{"kind": "rx", "host_utc": "2026-11-01T19:38:02.137330+00:00", "host_monotonic_ns": 31692956833, "offset": 38897, "length": 91, "latest_sample_ms": 30281}
+{"kind": "rx", "host_utc": "2026-11-01T19:38:02.450465+00:00", "host_monotonic_ns": 32006087333, "offset": 38988, "length": 17, "latest_sample_ms": 30781}
+{"kind": "rx", "host_utc": "2026-11-01T19:38:02.653966+00:00", "host_monotonic_ns": 32209584833, "offset": 39005, "length": 91, "latest_sample_ms": 30781}
+{"kind": "rx", "host_utc": "2026-11-01T19:38:03.172451+00:00", "host_monotonic_ns": 32728069500, "offset": 39096, "length": 91, "latest_sample_ms": 31281}
+{"kind": "rx", "host_utc": "2026-11-01T19:38:03.379016+00:00", "host_monotonic_ns": 32934641375, "offset": 39187, "length": 17, "latest_sample_ms": 31781}
+{"kind": "rx", "host_utc": "2026-11-01T19:38:03.685299+00:00", "host_monotonic_ns": 33240917500, "offset": 39204, "length": 91, "latest_sample_ms": 31781}
+{"kind": "rx", "host_utc": "2026-11-01T19:38:04.098868+00:00", "host_monotonic_ns": 33654641041, "offset": 39295, "length": 91, "latest_sample_ms": 32281}
+{"kind": "rx", "host_utc": "2026-11-01T19:38:04.403425+00:00", "host_monotonic_ns": 33959047166, "offset": 39386, "length": 17, "latest_sample_ms": 32781}
+{"kind": "rx", "host_utc": "2026-11-01T19:38:04.605038+00:00", "host_monotonic_ns": 34160655208, "offset": 39403, "length": 91, "latest_sample_ms": 32781}
+{"kind": "rx", "host_utc": "2026-11-01T19:38:05.125949+00:00", "host_monotonic_ns": 34681562583, "offset": 39494, "length": 91, "latest_sample_ms": 33281}
+{"kind": "rx", "host_utc": "2026-11-01T19:38:05.432055+00:00", "host_monotonic_ns": 34987671375, "offset": 39585, "length": 17, "latest_sample_ms": 33781}
+{"kind": "rx", "host_utc": "2026-11-01T19:38:05.642345+00:00", "host_monotonic_ns": 35197964416, "offset": 39602, "length": 91, "latest_sample_ms": 33781}
+{"kind": "rx", "host_utc": "2026-11-01T19:38:06.157462+00:00", "host_monotonic_ns": 35713086791, "offset": 39693, "length": 91, "latest_sample_ms": 34281}
+{"kind": "rx", "host_utc": "2026-11-01T19:38:06.366636+00:00", "host_monotonic_ns": 35922249291, "offset": 39784, "length": 17, "latest_sample_ms": 34781}
+{"kind": "rx", "host_utc": "2026-11-01T19:38:06.678011+00:00", "host_monotonic_ns": 36233632166, "offset": 39801, "length": 91, "latest_sample_ms": 34781}
+{"kind": "rx", "host_utc": "2026-11-01T19:38:07.190203+00:00", "host_monotonic_ns": 36745814416, "offset": 39892, "length": 91, "latest_sample_ms": 35281}
+{"kind": "rx", "host_utc": "2026-11-01T19:38:07.400159+00:00", "host_monotonic_ns": 36955772333, "offset": 39983, "length": 17, "latest_sample_ms": 35781}
+{"kind": "rx", "host_utc": "2026-11-01T19:38:07.607074+00:00", "host_monotonic_ns": 37162684333, "offset": 40000, "length": 91, "latest_sample_ms": 35781}
+{"kind": "end", "host_utc": "2026-11-01T19:38:07.607151+00:00", "host_monotonic_ns": 37162753583, "state": "captured_pending_VCD_review", "phase": "gate", "first_mcu_ms": 500, "last_mcu_ms": 36281, "seen": {"near": 3, "export_0": 3, "export_63": 3}, "sent_actions": 19, "limitations": "UART collection is not VCD overlap or hardware proof; examine GPIO and RX loss"}

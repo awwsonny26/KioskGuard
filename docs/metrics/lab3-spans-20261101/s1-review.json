@@ -1,0 +1,32 @@
+{
+  "valid": true,
+  "scope": "S1 only, Wokwi, separate TIM3 task span and inner D0 pulse; no physical CPU/WCET claim",
+  "firmware_elf_sha256": "093897f8f59176f5ad30b271edb3f85f949fd2e511e66d8acfc195ac1d282cf2",
+  "capture": {
+    "first_mcu_ms": 500,
+    "last_mcu_ms": 122500,
+    "samples": 245,
+    "non_500_intervals": [],
+    "got": [
+      "SYSTEM",
+      "RXDIAG"
+    ],
+    "commands": [
+      "stats",
+      "rxdiag"
+    ],
+    "error": null,
+    "state": "captured_pending_vcd"
+  },
+  "imu_stat": "STAT name=imu n=6026 min_us=1743 avg_us=1744 max_us=1769 jitter_min_ms=-1 jitter_max_ms=0 skipped=0 late=0",
+  "system": "SYSTEM foreground_permille=152 stack_used=928 heap_peak=1032 range_errors=0 cpu=polling",
+  "vcd_sha256": "6a989a7d9a223ffb491caaddeb03e11126c249daf628c69b7a1c5961983d6ff9",
+  "vcd_imu_width": {
+    "n": 6024,
+    "min_us": 1726.725,
+    "avg_us": 1727.3036811088978,
+    "max_us": 1731.175,
+    "p99_us": 1728.55
+  },
+  "limits": "UART STAT and VCD sample counts differ because snapshot and TX boundaries differ."
+}

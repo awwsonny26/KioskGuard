@@ -35,7 +35,9 @@ static unsigned rx_last_dispatch;
 static bool rx_diag_pending;
 static kg_audit audit;
 enum {KG_TASK_CMD,KG_TASK_PIR,KG_TASK_ADC,KG_TASK_IMU,KG_TASK_POLICY,KG_TASK_NV,KG_TASK_HEART,KG_TASK_TX,KG_TASK_TASKS};
+static const char *const task_names[]={"command","pir","adc","imu","policy","audit","heartbeat","output"};
 static kg_cadence clocks[KG_TASK_TASKS];
+static uint32_t range_errors;
 static uint32_t busy_us, load_start, load_permille, loop_last, loop_min, loop_max, loop_count;
 static uint64_t loop_sum;
 static uint32_t command_max, command_count, event_age_max;
@@ -243,7 +245,7 @@ void kg_platform_start(void)
     first_adc_us=kg_now_us();
     pir_level = HAL_GPIO_ReadPin(GPIOA, KG_PIR_PIN) == GPIO_PIN_SET;
     first_pir_us=kg_now_us();
-    printf("BOOT project=KioskGuard lab=3 source=%s timer=SysTick_1ms_CANDIDATE\r\n",KG_VERSION);
+    printf("BOOT project=KioskGuard lab=3 source=%s timer=SysTick_TIM3_span_CANDIDATE\r\n",KG_VERSION);
     printf("SELFTEST device=MPU6050 status=%s id_expected=0x68 range_g=4\r\n",
            kg_status_name(imu_status));
     printf("SELFTEST device=LDR status=%s adc=%u\r\n", adc_ok ? "READABLE" : "ERROR", light);
@@ -288,8 +290,13 @@ static void output(uint32_t now)
           (unsigned long)audit.totals.errors,(unsigned long)audit.totals.services,
           audit.busy,audit.dirty,audit.failed,(unsigned long)audit.invalid,(unsigned long)audit.coalesced);
     } else if (stats_pending) {
-        stats_pending=false;
-        n=snprintf(tx,sizeof(tx),"METRICS_UNAVAILABLE cpu_wcet=1 timer=SysTick_1ms\r\n");
+        if(report_line<KG_TASK_TASKS) {
+            unsigned i=report_line++; kg_cadence *c=&clocks[i];
+            n=snprintf(tx,sizeof(tx),"STAT name=%s n=%lu min_us=%lu avg_us=%lu max_us=%lu jitter_min_ms=%ld jitter_max_ms=%ld skipped=%lu late=%lu\r\n",task_names[i],(unsigned long)c->runs,(unsigned long)c->min_us,(unsigned long)(c->runs?c->sum_us/c->runs:0),(unsigned long)c->max_us,(long)(c->jitter_min/1000),(long)(c->jitter_max/1000),(unsigned long)c->skipped,(unsigned long)c->late);
+        } else {
+            stats_pending=false;
+            n=snprintf(tx,sizeof(tx),"SYSTEM foreground_permille=%lu stack_used=%u heap_peak=%u range_errors=%lu cpu=polling\r\n",(unsigned long)load_permille,kg_stack_used(),kg_heap_peak(),(unsigned long)range_errors);
+        }
     } else if (kg_event_pop(&kiosk, &event)) {
         kg_audit_event(&audit,&event,kiosk.base_adc);
         uint32_t age=now-event.time;if(age>event_age_max)event_age_max=age;
@@ -344,13 +351,15 @@ void kg_platform_run(void)
     rx_retry(now);
     if(!timer_checked && (uint32_t)(HAL_GetTick()-boot_tick)>=100) {
         timer_checked=true;
-        /* A stuck TIM3 is a failed measurement source, never fabricated time. */
+        /* This check covers the coarse scheduler clock, not TIM3. */
         clock_elapsed_us=cycle-boot_clock;
         clock_elapsed_ms=HAL_GetTick()-boot_tick;clock_pending=true;
     }
     for(unsigned id=0;id<KG_TASK_TASKS;++id) {
         uint32_t begin=kg_now_us();
         if(!kg_cadence_due(&clocks[id],begin))continue;
+        uint16_t perf_begin=kg_perf_ticks();
+        uint32_t perf_ms=HAL_GetTick();
         kg_input in=inputs(false,false);
         bool work=true;
         switch(id) {
@@ -392,7 +401,10 @@ void kg_platform_run(void)
         case KG_TASK_TX:work=huart2.gState==HAL_UART_STATE_READY;output(kg_now_ms());break;
         default:break;
         }
-        uint32_t elapsed=kg_now_us()-begin;
+        uint16_t perf_end=kg_perf_ticks();
+        uint32_t ms_span=HAL_GetTick()-perf_ms;
+        uint32_t elapsed=(uint16_t)(perf_end-perf_begin);
+        if(ms_span>=60U) { ++range_errors; elapsed=ms_span*1000U; }
         kg_cadence_finish(&clocks[id],elapsed);if(work)busy_us+=elapsed;
     }
     uint32_t elapsed=kg_now_us()-load_start;

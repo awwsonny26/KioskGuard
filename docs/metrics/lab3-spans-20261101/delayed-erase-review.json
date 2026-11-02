@@ -1,0 +1,13 @@
+{
+  "last_audit_gpio_start_ns": 79714108875,
+  "last_audit_gpio_end_ns": 79715238525,
+  "later_slot0_count": 36,
+  "last_slot0_ns": 377645084325,
+  "delay_seconds": 297.9298458,
+  "final_audit": {
+    "start_ns": 436558663425,
+    "end_ns": 436572102681,
+    "text": "AUDIT gen=65 committed=64 near=45 shock=0 moved=0 light=0 errors=1 service_changes=281 busy=1 dirty=1 failed=1 invalid=0 coalesced=261"
+  },
+  "inference": "D1 marks real kg_audit_step; after its last pulse, repeated exports still show committed slot 0 unchanged. Exact operation type is inferred from final failed erase state and source, not directly decoded as a flash bus transaction."
+}

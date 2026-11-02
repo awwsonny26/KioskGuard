@@ -28,6 +28,7 @@
  * Pointer to the current high watermark of the heap usage
  */
 static uint8_t *__sbrk_heap_end = NULL;
+static uint8_t *__sbrk_heap_peak = NULL;
 
 /**
  * @brief _sbrk() allocates memory to the newlib heap and is used by malloc
@@ -74,6 +75,7 @@ void *_sbrk(ptrdiff_t incr)
 
   prev_heap_end = __sbrk_heap_end;
   __sbrk_heap_end += incr;
+  if (!__sbrk_heap_peak || __sbrk_heap_end > __sbrk_heap_peak) __sbrk_heap_peak=__sbrk_heap_end;
 
   return (void *)prev_heap_end;
 }
@@ -81,5 +83,5 @@ void *_sbrk(ptrdiff_t incr)
 unsigned kg_heap_peak(void)
 {
   extern uint8_t _end;
-  return __sbrk_heap_end ? (unsigned)(__sbrk_heap_end - &_end) : 0;
+  return __sbrk_heap_peak ? (unsigned)(__sbrk_heap_peak - &_end) : 0;
 }

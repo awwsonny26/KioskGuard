@@ -1,7 +1,13 @@
 #include "board.h"
 #include "measure.h"
-/* Isolated diagnostic candidate: 1 ms resolution, not CPU/WCET profiling. */
-void kg_measure_init(void) {}
+/* SysTick schedules at 1 ms; TIM3 measures short elapsed spans, including waits. */
+void kg_measure_init(void) {
+    __HAL_RCC_TIM3_CLK_ENABLE(); TIM3->CR1=0;
+    TIM3->PSC=SystemCoreClock/1000000U-1U; TIM3->ARR=65535;
+    TIM3->EGR=TIM_EGR_UG; TIM3->SR=0; TIM3->DIER=0; TIM3->CNT=0;
+    TIM3->CR1=TIM_CR1_CEN;
+}
+uint16_t kg_perf_ticks(void) { return (uint16_t)TIM3->CNT; }
 uint32_t kg_now_us(void) { return HAL_GetTick() * 1000U; }
 uint32_t kg_now_ms(void) { return HAL_GetTick(); }
 extern uint32_t _estack, _Min_Stack_Size;

@@ -1,0 +1,12 @@
+{
+  "state": "incomplete",
+  "reason": "SAMPLE timeout",
+  "first_mcu_ms": 15500,
+  "last_mcu_ms": 1997000,
+  "uart.raw_sha256": "177d2eead508bcb28c440324d85cdbcf120653afd962979ae16d833de96868fa",
+  "events.jsonl_sha256": "e647c54ad9d43db2e0978a68341e83a230c433f4faa3f36e9dca91261e704279",
+  "finish": {
+    "utc": "2026-11-01T20:20:28.377026+00:00",
+    "monotonic_ns": 2012940118750
+  }
+}

@@ -1,0 +1,265 @@
+{
+  "slots_seen": 64,
+  "lines_seen": 2880,
+  "valid": [
+    {
+      "slot": 0,
+      "generation": 1
+    },
+    {
+      "slot": 1,
+      "generation": 2
+    },
+    {
+      "slot": 2,
+      "generation": 3
+    },
+    {
+      "slot": 3,
+      "generation": 4
+    },
+    {
+      "slot": 4,
+      "generation": 5
+    },
+    {
+      "slot": 5,
+      "generation": 6
+    },
+    {
+      "slot": 6,
+      "generation": 7
+    },
+    {
+      "slot": 7,
+      "generation": 8
+    },
+    {
+      "slot": 8,
+      "generation": 9
+    },
+    {
+      "slot": 9,
+      "generation": 10
+    },
+    {
+      "slot": 10,
+      "generation": 11
+    },
+    {
+      "slot": 11,
+      "generation": 12
+    },
+    {
+      "slot": 12,
+      "generation": 13
+    },
+    {
+      "slot": 13,
+      "generation": 14
+    },
+    {
+      "slot": 14,
+      "generation": 15
+    },
+    {
+      "slot": 15,
+      "generation": 16
+    },
+    {
+      "slot": 16,
+      "generation": 17
+    },
+    {
+      "slot": 17,
+      "generation": 18
+    },
+    {
+      "slot": 18,
+      "generation": 19
+    },
+    {
+      "slot": 19,
+      "generation": 20
+    },
+    {
+      "slot": 20,
+      "generation": 21
+    },
+    {
+      "slot": 21,
+      "generation": 22
+    },
+    {
+      "slot": 22,
+      "generation": 23
+    },
+    {
+      "slot": 23,
+      "generation": 24
+    },
+    {
+      "slot": 24,
+      "generation": 25
+    },
+    {
+      "slot": 25,
+      "generation": 26
+    },
+    {
+      "slot": 26,
+      "generation": 27
+    },
+    {
+      "slot": 27,
+      "generation": 28
+    },
+    {
+      "slot": 28,
+      "generation": 29
+    },
+    {
+      "slot": 29,
+      "generation": 30
+    },
+    {
+      "slot": 30,
+      "generation": 31
+    },
+    {
+      "slot": 31,
+      "generation": 32
+    },
+    {
+      "slot": 32,
+      "generation": 33
+    },
+    {
+      "slot": 33,
+      "generation": 34
+    },
+    {
+      "slot": 34,
+      "generation": 35
+    },
+    {
+      "slot": 35,
+      "generation": 36
+    },
+    {
+      "slot": 36,
+      "generation": 37
+    },
+    {
+      "slot": 37,
+      "generation": 38
+    },
+    {
+      "slot": 38,
+      "generation": 39
+    },
+    {
+      "slot": 39,
+      "generation": 40
+    },
+    {
+      "slot": 40,
+      "generation": 41
+    },
+    {
+      "slot": 41,
+      "generation": 42
+    },
+    {
+      "slot": 42,
+      "generation": 43
+    },
+    {
+      "slot": 43,
+      "generation": 44
+    },
+    {
+      "slot": 44,
+      "generation": 45
+    },
+    {
+      "slot": 45,
+      "generation": 46
+    },
+    {
+      "slot": 46,
+      "generation": 47
+    },
+    {
+      "slot": 47,
+      "generation": 48
+    },
+    {
+      "slot": 48,
+      "generation": 49
+    },
+    {
+      "slot": 49,
+      "generation": 50
+    },
+    {
+      "slot": 50,
+      "generation": 51
+    },
+    {
+      "slot": 51,
+      "generation": 52
+    },
+    {
+      "slot": 52,
+      "generation": 53
+    },
+    {
+      "slot": 53,
+      "generation": 54
+    },
+    {
+      "slot": 54,
+      "generation": 55
+    },
+    {
+      "slot": 55,
+      "generation": 56
+    },
+    {
+      "slot": 56,
+      "generation": 57
+    },
+    {
+      "slot": 57,
+      "generation": 58
+    },
+    {
+      "slot": 58,
+      "generation": 59
+    },
+    {
+      "slot": 59,
+      "generation": 60
+    },
+    {
+      "slot": 60,
+      "generation": 61
+    },
+    {
+      "slot": 61,
+      "generation": 62
+    },
+    {
+      "slot": 62,
+      "generation": 63
+    },
+    {
+      "slot": 63,
+      "generation": 64
+    }
+  ],
+  "erased": [],
+  "invalid": [],
+  "limitations": "UART export is a snapshot of simulated flash, not physical persistence or power loss."
+}

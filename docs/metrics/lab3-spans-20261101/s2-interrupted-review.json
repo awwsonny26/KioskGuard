@@ -1,0 +1,39 @@
+{
+  "state": "interrupted",
+  "first_mcu_ms": 15500,
+  "last_mcu_ms": 1997000,
+  "elapsed_mcu_ms": 1981500,
+  "samples": 3964,
+  "non_500_intervals": [],
+  "sample_min_interval_ms": 500,
+  "sample_max_interval_ms": 500,
+  "last_audit": "AUDIT gen=8 committed=8 near=0 shock=0 moved=0 light=0 errors=0 service_changes=8 busy=0 dirty=0 failed=0 invalid=0 coalesced=0",
+  "last_system": "SYSTEM foreground_permille=153 stack_used=928 heap_peak=1032 range_errors=0 cpu=polling",
+  "vcd_sha256": "58229ac9bc47b6baff0857be1ebc54a16868eebc0c5708992f5c7ed4ffc6c63d",
+  "uart_sha256": "177d2eead508bcb28c440324d85cdbcf120653afd962979ae16d833de96868fa",
+  "limitations": "The 15-second transport stall ended acquisition. VCD continued briefly after inspecting the simulator window; cause of the pause is unconfirmed. This is not an uninterrupted one-hour S2 and cannot be combined with other runs.",
+  "vcd_matching_sample_start_ns": [
+    15504275600,
+    1996963060125
+  ],
+  "vcd_sample_start_interval_ms": 1981458.784525,
+  "heap_peak_samples": [
+    1032,
+    1032,
+    1032,
+    1032,
+    1032,
+    1032,
+    1032,
+    1032
+  ],
+  "audit_committed_samples": [
+    2,
+    4,
+    4,
+    6,
+    6,
+    8,
+    8
+  ]
+}

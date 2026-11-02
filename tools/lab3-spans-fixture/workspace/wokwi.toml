@@ -1,0 +1,10 @@
+[wokwi]
+version = 1
+firmware = 'firmware/build-poll/firmware.hex'
+elf = 'firmware/build-poll/firmware.elf'
+vcdFile = 'docs/captures/gate.vcd'
+rfc2217ServerPort = 14379
+
+[[chip]]
+name = 'pirfixture'
+binary = 'chips/pirfixture.chip.wasm'
